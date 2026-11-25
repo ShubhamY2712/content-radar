@@ -1,0 +1,180 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "creatives",
+ "type": "object",
+ "properties": {
+  "creatives": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^C[0-9]+-[0-9]+$"
+     },
+     "competitor": {
+      "type": "string",
+      "description": "Competitor name, or the brand itself for C0 creatives"
+     },
+     "link": {
+      "type": "string",
+      "pattern": "^https?://"
+     },
+     "platform": {
+      "enum": [
+       "Meta",
+       "YouTube / Google"
+      ]
+     },
+     "placement": {
+      "type": "string"
+     },
+     "format": {
+      "enum": [
+       "Image",
+       "Carousel",
+       "Video"
+      ]
+     },
+     "product_shown": {
+      "type": "string",
+      "description": "Products visible in the creative, as named on pack or copy"
+     },
+     "product_match": {
+      "enum": [
+       "Exact product",
+       "Same product type",
+       "Brand range",
+       "No product"
+      ]
+     },
+     "paid_or_organic": {
+      "enum": [
+       "Paid",
+       "Organic"
+      ]
+     },
+     "date_seen": {
+      "type": "string",
+      "format": "date"
+     },
+     "duration_s": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "copy": {
+      "type": "string"
+     },
+     "media": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "frames": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "time_s": {
+         "type": "number"
+        },
+        "file": {
+         "type": "string"
+        }
+       },
+       "required": [
+        "time_s",
+        "file"
+       ],
+       "additionalProperties": false
+      }
+     },
+     "notes": {
+      "type": "string"
+     },
+     "started_running": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "format": "date"
+     },
+     "days_running": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "versions": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "published": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "format": "date"
+     },
+     "views": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "likes": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "comments": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "selection_reason": {
+      "type": "string"
+     },
+     "cuts_s": {
+      "type": "array",
+      "items": {
+       "type": "number"
+      }
+     },
+     "transcript": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "id",
+     "competitor",
+     "link",
+     "platform",
+     "placement",
+     "format",
+     "paid_or_organic",
+     "date_seen",
+     "media",
+     "selection_reason",
+     "product_shown",
+     "product_match"
+    ],
+    "additionalProperties": false
+   }
+  }
+ },
+ "required": [
+  "creatives"
+ ],
+ "additionalProperties": false
+}

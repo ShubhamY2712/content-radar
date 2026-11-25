@@ -1,0 +1,199 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "synthesis",
+ "type": "object",
+ "properties": {
+  "competitor_notes": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "competitor": {
+      "type": "string"
+     },
+     "note": {
+      "type": "string"
+     },
+     "recurring": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "standout_creatives": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    },
+    "required": [
+     "competitor",
+     "note",
+     "recurring",
+     "standout_creatives"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "market_patterns": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "parameter": {
+      "type": "string",
+      "pattern": "^[BS][0-9]{2}$"
+     },
+     "common": {
+      "type": "string"
+     },
+     "rare_or_missing": {
+      "type": "string"
+     },
+     "evidence": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "minItems": 1
+     },
+     "stats": {
+      "type": "array",
+      "description": "Counts copied from stats.json (tools/stats.py); review checks them",
+      "items": {
+       "type": "object",
+       "properties": {
+        "option": {
+         "type": "string"
+        },
+        "n": {
+         "type": "integer"
+        },
+        "of": {
+         "type": "integer"
+        },
+        "group": {
+         "enum": [
+          "market",
+          "brand"
+         ]
+        }
+       },
+       "required": [
+        "option",
+        "n",
+        "of",
+        "group"
+       ],
+       "additionalProperties": false
+      }
+     }
+    },
+    "required": [
+     "parameter",
+     "common",
+     "rare_or_missing",
+     "evidence"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "headline_findings": {
+   "type": "array",
+   "minItems": 3,
+   "maxItems": 5,
+   "items": {
+    "type": "string"
+   }
+  },
+  "brand_baseline": {
+   "type": "object",
+   "properties": {
+    "note": {
+     "type": "string"
+    },
+    "vs_market": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "object",
+      "properties": {
+       "parameter": {
+        "type": "string",
+        "pattern": "^[BS][0-9]{2}$"
+       },
+       "brand": {
+        "type": "string"
+       },
+       "market": {
+        "type": "string"
+       },
+       "gap": {
+        "type": "string"
+       },
+       "evidence": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        },
+        "minItems": 1
+       },
+       "stats": {
+        "type": "array",
+        "description": "Counts copied from stats.json (tools/stats.py); review checks them",
+        "items": {
+         "type": "object",
+         "properties": {
+          "option": {
+           "type": "string"
+          },
+          "n": {
+           "type": "integer"
+          },
+          "of": {
+           "type": "integer"
+          },
+          "group": {
+           "enum": [
+            "market",
+            "brand"
+           ]
+          }
+         },
+         "required": [
+          "option",
+          "n",
+          "of",
+          "group"
+         ],
+         "additionalProperties": false
+        }
+       }
+      },
+      "required": [
+       "parameter",
+       "brand",
+       "market",
+       "gap",
+       "evidence"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "note",
+    "vs_market"
+   ],
+   "additionalProperties": false
+  }
+ },
+ "required": [
+  "competitor_notes",
+  "market_patterns",
+  "headline_findings",
+  "brand_baseline"
+ ],
+ "additionalProperties": false
+}

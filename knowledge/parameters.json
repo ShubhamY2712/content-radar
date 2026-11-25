@@ -1,0 +1,3112 @@
+[
+ {
+  "id": "B01",
+  "part": "Business",
+  "group": "Hook and message",
+  "name": "Hook message",
+  "applies_to": "Both",
+  "what_to_check": "The first line of text, first frame or first spoken words: what stops the scroll",
+  "options": [],
+  "free_text": true,
+  "benchmark": "Front-loaded and specific to the audience; works with sound off",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   },
+   {
+    "layer": "L2 Product",
+    "assets": [
+     "Packshot"
+    ]
+   },
+   {
+    "layer": "L4 People / characters",
+    "assets": [
+     "Face close-up"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH1 Hook",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over",
+     "Dialogue"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L4 People / characters",
+    "assets": [
+     "Face close-up"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B02",
+  "part": "Business",
+  "group": "Hook and message",
+  "name": "Hook type",
+  "applies_to": "Both",
+  "what_to_check": "The tactic the opener uses",
+  "options": [
+   "Question",
+   "Bold claim",
+   "Problem call-out",
+   "Statistic",
+   "Curiosity gap",
+   "Pattern interrupt",
+   "Testimonial",
+   "Contrarian",
+   "Before / after",
+   "Demo / product in action",
+   "Offer-led",
+   "Persona call-out",
+   "Story open",
+   "Trend / pop-culture"
+  ],
+  "free_text": false,
+  "benchmark": "No single best type; compare by funnel stage",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   },
+   {
+    "layer": "L2 Product",
+    "assets": [
+     "Packshot"
+    ]
+   },
+   {
+    "layer": "L4 People / characters",
+    "assets": [
+     "Face close-up"
+    ]
+   },
+   {
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Badge / sticker"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH1 Hook",
+    "layer": "L4 People / characters",
+    "assets": [
+     "Face close-up"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L12 Footage type",
+    "assets": [
+     "A-roll (main / talking head)",
+     "B-roll"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Zoom / camera move",
+     "Speed effects (slow-mo, speed ramp)"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L13 Audio",
+    "assets": [
+     "Dialogue"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B03",
+  "part": "Business",
+  "group": "Hook and message",
+  "name": "Value proposition",
+  "applies_to": "Both",
+  "what_to_check": "The one benefit the viewer should remember",
+  "options": [
+   "Price / savings",
+   "Quality",
+   "Convenience",
+   "Speed",
+   "Results / transformation",
+   "Safety / trust",
+   "Health",
+   "Status",
+   "Identity"
+  ],
+  "free_text": false,
+  "benchmark": "One benefit, stated early",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline",
+     "Sub-headline",
+     "Tagline"
+    ]
+   },
+   {
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Long headline"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   },
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B04",
+  "part": "Business",
+  "group": "Hook and message",
+  "name": "Single clear message",
+  "applies_to": "Both",
+  "what_to_check": "Can the main message be restated in one sentence",
+  "options": [
+   "Clear and early",
+   "Clear but buried",
+   "Several competing messages"
+  ],
+  "free_text": false,
+  "benchmark": "One message per ad",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   },
+   {
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Primary text / caption",
+     "Headline field"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline",
+     "Captions / subtitles"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B05",
+  "part": "Business",
+  "group": "Hook and message",
+  "name": "Supporting facts",
+  "applies_to": "Both",
+  "what_to_check": "Evidence that backs the message",
+  "options": [
+   "Problem",
+   "Feature",
+   "Benefit",
+   "Spec / ingredient",
+   "How it works",
+   "Comparison",
+   "Proof point"
+  ],
+  "free_text": false,
+  "benchmark": "At least one benefit plus one feature or mechanism",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Benefit points",
+     "Stats / numbers"
+    ]
+   },
+   {
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Icons",
+     "Chart / data graphic",
+     "Arrows / callouts"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Benefit points",
+     "Stats / numbers"
+    ]
+   },
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Arrows / callouts"
+    ]
+   },
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B06",
+  "part": "Business",
+  "group": "Hook and message",
+  "name": "Problem–solution clarity",
+  "applies_to": "Both",
+  "what_to_check": "Is a problem shown and the product presented as the fix",
+  "options": [
+   "Clear",
+   "Partial",
+   "Absent"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline",
+     "Sub-headline"
+    ]
+   },
+   {
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Before–after split"
+    ]
+   },
+   {
+    "layer": "L2 Product",
+    "assets": [
+     "Product in use"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH2 Context / problem",
+    "layer": "L4 People / characters",
+    "assets": [
+     "Model / talent",
+     "Creator (UGC)"
+    ]
+   },
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L2 Product",
+    "assets": [
+     "Product in use"
+    ]
+   },
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Before–after split"
+    ]
+   },
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Split screen / PIP"
+    ]
+   },
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B07",
+  "part": "Business",
+  "group": "Hook and message",
+  "name": "Product shown and role",
+  "applies_to": "Both",
+  "what_to_check": "How visible and central the product is",
+  "options": [
+   "Hero",
+   "Visible, secondary",
+   "In use / demo",
+   "Incidental",
+   "Not shown"
+  ],
+  "free_text": false,
+  "benchmark": "Awareness: brand-led; action: product is the ad",
+  "photo": [
+   {
+    "layer": "L2 Product",
+    "assets": [
+     "Packshot",
+     "Product in use",
+     "Close-up / texture"
+    ]
+   },
+   {
+    "layer": "L3 Props and set",
+    "assets": [
+     "Ingredients"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH3 Product reveal",
+    "layer": "L2 Product",
+    "assets": [
+     "Packshot",
+     "Product in use"
+    ]
+   },
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L3 Props and set",
+    "assets": [
+     "Ingredients"
+    ]
+   },
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L12 Footage type",
+    "assets": [
+     "A-roll (main / talking head)",
+     "B-roll"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B08",
+  "part": "Business",
+  "group": "Audience and intent",
+  "name": "Target audience / persona",
+  "applies_to": "Both",
+  "what_to_check": "Who the ad speaks to and whether they would recognise themselves",
+  "options": [],
+  "free_text": true,
+  "benchmark": "Persona shown in their own context and language",
+  "photo": [
+   {
+    "layer": "L4 People / characters",
+    "assets": [
+     "Model / talent",
+     "Creator (UGC)",
+     "Customer / testimonial person"
+    ]
+   },
+   {
+    "layer": "L1 Background",
+    "assets": [
+     "Scene / location"
+    ]
+   },
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH1 Hook",
+    "layer": "L4 People / characters",
+    "assets": [
+     "Model / talent",
+     "Creator (UGC)"
+    ]
+   },
+   {
+    "shot": "SH2 Context / problem",
+    "layer": "L1 Background",
+    "assets": [
+     "Scene / location"
+    ]
+   },
+   {
+    "shot": "SH2 Context / problem",
+    "layer": "L13 Audio",
+    "assets": [
+     "Dialogue"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B09",
+  "part": "Business",
+  "group": "Audience and intent",
+  "name": "Awareness stage",
+  "applies_to": "Both",
+  "what_to_check": "How much the ad assumes the viewer already knows",
+  "options": [
+   "Unaware",
+   "Problem-aware",
+   "Solution-aware",
+   "Product-aware",
+   "Most aware"
+  ],
+  "free_text": false,
+  "benchmark": "Hard offers to cold audiences are a mismatch",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   },
+   {
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Primary text / caption"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH1 Hook",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B10",
+  "part": "Business",
+  "group": "Audience and intent",
+  "name": "Funnel stage",
+  "applies_to": "Both",
+  "what_to_check": "The job of the ad in the campaign",
+  "options": [
+   "Awareness",
+   "Consideration",
+   "Action",
+   "Full funnel"
+  ],
+  "free_text": false,
+  "benchmark": "Compare creatives only within the same stage",
+  "photo": [
+   {
+    "layer": "L8 CTA",
+    "assets": [
+     "CTA text"
+    ]
+   },
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Offer / price text",
+     "Promo code"
+    ]
+   },
+   {
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Platform CTA button"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH6 Offer",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Offer / price text"
+    ]
+   },
+   {
+    "shot": "SH7 CTA / end card",
+    "layer": "L8 CTA",
+    "assets": [
+     "CTA button",
+     "CTA text"
+    ]
+   },
+   {
+    "shot": "SH7 CTA / end card",
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Platform CTA button"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B11",
+  "part": "Business",
+  "group": "Audience and intent",
+  "name": "Appeal and emotion",
+  "applies_to": "Both",
+  "what_to_check": "Rational or emotional lever, and which emotion",
+  "options": [
+   "Rational",
+   "Emotional – humour",
+   "Emotional – aspiration",
+   "Emotional – FOMO",
+   "Emotional – relief",
+   "Emotional – belonging",
+   "Emotional – surprise",
+   "Emotional – fear",
+   "Emotional – nostalgia",
+   "Mixed"
+  ],
+  "free_text": false,
+  "benchmark": "Strong emotional response builds long-term brand impact",
+  "photo": [
+   {
+    "layer": "L4 People / characters",
+    "assets": [
+     "Face close-up",
+     "Model / talent"
+    ]
+   },
+   {
+    "layer": "L1 Background",
+    "assets": [
+     "Scene / location"
+    ]
+   },
+   {
+    "layer": "L9 Lighting and finish",
+    "assets": [
+     "Colour grade / filter"
+    ]
+   },
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH2 Context / problem",
+    "layer": "L4 People / characters",
+    "assets": [
+     "Face close-up"
+    ]
+   },
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L13 Audio",
+    "assets": [
+     "Music"
+    ]
+   },
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L9 Lighting and finish",
+    "assets": [
+     "Colour grade / filter"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B12",
+  "part": "Business",
+  "group": "Audience and intent",
+  "name": "Occasion, season or trend",
+  "applies_to": "Both",
+  "what_to_check": "Timely context the ad rides on",
+  "options": [
+   "Festival / holiday",
+   "Sale event",
+   "Launch",
+   "Season",
+   "Pop-culture trend",
+   "Evergreen"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "L1 Background",
+    "assets": [
+     "Scene / location"
+    ]
+   },
+   {
+    "layer": "L3 Props and set",
+    "assets": [
+     "Lifestyle props",
+     "Florals / natural elements"
+    ]
+   },
+   {
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Badge / sticker",
+     "Emoji / GIF"
+    ]
+   },
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH1 Hook",
+    "layer": "L1 Background",
+    "assets": [
+     "Scene / location"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L3 Props and set",
+    "assets": [
+     "Lifestyle props"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L13 Audio",
+    "assets": [
+     "Music (trending)"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "AR effects / filters"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B13",
+  "part": "Business",
+  "group": "Audience and intent",
+  "name": "Language and localisation",
+  "applies_to": "Both",
+  "what_to_check": "Language of copy and voice, and local fit",
+  "options": [
+   "English",
+   "Hindi",
+   "Hinglish",
+   "Regional language",
+   "Multi-language"
+  ],
+  "free_text": false,
+  "benchmark": "Match the language of the target audience",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "All text"
+    ]
+   },
+   {
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Primary text / caption"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "All text",
+     "Captions / subtitles"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over",
+     "Dialogue"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B14",
+  "part": "Business",
+  "group": "Offer and proof",
+  "name": "Offer and price",
+  "applies_to": "Both",
+  "what_to_check": "Incentive and how price is presented",
+  "options": [
+   "Discount %",
+   "Flat price",
+   "Price anchoring (MRP struck)",
+   "Starting at",
+   "EMI / pay later",
+   "BOGO / bundle",
+   "Free gift",
+   "Free shipping",
+   "Free trial / demo",
+   "No offer"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Offer / price text",
+     "MRP strike-through",
+     "Promo code"
+    ]
+   },
+   {
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Badge / sticker"
+    ]
+   },
+   {
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Product tags"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH6 Offer",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Offer / price text",
+     "MRP strike-through",
+     "Promo code"
+    ]
+   },
+   {
+    "shot": "SH6 Offer",
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Badge / sticker"
+    ]
+   },
+   {
+    "shot": "SH6 Offer",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B15",
+  "part": "Business",
+  "group": "Offer and proof",
+  "name": "Urgency",
+  "applies_to": "Both",
+  "what_to_check": "Time or stock pressure",
+  "options": [
+   "Time-limited",
+   "Limited stock",
+   "Countdown",
+   "None"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Offer / price text"
+    ]
+   },
+   {
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Countdown timer graphic",
+     "Badge / sticker"
+    ]
+   },
+   {
+    "layer": "L11 Interactive stickers",
+    "assets": [
+     "Countdown"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH6 Offer",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Offer / price text"
+    ]
+   },
+   {
+    "shot": "SH6 Offer",
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Countdown timer graphic"
+    ]
+   },
+   {
+    "shot": "SH6 Offer",
+    "layer": "L11 Interactive stickers",
+    "assets": [
+     "Countdown"
+    ]
+   },
+   {
+    "shot": "SH6 Offer",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B16",
+  "part": "Business",
+  "group": "Offer and proof",
+  "name": "Social proof and trust",
+  "applies_to": "Both",
+  "what_to_check": "Third-party validation shown",
+  "options": [
+   "Rating / stars",
+   "Review count",
+   "Testimonial",
+   "Customer numbers",
+   "Expert / doctor",
+   "Celebrity",
+   "Creator / UGC",
+   "Awards / records",
+   "Press / Shark Tank",
+   "Certification",
+   "Guarantee",
+   "None"
+  ],
+  "free_text": false,
+  "benchmark": "At least one trust signal for action ads",
+  "photo": [
+   {
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Review card / stars",
+     "Trust seal / certification"
+    ]
+   },
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Stats / numbers",
+     "Quote / testimonial text"
+    ]
+   },
+   {
+    "layer": "L4 People / characters",
+    "assets": [
+     "Expert (doctor, chef)",
+     "Customer / testimonial person"
+    ]
+   },
+   {
+    "layer": "L7 Brand",
+    "assets": [
+     "Partner logo"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH5 Proof",
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Review card / stars",
+     "Trust seal / certification"
+    ]
+   },
+   {
+    "shot": "SH5 Proof",
+    "layer": "L4 People / characters",
+    "assets": [
+     "Expert (doctor, chef)",
+     "Customer / testimonial person",
+     "Creator (UGC)"
+    ]
+   },
+   {
+    "shot": "SH5 Proof",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Quote / testimonial text",
+     "Stats / numbers"
+    ]
+   },
+   {
+    "shot": "SH5 Proof",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Lower third"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B17",
+  "part": "Business",
+  "group": "Offer and proof",
+  "name": "Differentiation",
+  "applies_to": "Both",
+  "what_to_check": "Why this brand over alternatives",
+  "options": [
+   "Explicit and credible",
+   "Implied",
+   "Category-generic"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Sub-headline",
+     "Benefit points"
+    ]
+   },
+   {
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Comparison table",
+     "Before–after split"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Sub-headline",
+     "Benefit points"
+    ]
+   },
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Comparison table"
+    ]
+   },
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B18",
+  "part": "Business",
+  "group": "Offer and proof",
+  "name": "Claims and disclaimers",
+  "applies_to": "Both",
+  "what_to_check": "Claim type and whether it is backed and readable",
+  "options": [
+   "Superlative claim",
+   "Numeric claim",
+   "Before / after",
+   "Claim with asterisk and T&C",
+   "No claims"
+  ],
+  "free_text": false,
+  "benchmark": "Claims backed and T&C readable; no cure or guaranteed-result claims",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Disclaimer",
+     "Stats / numbers"
+    ]
+   },
+   {
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Trust seal / certification"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH5 Proof",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Disclaimer"
+    ]
+   },
+   {
+    "shot": "SH7 CTA / end card",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Disclaimer"
+    ]
+   },
+   {
+    "shot": "SH7 CTA / end card",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B19",
+  "part": "Business",
+  "group": "Brand and action",
+  "name": "Talent / messenger",
+  "applies_to": "Both",
+  "what_to_check": "Who delivers the message",
+  "options": [
+   "Celebrity",
+   "Founder",
+   "Creator / influencer",
+   "Expert",
+   "Customer",
+   "Presenter / actor",
+   "Model",
+   "Mascot",
+   "No person"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "L4 People / characters",
+    "assets": [
+     "All people assets"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH1–SH5",
+    "layer": "L4 People / characters",
+    "assets": [
+     "All people assets"
+    ]
+   },
+   {
+    "shot": "SH1–SH5",
+    "layer": "L13 Audio",
+    "assets": [
+     "Dialogue"
+    ]
+   },
+   {
+    "shot": "SH1–SH5",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Lower third"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B20",
+  "part": "Business",
+  "group": "Brand and action",
+  "name": "Advertiser and partners",
+  "applies_to": "Both",
+  "what_to_check": "Who runs the ad and any partner brands",
+  "options": [
+   "Brand page",
+   "Creator partnership",
+   "Retailer / marketplace",
+   "Co-brand",
+   "Financing partner"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "L7 Brand",
+    "assets": [
+     "Logo",
+     "Partner logo"
+    ]
+   },
+   {
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Sponsored / Paid partnership label",
+     "Page name + profile photo"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH7 CTA / end card",
+    "layer": "L7 Brand",
+    "assets": [
+     "Logo",
+     "Partner logo"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Sponsored / Paid partnership label",
+     "Page name + profile photo"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L11 Interactive stickers",
+    "assets": [
+     "@mention"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B21",
+  "part": "Business",
+  "group": "Brand and action",
+  "name": "Brand presence and cues",
+  "applies_to": "Both",
+  "what_to_check": "Brand signals beyond the logo",
+  "options": [
+   "Logo",
+   "Brand colours",
+   "Pack / product",
+   "Spoken name",
+   "Tagline",
+   "Mascot",
+   "Sonic logo"
+  ],
+  "free_text": false,
+  "benchmark": "At least 2 brand cues",
+  "photo": [
+   {
+    "layer": "L7 Brand",
+    "assets": [
+     "Logo",
+     "Brand colour block",
+     "Brand font"
+    ]
+   },
+   {
+    "layer": "L2 Product",
+    "assets": [
+     "Packaging"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L7 Brand",
+    "assets": [
+     "Logo",
+     "Brand colour block"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L2 Product",
+    "assets": [
+     "Packaging"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L13 Audio",
+    "assets": [
+     "Sonic logo",
+     "Jingle"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Logo animation (sting)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B22",
+  "part": "Business",
+  "group": "Brand and action",
+  "name": "Availability / where to buy",
+  "applies_to": "Both",
+  "what_to_check": "Where and how fast the product can be bought",
+  "options": [
+   "Own website",
+   "Own app",
+   "Marketplace logos",
+   "Quick commerce",
+   "Offline store",
+   "Delivery promise",
+   "Not shown"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "L8 CTA",
+    "assets": [
+     "Link / URL",
+     "QR code"
+    ]
+   },
+   {
+    "layer": "L7 Brand",
+    "assets": [
+     "Partner logo"
+    ]
+   },
+   {
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Site links",
+     "Product tags",
+     "Product feed / catalog tiles"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH7 CTA / end card",
+    "layer": "L8 CTA",
+    "assets": [
+     "Link / URL",
+     "End card"
+    ]
+   },
+   {
+    "shot": "SH7 CTA / end card",
+    "layer": "L7 Brand",
+    "assets": [
+     "Partner logo"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Site links",
+     "Product feed / catalog tiles",
+     "Companion banner"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L11 Interactive stickers",
+    "assets": [
+     "Link sticker",
+     "Location"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B23",
+  "part": "Business",
+  "group": "Brand and action",
+  "name": "CTA",
+  "applies_to": "Both",
+  "what_to_check": "Clarity, wording and placement of the next step",
+  "options": [
+   "Specific verb (Shop now, Book demo)",
+   "Generic (Learn more)",
+   "Soft / implied",
+   "None",
+   "In-image button",
+   "Text only",
+   "End card",
+   "Spoken",
+   "Platform button only"
+  ],
+  "free_text": false,
+  "benchmark": "Names the exact action; on video both shown and spoken",
+  "photo": [
+   {
+    "layer": "L8 CTA",
+    "assets": [
+     "CTA button",
+     "CTA text",
+     "Swipe / tap cue"
+    ]
+   },
+   {
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Platform CTA button"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH7 CTA / end card",
+    "layer": "L8 CTA",
+    "assets": [
+     "CTA button",
+     "End card"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Platform CTA button"
+    ]
+   },
+   {
+    "shot": "SH7 CTA / end card",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B24",
+  "part": "Business",
+  "group": "Brand and action",
+  "name": "Copy tone and length",
+  "applies_to": "Both",
+  "what_to_check": "Voice of the copy and whether text fields fit",
+  "options": [
+   "Casual",
+   "Formal",
+   "Humorous",
+   "Urgent",
+   "Calm",
+   "Energetic",
+   "Within limit",
+   "Truncated"
+  ],
+  "free_text": false,
+  "benchmark": "Meta primary text ~125 chars, headline ~40; no ALL CAPS",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "All text"
+    ]
+   },
+   {
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Primary text / caption",
+     "Headline field",
+     "Description"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "All text"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Primary text / caption"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B25",
+  "part": "Business",
+  "group": "Video timing",
+  "name": "Hook in first 0–3 s",
+  "applies_to": "Video",
+  "what_to_check": "Key message or visual hook lands in the first 3 seconds",
+  "options": [
+   "Yes – visual",
+   "Yes – spoken",
+   "Yes – both",
+   "No"
+  ],
+  "free_text": false,
+  "benchmark": "Hook within 0–3 s",
+  "photo": [],
+  "video": [
+   {
+    "shot": "SH1 Hook",
+    "layer": "L2 Product",
+    "assets": [
+     "Packshot"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L4 People / characters",
+    "assets": [
+     "Face close-up"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Cuts",
+     "Zoom / camera move"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B26",
+  "part": "Business",
+  "group": "Video timing",
+  "name": "Brand first appears at",
+  "applies_to": "Video",
+  "what_to_check": "Time of first logo or brand cue",
+  "options": [
+   "Under 1 s",
+   "1–2 s",
+   "2–5 s",
+   "5–10 s",
+   "Later",
+   "End card only",
+   "Not shown"
+  ],
+  "free_text": false,
+  "benchmark": "Meta: within 2 s; YouTube: within 5 s; repeat through the ad",
+  "photo": [],
+  "video": [
+   {
+    "shot": "Beat where brand first appears",
+    "layer": "L7 Brand",
+    "assets": [
+     "Logo"
+    ]
+   },
+   {
+    "shot": "Beat where brand first appears",
+    "layer": "L2 Product",
+    "assets": [
+     "Packaging"
+    ]
+   },
+   {
+    "shot": "Beat where brand first appears",
+    "layer": "L13 Audio",
+    "assets": [
+     "Sonic logo",
+     "Voice-over"
+    ]
+   },
+   {
+    "shot": "Beat where brand first appears",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Logo animation (sting)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B27",
+  "part": "Business",
+  "group": "Video timing",
+  "name": "Product first appears at",
+  "applies_to": "Video",
+  "what_to_check": "Time the product first appears",
+  "options": [
+   "Under 2 s",
+   "2–5 s",
+   "Later",
+   "Never"
+  ],
+  "free_text": false,
+  "benchmark": "Within 2 s on Meta; within 5 s on YouTube",
+  "photo": [],
+  "video": [
+   {
+    "shot": "SH3 Product reveal",
+    "layer": "L2 Product",
+    "assets": [
+     "Packshot",
+     "Product in use"
+    ]
+   },
+   {
+    "shot": "SH3 Product reveal",
+    "layer": "L12 Footage type",
+    "assets": [
+     "A-roll (main / talking head)",
+     "B-roll"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B28",
+  "part": "Business",
+  "group": "Video timing",
+  "name": "Story structure",
+  "applies_to": "Video",
+  "what_to_check": "Narrative template used",
+  "options": [
+   "Hook–context–demo–proof–CTA",
+   "Problem–agitate–solve",
+   "Demo",
+   "Testimonial",
+   "Founder story",
+   "Skit / film",
+   "Listicle",
+   "Unboxing",
+   "Before / after",
+   "Podcast / talk clip",
+   "Montage"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L12 Footage type",
+    "assets": [
+     "A-roll (main / talking head)",
+     "B-roll"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Cuts",
+     "Transitions"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B29",
+  "part": "Business",
+  "group": "Video timing",
+  "name": "CTA timing",
+  "applies_to": "Video",
+  "what_to_check": "When the CTA appears and how long it stays",
+  "options": [
+   "Early",
+   "Middle",
+   "End card",
+   "Throughout"
+  ],
+  "free_text": false,
+  "benchmark": "On screen 3–5 s and spoken",
+  "photo": [],
+  "video": [
+   {
+    "shot": "SH7 (or earlier beat)",
+    "layer": "L8 CTA",
+    "assets": [
+     "CTA button",
+     "CTA text"
+    ]
+   },
+   {
+    "shot": "SH7 (or earlier beat)",
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Platform CTA button"
+    ]
+   },
+   {
+    "shot": "SH7 (or earlier beat)",
+    "layer": "L13 Audio",
+    "assets": [
+     "Voice-over"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S01",
+  "part": "Style",
+  "group": "Format and imagery",
+  "name": "Creative format",
+  "applies_to": "Both",
+  "what_to_check": "Production format of the creative",
+  "options": [
+   "Catalogue packshot",
+   "Designed static",
+   "Carousel",
+   "Cinemagraph",
+   "Static-to-motion",
+   "UGC",
+   "Talking head",
+   "Film / skit",
+   "Podcast clip",
+   "Animation / motion graphics",
+   "App montage"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "Full frame (L1–L9)",
+    "assets": [
+     "Single image / carousel cards"
+    ]
+   },
+   {
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Shapes / frames"
+    ]
+   },
+   {
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Product feed / catalog tiles"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L12 Footage type",
+    "assets": [
+     "Footage type"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Animation"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "part": "Style",
+  "group": "Format and imagery",
+  "name": "Visual style",
+  "applies_to": "Both",
+  "what_to_check": "Overall aesthetic",
+  "options": [
+   "Minimal / clean",
+   "Bold graphic",
+   "Polished photo",
+   "Illustrated",
+   "3D / CGI",
+   "UGC / lo-fi",
+   "Editorial",
+   "Meme / native",
+   "Collage",
+   "Infographic"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "L1 Background",
+    "assets": [
+     "Background"
+    ]
+   },
+   {
+    "layer": "L2 Product",
+    "assets": [
+     "3D render"
+    ]
+   },
+   {
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Illustrations"
+    ]
+   },
+   {
+    "layer": "L9 Lighting and finish",
+    "assets": [
+     "Colour grade / filter"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L12 Footage type",
+    "assets": [
+     "Live action",
+     "Animation / 3D",
+     "Stock footage"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L9 Lighting and finish",
+    "assets": [
+     "Colour grade / filter"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Animation"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "part": "Style",
+  "group": "Format and imagery",
+  "name": "Production level / native feel",
+  "applies_to": "Both",
+  "what_to_check": "Polish of production and how organic it looks in feed",
+  "options": [
+   "High (commercial)",
+   "Medium",
+   "Low (native / UGC)"
+  ],
+  "free_text": false,
+  "benchmark": "Hi-fi for awareness; lo-fi native for purchase intent",
+  "photo": [
+   {
+    "layer": "L4 People / characters",
+    "assets": [
+     "Creator (UGC)"
+    ]
+   },
+   {
+    "layer": "L1 Background",
+    "assets": [
+     "Studio set",
+     "Scene / location"
+    ]
+   },
+   {
+    "layer": "L9 Lighting and finish",
+    "assets": [
+     "Retouch",
+     "Colour grade / filter"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L12 Footage type",
+    "assets": [
+     "A-roll (main / talking head)",
+     "Screen recording"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L4 People / characters",
+    "assets": [
+     "Creator (UGC)"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "AR effects / filters",
+     "Zoom / camera move"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L13 Audio",
+    "assets": [
+     "Music (original)",
+     "Music (trending)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "part": "Style",
+  "group": "Format and imagery",
+  "name": "Product imagery type",
+  "applies_to": "Both",
+  "what_to_check": "How the product is pictured",
+  "options": [
+   "Packshot on plain",
+   "3D render",
+   "Lifestyle in use",
+   "Hand-held",
+   "Serving / usage suggestion",
+   "Variant line-up",
+   "Not shown"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "L2 Product",
+    "assets": [
+     "All product assets"
+    ]
+   },
+   {
+    "layer": "L3 Props and set",
+    "assets": [
+     "Podium / plinth"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH3 Product reveal",
+    "layer": "L2 Product",
+    "assets": [
+     "All product assets"
+    ]
+   },
+   {
+    "shot": "SH4 Demo / benefit",
+    "layer": "L12 Footage type",
+    "assets": [
+     "A-roll (main / talking head)",
+     "B-roll"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "part": "Style",
+  "group": "Format and imagery",
+  "name": "Background and setting",
+  "applies_to": "Both",
+  "what_to_check": "What sits behind the subject",
+  "options": [
+   "Plain / solid",
+   "Gradient",
+   "Studio",
+   "Lifestyle scene",
+   "Real-world / UGC",
+   "Abstract / graphic",
+   "Texture"
+  ],
+  "free_text": false,
+  "benchmark": "Real settings in natural light for Google images; avoid all-white composites",
+  "photo": [
+   {
+    "layer": "L1 Background",
+    "assets": [
+     "All background assets"
+    ]
+   },
+   {
+    "layer": "L3 Props and set",
+    "assets": [
+     "Props"
+    ]
+   },
+   {
+    "layer": "L9 Lighting and finish",
+    "assets": [
+     "Depth of field / blur"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L1 Background",
+    "assets": [
+     "All background assets"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L3 Props and set",
+    "assets": [
+     "Props"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "part": "Style",
+  "group": "Colour and contrast",
+  "name": "Brand colour use",
+  "applies_to": "Both",
+  "what_to_check": "Whether brand colours are present and leading",
+  "options": [
+   "Dominant",
+   "Accent only",
+   "Absent",
+   "Off-brand"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "L7 Brand",
+    "assets": [
+     "Brand colour block"
+    ]
+   },
+   {
+    "layer": "L1 Background",
+    "assets": [
+     "Solid colour"
+    ]
+   },
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Text colour"
+    ]
+   },
+   {
+    "layer": "L8 CTA",
+    "assets": [
+     "CTA button"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L7 Brand",
+    "assets": [
+     "Brand colour block"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L1 Background",
+    "assets": [
+     "Solid colour"
+    ]
+   },
+   {
+    "shot": "SH7 CTA / end card",
+    "layer": "L8 CTA",
+    "assets": [
+     "End card"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "part": "Style",
+  "group": "Colour and contrast",
+  "name": "Colour palette",
+  "applies_to": "Both",
+  "what_to_check": "Character and number of dominant colours",
+  "options": [
+   "Bright / saturated",
+   "Pastel / muted",
+   "Dark / moody",
+   "Monochrome",
+   "High contrast",
+   "1–2 colours",
+   "3–4 colours",
+   "5+ colours"
+  ],
+  "free_text": false,
+  "benchmark": "3–4 dominant colours or fewer",
+  "photo": [
+   {
+    "layer": "L1 Background",
+    "assets": [
+     "Colours"
+    ]
+   },
+   {
+    "layer": "L2 Product",
+    "assets": [
+     "Colours"
+    ]
+   },
+   {
+    "layer": "L3 Props and set",
+    "assets": [
+     "Colours"
+    ]
+   },
+   {
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "Colours"
+    ]
+   },
+   {
+    "layer": "L9 Lighting and finish",
+    "assets": [
+     "Colour grade / filter"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L1 Background",
+    "assets": [
+     "Colours"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L2 Product",
+    "assets": [
+     "Colours"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L9 Lighting and finish",
+    "assets": [
+     "Colour grade / filter"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S08",
+  "part": "Style",
+  "group": "Colour and contrast",
+  "name": "Contrast and legibility",
+  "applies_to": "Both",
+  "what_to_check": "Subject against background and text against its backdrop",
+  "options": [
+   "High",
+   "Medium",
+   "Low"
+  ],
+  "free_text": false,
+  "benchmark": "Text contrast 4.5:1 (3:1 for large text)",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline",
+     "All text"
+    ]
+   },
+   {
+    "layer": "L1 Background",
+    "assets": [
+     "Background behind text"
+    ]
+   },
+   {
+    "layer": "L9 Lighting and finish",
+    "assets": [
+     "Shadows",
+     "Depth of field / blur"
+    ]
+   },
+   {
+    "layer": "L8 CTA",
+    "assets": [
+     "CTA button"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline",
+     "Captions / subtitles"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L1 Background",
+    "assets": [
+     "Background behind text"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Lower third"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S09",
+  "part": "Style",
+  "group": "Typography and text",
+  "name": "Text vs image ratio",
+  "applies_to": "Both",
+  "what_to_check": "Share of the frame covered by overlaid text",
+  "options": [
+   "No text",
+   "Up to 10%",
+   "10–20%",
+   "20–40%",
+   "Over 40%"
+  ],
+  "free_text": false,
+  "benchmark": "Meta: over 20% text may reduce delivery; Google images: no overlaid text",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "All text"
+    ]
+   },
+   {
+    "layer": "L1 Background",
+    "assets": [
+     "Image area"
+    ]
+   },
+   {
+    "layer": "L2 Product",
+    "assets": [
+     "Image area"
+    ]
+   },
+   {
+    "layer": "L3 Props and set",
+    "assets": [
+     "Image area"
+    ]
+   },
+   {
+    "layer": "L4 People / characters",
+    "assets": [
+     "Image area"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH1 Hook",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "All text"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Kinetic typography"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S10",
+  "part": "Style",
+  "group": "Typography and text",
+  "name": "Typography",
+  "applies_to": "Both",
+  "what_to_check": "Font count, hierarchy and size on a phone screen",
+  "options": [
+   "1 font",
+   "2 fonts",
+   "3+ fonts",
+   "Clear hierarchy",
+   "Weak",
+   "Flat",
+   "Legible on mobile",
+   "Borderline",
+   "Too small"
+  ],
+  "free_text": false,
+  "benchmark": "2 fonts or fewer; headline > sub > CTA; 10 words or fewer per frame",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "All text"
+    ]
+   },
+   {
+    "layer": "L7 Brand",
+    "assets": [
+     "Brand font"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "All text"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Kinetic typography",
+     "Lower third"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S11",
+  "part": "Style",
+  "group": "Typography and text",
+  "name": "Graphic elements and badges",
+  "applies_to": "Both",
+  "what_to_check": "Stickers, badges and icons added to the creative",
+  "options": [
+   "NEW / launch tag",
+   "Price sticker",
+   "Rating stars",
+   "Record / award badge",
+   "Icons",
+   "Emoji",
+   "None"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "All graphic assets"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L6 Graphic elements",
+    "assets": [
+     "All graphic assets"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Animation"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S12",
+  "part": "Style",
+  "group": "Layout and composition",
+  "name": "Focal point",
+  "applies_to": "Both",
+  "what_to_check": "Is there one dominant point of attention",
+  "options": [
+   "Single focal point",
+   "Two competing",
+   "None / cluttered"
+  ],
+  "free_text": false,
+  "benchmark": "One focal point",
+  "photo": [
+   {
+    "layer": "L2 Product",
+    "assets": [
+     "Packshot"
+    ]
+   },
+   {
+    "layer": "L4 People / characters",
+    "assets": [
+     "Face close-up"
+    ]
+   },
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   },
+   {
+    "layer": "L9 Lighting and finish",
+    "assets": [
+     "Depth of field / blur"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH1 Hook",
+    "layer": "L2 Product",
+    "assets": [
+     "Packshot"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L4 People / characters",
+    "assets": [
+     "Face close-up"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Zoom / camera move"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S13",
+  "part": "Style",
+  "group": "Layout and composition",
+  "name": "Visual hierarchy",
+  "applies_to": "Both",
+  "what_to_check": "Order the eye follows through brand, product, message and CTA",
+  "options": [
+   "Intended order followed",
+   "Partly",
+   "Not followed"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline (1st)"
+    ]
+   },
+   {
+    "layer": "L2 Product",
+    "assets": [
+     "Packshot (2nd)"
+    ]
+   },
+   {
+    "layer": "L8 CTA",
+    "assets": [
+     "CTA button (3rd)"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH1 Hook",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L2 Product",
+    "assets": [
+     "Packshot"
+    ]
+   },
+   {
+    "shot": "SH7 CTA / end card",
+    "layer": "L8 CTA",
+    "assets": [
+     "CTA button"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S14",
+  "part": "Style",
+  "group": "Layout and composition",
+  "name": "Layout / composition",
+  "applies_to": "Both",
+  "what_to_check": "Structural arrangement",
+  "options": [
+   "Centred",
+   "Rule of thirds",
+   "Z-pattern",
+   "F-pattern",
+   "Split screen",
+   "Close-up",
+   "Wide"
+  ],
+  "free_text": false,
+  "benchmark": "–",
+  "photo": [
+   {
+    "layer": "L2 Product",
+    "assets": [
+     "Position"
+    ]
+   },
+   {
+    "layer": "L4 People / characters",
+    "assets": [
+     "Position"
+    ]
+   },
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Position"
+    ]
+   },
+   {
+    "layer": "L7 Brand",
+    "assets": [
+     "Position"
+    ]
+   },
+   {
+    "layer": "L8 CTA",
+    "assets": [
+     "Position"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH1 Hook",
+    "layer": "L2 Product",
+    "assets": [
+     "Position"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L4 People / characters",
+    "assets": [
+     "Position"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Position"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Split screen / PIP"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S15",
+  "part": "Style",
+  "group": "Layout and composition",
+  "name": "Space use",
+  "applies_to": "Both",
+  "what_to_check": "Negative space against element density",
+  "options": [
+   "Generous",
+   "Balanced",
+   "Busy",
+   "Cluttered"
+  ],
+  "free_text": false,
+  "benchmark": "Blank space no more than 80% of a Google image",
+  "photo": [
+   {
+    "layer": "L1 Background",
+    "assets": [
+     "Empty space"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L1 Background",
+    "assets": [
+     "Empty space"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S16",
+  "part": "Style",
+  "group": "Layout and composition",
+  "name": "Product / subject size in frame",
+  "applies_to": "Both",
+  "what_to_check": "Share of the frame filled by the key person or product",
+  "options": [
+   "60% or more",
+   "30–59%",
+   "10–29%",
+   "Under 10%"
+  ],
+  "free_text": false,
+  "benchmark": "Shorts: subject 60% or more of the frame",
+  "photo": [
+   {
+    "layer": "L2 Product",
+    "assets": [
+     "Packshot"
+    ]
+   },
+   {
+    "layer": "L4 People / characters",
+    "assets": [
+     "Model / talent"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH3 Product reveal",
+    "layer": "L2 Product",
+    "assets": [
+     "Packshot"
+    ]
+   },
+   {
+    "shot": "SH3 Product reveal",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Zoom / camera move"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S17",
+  "part": "Style",
+  "group": "People and brand",
+  "name": "People",
+  "applies_to": "Both",
+  "what_to_check": "Presence, face, gaze and expression",
+  "options": [
+   "No people",
+   "Hands only",
+   "Face visible",
+   "Multiple people",
+   "Gaze at camera",
+   "Gaze at product",
+   "Positive",
+   "Neutral",
+   "Negative"
+  ],
+  "free_text": false,
+  "benchmark": "People early; tight framing",
+  "photo": [
+   {
+    "layer": "L4 People / characters",
+    "assets": [
+     "All people assets"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L4 People / characters",
+    "assets": [
+     "All people assets"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L12 Footage type",
+    "assets": [
+     "A-roll (main / talking head)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S18",
+  "part": "Style",
+  "group": "People and brand",
+  "name": "Logo placement and size",
+  "applies_to": "Both",
+  "what_to_check": "Where the logo sits and how visible it is",
+  "options": [
+   "Top-left",
+   "Top-centre",
+   "Top-right",
+   "Centre",
+   "Bottom",
+   "On product",
+   "Persistent watermark",
+   "Absent",
+   "Dominant",
+   "Moderate",
+   "Subtle"
+  ],
+  "free_text": false,
+  "benchmark": "Avoid bottom-right and areas covered by platform buttons",
+  "photo": [
+   {
+    "layer": "L7 Brand",
+    "assets": [
+     "Logo"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "SH1 Hook",
+    "layer": "L7 Brand",
+    "assets": [
+     "Logo"
+    ]
+   },
+   {
+    "shot": "SH7 CTA / end card",
+    "layer": "L7 Brand",
+    "assets": [
+     "Logo"
+    ]
+   },
+   {
+    "shot": "SH7 CTA / end card",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Logo animation (sting)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S19",
+  "part": "Style",
+  "group": "Platform fit",
+  "name": "Aspect ratio and native fit",
+  "applies_to": "Both",
+  "what_to_check": "Frame ratio and whether it was built for the placement",
+  "options": [
+   "1:1",
+   "4:5",
+   "9:16",
+   "16:9",
+   "1.91:1",
+   "Native",
+   "Cropped / letterboxed"
+  ],
+  "free_text": false,
+  "benchmark": "Feed 4:5 or 1:1; Reels, Stories, Shorts 9:16; YouTube in-stream 16:9",
+  "photo": [
+   {
+    "layer": "Full frame (L1–L9)",
+    "assets": [
+     "Frame size / aspect ratio"
+    ]
+   },
+   {
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Placement"
+    ]
+   },
+   {
+    "layer": "L11 Interactive stickers",
+    "assets": [
+     "Stickers"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "Full frame (L1–L9)",
+    "assets": [
+     "Frame size / aspect ratio"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L12 Footage type",
+    "assets": [
+     "Footage framing"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L11 Interactive stickers",
+    "assets": [
+     "Stickers"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S20",
+  "part": "Style",
+  "group": "Platform fit",
+  "name": "Safe zones",
+  "applies_to": "Both",
+  "what_to_check": "Key text, logo, CTA and product clear of platform buttons",
+  "options": [
+   "Fully clear",
+   "Minor overlap",
+   "Key element covered"
+  ],
+  "free_text": false,
+  "benchmark": "9:16: keep top 14%, bottom 35% and sides 6% clear",
+  "photo": [
+   {
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Text position"
+    ]
+   },
+   {
+    "layer": "L7 Brand",
+    "assets": [
+     "Logo position"
+    ]
+   },
+   {
+    "layer": "L8 CTA",
+    "assets": [
+     "CTA position"
+    ]
+   },
+   {
+    "layer": "L10 Ad text and platform",
+    "assets": [
+     "Platform UI overlap"
+    ]
+   },
+   {
+    "layer": "L11 Interactive stickers",
+    "assets": [
+     "Sticker position"
+    ]
+   }
+  ],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Text position"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L7 Brand",
+    "assets": [
+     "Logo position"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L8 CTA",
+    "assets": [
+     "CTA position"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L11 Interactive stickers",
+    "assets": [
+     "Sticker position"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S21",
+  "part": "Style",
+  "group": "Video craft",
+  "name": "Opening frame",
+  "applies_to": "Video",
+  "what_to_check": "Whether the first frame works as a thumbnail and stops the scroll",
+  "options": [
+   "Strong",
+   "Weak",
+   "Blank / dark"
+  ],
+  "free_text": false,
+  "benchmark": "No blank or text-less first frame",
+  "photo": [],
+  "video": [
+   {
+    "shot": "SH1 Hook",
+    "layer": "L1 Background",
+    "assets": [
+     "Background"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L2 Product",
+    "assets": [
+     "Packshot"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L4 People / characters",
+    "assets": [
+     "Face close-up"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Headline"
+    ]
+   },
+   {
+    "shot": "SH1 Hook",
+    "layer": "L12 Footage type",
+    "assets": [
+     "Footage type"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S22",
+  "part": "Style",
+  "group": "Video craft",
+  "name": "Pacing / cuts",
+  "applies_to": "Video",
+  "what_to_check": "Edit rhythm",
+  "options": [
+   "Fast cuts",
+   "Moderate",
+   "Slow build",
+   "Single take"
+  ],
+  "free_text": false,
+  "benchmark": "3 or more shots in the first 5 s; a cut every 2–3 s for short-form",
+  "photo": [],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Cuts",
+     "Transitions",
+     "Speed effects (slow-mo, speed ramp)"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L12 Footage type",
+    "assets": [
+     "A-roll (main / talking head)",
+     "B-roll"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S23",
+  "part": "Style",
+  "group": "Video craft",
+  "name": "Length",
+  "applies_to": "Video",
+  "what_to_check": "Duration against placement norm",
+  "options": [
+   "Under 6 s",
+   "6–15 s",
+   "15–30 s",
+   "30–60 s",
+   "Over 60 s"
+  ],
+  "free_text": false,
+  "benchmark": "Reels 9–15 s; Feed 15–30 s; bumper 6 s; Demand Gen 5 s or more",
+  "photo": [],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Cuts (total runtime)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S24",
+  "part": "Style",
+  "group": "Video craft",
+  "name": "Audio type",
+  "applies_to": "Video",
+  "what_to_check": "What the soundtrack is made of",
+  "options": [
+   "Voiceover",
+   "Creator voice",
+   "Dialogue",
+   "Trending music",
+   "Background music",
+   "Sound effects",
+   "No audio"
+  ],
+  "free_text": false,
+  "benchmark": "Include audio for Reels and YouTube",
+  "photo": [],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L13 Audio",
+    "assets": [
+     "All audio assets"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S25",
+  "part": "Style",
+  "group": "Video craft",
+  "name": "Sound-off readiness / captions",
+  "applies_to": "Video",
+  "what_to_check": "Whether the message works muted",
+  "options": [
+   "Burned-in captions",
+   "Kinetic text",
+   "Supers / lower thirds",
+   "Partial",
+   "None"
+  ],
+  "free_text": false,
+  "benchmark": "Message readable with sound off",
+  "photo": [],
+  "video": [
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L5 On-creative text",
+    "assets": [
+     "Captions / subtitles"
+    ]
+   },
+   {
+    "shot": "All beats (SH1–SH7)",
+    "layer": "L14 Motion and edit",
+    "assets": [
+     "Kinetic typography"
+    ]
+   }
+  ]
+ }
+]

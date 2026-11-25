@@ -1,0 +1,45 @@
+{
+ "name": "creative-analysis",
+ "version": "2.0.0",
+ "order": 4,
+ "depends_on": [
+  "creative-collection"
+ ],
+ "inputs": [
+  "creatives.json",
+  "media/ (incl. measures.json, transcript.json)"
+ ],
+ "outputs": [
+  "analysis/parts/<id>-B.json",
+  "analysis/parts/<id>-S.json",
+  "analysis/<creative id>.json",
+  "checks/<creative id>.json"
+ ],
+ "schemas": [
+  "analysis.schema.json",
+  "checks.schema.json"
+ ],
+ "knowledge": [
+  "parameters.json",
+  "parameters.md",
+  "breakdown.json",
+  "option_guide.md",
+  "examples/example_photo.md",
+  "examples/example_video.md"
+ ],
+ "tools": [
+  "image_view",
+  "tools/merge_parts.py",
+  "tools/check_compare.py",
+  "tools/validate.py"
+ ],
+ "permissions": [
+  "file_write_run"
+ ],
+ "human_approval": false,
+ "parallel": "per creative: 2 analysts (B, S) + 1 checker, then a resolver",
+ "worker": [
+  "agents/analyst.md",
+  "agents/checker.md"
+ ]
+}

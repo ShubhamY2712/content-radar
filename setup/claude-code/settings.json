@@ -1,0 +1,20 @@
+{
+  "enableAllProjectMcpServers": true,
+  "permissions": {
+    "allow": [
+      "Bash(python tools/*)",
+      "Bash(python tools\\*)",
+      "Bash(python -m yt_dlp *)",
+      "Bash(ffmpeg *)",
+      "Bash(ffprobe *)",
+      "Bash(mkdir *)",
+      "Edit(./runs/**)",
+      "WebSearch",
+      "WebFetch",
+      "mcp__browser1__*",
+      "mcp__browser2__*",
+      "mcp__browser3__*",
+      "mcp__browser4__*"
+    ]
+  }
+}

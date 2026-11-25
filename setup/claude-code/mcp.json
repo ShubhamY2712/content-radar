@@ -1,0 +1,44 @@
+{
+  "mcpServers": {
+    "browser1": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@playwright/mcp@latest",
+        "--isolated"
+      ]
+    },
+    "browser2": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@playwright/mcp@latest",
+        "--isolated"
+      ]
+    },
+    "browser3": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@playwright/mcp@latest",
+        "--isolated"
+      ]
+    },
+    "browser4": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@playwright/mcp@latest",
+        "--isolated"
+      ]
+    }
+  }
+}

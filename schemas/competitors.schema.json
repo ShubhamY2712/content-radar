@@ -1,0 +1,172 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "competitors",
+ "type": "object",
+ "properties": {
+  "approved_by_user": {
+   "type": "boolean"
+  },
+  "competitors": {
+   "type": "array",
+   "minItems": 1,
+   "maxItems": 5,
+   "items": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "why": {
+      "type": "string"
+     },
+     "product_name": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Its product that matches the brief (exact, else same type)"
+     },
+     "product_page": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "pattern": "^https?://"
+     },
+     "product_image": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Run-relative path of the product's pack photo (media/products/C<n>.<ext>), used by measure.py --pack"
+     },
+     "website": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "instagram": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "facebook": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "youtube": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "ad_library": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "google_ads_transparency": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "sources": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "pattern": "^https?://"
+      },
+      "minItems": 1
+     }
+    },
+    "required": [
+     "name",
+     "why",
+     "sources"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "brand": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "type": "string"
+    },
+    "product_name": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Its product that matches the brief (exact, else same type)"
+    },
+    "product_page": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "pattern": "^https?://"
+    },
+    "product_image": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Run-relative path of the product's pack photo (media/products/C<n>.<ext>), used by measure.py --pack"
+    },
+    "website": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "instagram": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "facebook": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "youtube": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "ad_library": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "google_ads_transparency": {
+     "type": [
+      "string",
+      "null"
+     ]
+    }
+   },
+   "required": [
+    "name"
+   ],
+   "additionalProperties": false
+  }
+ },
+ "required": [
+  "approved_by_user",
+  "competitors",
+  "brand"
+ ],
+ "additionalProperties": false
+}

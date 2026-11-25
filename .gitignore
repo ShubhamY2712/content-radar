@@ -1,0 +1,23 @@
+# secrets (keys and saved browser logins)
+.env
+auth.json
+
+# run outputs: they contain other brands' creatives
+runs/*/
+
+# models downloaded on first use
+tools/models/
+
+# per-machine copies made from setup/claude-code
+.claude/
+.mcp.json
+
+# browser logs and page snapshots from the Playwright browsers
+.playwright-mcp/
+
+# Python
+__pycache__/
+*.pyc
+
+# accuracy reports
+evaluation/results/

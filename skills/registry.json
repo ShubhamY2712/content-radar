@@ -1,0 +1,253 @@
+{
+ "agent": "content-benchmark",
+ "order": [
+  "brief-intake",
+  "competitor-discovery",
+  "creative-collection",
+  "creative-analysis",
+  "benchmark-synthesis",
+  "content-recommendation",
+  "report-review"
+ ],
+ "skills": [
+  {
+   "name": "brief-intake",
+   "version": "1.2.0",
+   "order": 1,
+   "depends_on": [],
+   "inputs": [
+    "user request"
+   ],
+   "outputs": [
+    "brief.json"
+   ],
+   "schemas": [
+    "brief.schema.json"
+   ],
+   "knowledge": [],
+   "tools": [],
+   "permissions": [
+    "file_write_run"
+   ],
+   "human_approval": false,
+   "description": "Turn the user's request (brand + product, optional competitors and settings) into a complete research brief. Step 1 of the content benchmark run.",
+   "path": "skills/brief-intake/SKILL.md"
+  },
+  {
+   "name": "competitor-discovery",
+   "version": "1.3.0",
+   "order": 2,
+   "depends_on": [
+    "brief-intake"
+   ],
+   "inputs": [
+    "brief.json"
+   ],
+   "outputs": [
+    "competitors.json",
+    "media/products/"
+   ],
+   "schemas": [
+    "competitors.schema.json"
+   ],
+   "knowledge": [],
+   "tools": [
+    "web_search",
+    "web_fetch"
+   ],
+   "permissions": [
+    "internet_read",
+    "file_write_run"
+   ],
+   "human_approval": true,
+   "description": "Find (or check) the brand's competitors and every link where their content lives - website, Instagram, Facebook page, YouTube channel, Meta Ad Library and Google Ads Transparency pages. Step 2; needs user approval.",
+   "path": "skills/competitor-discovery/SKILL.md"
+  },
+  {
+   "name": "creative-collection",
+   "version": "1.5.1",
+   "order": 3,
+   "depends_on": [
+    "competitor-discovery"
+   ],
+   "inputs": [
+    "brief.json",
+    "competitors.json"
+   ],
+   "outputs": [
+    "creatives.json",
+    "media/"
+   ],
+   "schemas": [
+    "creatives.schema.json"
+   ],
+   "knowledge": [
+    "breakdown.json"
+   ],
+   "tools": [
+    "web_search",
+    "web_fetch",
+    "browser",
+    "tools/youtube.py",
+    "tools/instagram.py",
+    "tools/frames.py",
+    "tools/transcript.py",
+    "tools/measure.py"
+   ],
+   "permissions": [
+    "internet_read",
+    "file_write_run"
+   ],
+   "human_approval": false,
+   "parallel": "per competitor",
+   "worker": "agents/collector.md",
+   "description": "Collect the strongest recent creatives (paid ads and organic posts, photo and video) for each approved competitor plus the brand's own as a baseline, with selection evidence, media, 1-2 fps video frames, cut times and transcripts. Step 3.",
+   "path": "skills/creative-collection/SKILL.md"
+  },
+  {
+   "name": "creative-analysis",
+   "version": "2.0.0",
+   "order": 4,
+   "depends_on": [
+    "creative-collection"
+   ],
+   "inputs": [
+    "creatives.json",
+    "media/ (incl. measures.json, transcript.json)"
+   ],
+   "outputs": [
+    "analysis/parts/<id>-B.json",
+    "analysis/parts/<id>-S.json",
+    "analysis/<creative id>.json",
+    "checks/<creative id>.json"
+   ],
+   "schemas": [
+    "analysis.schema.json",
+    "checks.schema.json"
+   ],
+   "knowledge": [
+    "parameters.json",
+    "parameters.md",
+    "breakdown.json",
+    "option_guide.md",
+    "examples/example_photo.md",
+    "examples/example_video.md"
+   ],
+   "tools": [
+    "image_view",
+    "tools/merge_parts.py",
+    "tools/check_compare.py",
+    "tools/validate.py"
+   ],
+   "permissions": [
+    "file_write_run"
+   ],
+   "human_approval": false,
+   "parallel": "per creative: 2 analysts (B, S) + 1 checker, then a resolver",
+   "worker": [
+    "agents/analyst.md",
+    "agents/checker.md"
+   ],
+   "description": "Analyse one creative on the 54 benchmark parameters - evidence first, measured facts before eye judgement - for each the evidence, finding, option and where it sits (shot for video, layer, assets); a Business analyst and a Style analyst split the work and an independent checker re-reads it. Step 4; run per creative.",
+   "path": "skills/creative-analysis/SKILL.md"
+  },
+  {
+   "name": "benchmark-synthesis",
+   "version": "1.3.0",
+   "order": 5,
+   "depends_on": [
+    "creative-analysis"
+   ],
+   "inputs": [
+    "competitors.json",
+    "creatives.json",
+    "analysis/"
+   ],
+   "outputs": [
+    "synthesis.json",
+    "stats.json"
+   ],
+   "schemas": [
+    "synthesis.schema.json"
+   ],
+   "knowledge": [
+    "parameters.json"
+   ],
+   "tools": [
+    "tools/stats.py"
+   ],
+   "permissions": [
+    "file_write_run"
+   ],
+   "human_approval": false,
+   "description": "Turn all creative analyses into a short note per competitor, market patterns per parameter (what most do, what few do) and 3-5 headline findings. Step 5.",
+   "path": "skills/benchmark-synthesis/SKILL.md"
+  },
+  {
+   "name": "content-recommendation",
+   "version": "1.3.0",
+   "order": 6,
+   "depends_on": [
+    "benchmark-synthesis"
+   ],
+   "inputs": [
+    "brief.json",
+    "synthesis.json",
+    "analysis/"
+   ],
+   "outputs": [
+    "recommendations.json",
+    "report.md"
+   ],
+   "schemas": [
+    "recommendations.schema.json"
+   ],
+   "knowledge": [
+    "parameters.json",
+    "breakdown.json"
+   ],
+   "tools": [
+    "tools/render_report.py"
+   ],
+   "permissions": [
+    "file_write_run"
+   ],
+   "human_approval": false,
+   "description": "Recommend content ideas for the brand on the same benchmark parameters, based on competitor patterns and gaps, and write the final benchmark report. Step 6.",
+   "path": "skills/content-recommendation/SKILL.md"
+  },
+  {
+   "name": "report-review",
+   "version": "1.2.0",
+   "order": 7,
+   "depends_on": [
+    "content-recommendation"
+   ],
+   "inputs": [
+    "all run files",
+    "report.md"
+   ],
+   "outputs": [
+    "review.json"
+   ],
+   "schemas": [
+    "review.schema.json"
+   ],
+   "knowledge": [
+    "parameters.json"
+   ],
+   "tools": [
+    "tools/review.py",
+    "tools/render_report.py",
+    "web_fetch"
+   ],
+   "permissions": [
+    "internet_read",
+    "file_write_run"
+   ],
+   "human_approval": false,
+   "description": "Check the finished run before calling it done - ids, counts and evidence agree across files, every recommendation is grounded, links open, nothing is guessed - fix what fails and record the review. Step 7.",
+   "path": "skills/report-review/SKILL.md"
+  }
+ ]
+}

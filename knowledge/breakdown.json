@@ -1,0 +1,226 @@
+{
+ "shots": [
+  "SH1 Hook",
+  "SH2 Context / problem",
+  "SH3 Product reveal",
+  "SH4 Demo / benefit",
+  "SH5 Proof",
+  "SH6 Offer",
+  "SH7 CTA / end card",
+  "All beats (SH1–SH7)"
+ ],
+ "layers": [
+  {
+   "layer": "L1 Background",
+   "assets": [
+    "Solid colour",
+    "Gradient",
+    "Texture / pattern",
+    "Scene / location",
+    "Studio set",
+    "AI-generated / expanded background"
+   ]
+  },
+  {
+   "layer": "L2 Product",
+   "assets": [
+    "Packshot",
+    "Product in use",
+    "Close-up / texture",
+    "Packaging",
+    "Product range",
+    "3D render",
+    "Shade / variant swatches",
+    "Catalog product tiles"
+   ]
+  },
+  {
+   "layer": "L3 Props and set",
+   "assets": [
+    "Ingredients",
+    "Splashes / liquids",
+    "Lifestyle props",
+    "Florals / natural elements",
+    "Podium / plinth"
+   ]
+  },
+  {
+   "layer": "L4 People / characters",
+   "assets": [
+    "Model / talent",
+    "Creator (UGC)",
+    "Expert (doctor, chef)",
+    "Customer / testimonial person",
+    "Hands only",
+    "Face close-up",
+    "Group / family",
+    "Mascot / illustrated character"
+   ]
+  },
+  {
+   "layer": "L5 On-creative text",
+   "assets": [
+    "Headline",
+    "Sub-headline",
+    "Tagline",
+    "Benefit points",
+    "Stats / numbers",
+    "Quote / testimonial text",
+    "Offer / price text",
+    "MRP strike-through",
+    "Promo code",
+    "Captions / subtitles",
+    "Disclaimer"
+   ]
+  },
+  {
+   "layer": "L6 Graphic elements",
+   "assets": [
+    "Badge / sticker",
+    "Trust seal / certification",
+    "Icons",
+    "Illustrations",
+    "Shapes / frames",
+    "Arrows / callouts",
+    "Review card / stars",
+    "Before–after split",
+    "Comparison table",
+    "Chart / data graphic",
+    "Countdown timer graphic",
+    "Emoji / GIF"
+   ]
+  },
+  {
+   "layer": "L7 Brand",
+   "assets": [
+    "Logo",
+    "Brand name / wordmark",
+    "Partner logo",
+    "Brand colour block",
+    "Brand font",
+    "Brand handle / hashtag"
+   ]
+  },
+  {
+   "layer": "L8 CTA",
+   "assets": [
+    "CTA button",
+    "CTA text",
+    "Link / URL",
+    "QR code",
+    "Swipe / tap cue",
+    "End card"
+   ]
+  },
+  {
+   "layer": "L9 Lighting and finish",
+   "assets": [
+    "Shadows",
+    "Highlights / reflections",
+    "Colour grade / filter",
+    "Retouch",
+    "Depth of field / blur"
+   ]
+  },
+  {
+   "layer": "L10 Ad text and platform",
+   "assets": [
+    "Primary text / caption",
+    "Headline field",
+    "Long headline",
+    "Description",
+    "Business name",
+    "Hashtags",
+    "Sponsored / Paid partnership label",
+    "Page name + profile photo",
+    "Platform CTA button",
+    "Site links",
+    "Product tags",
+    "Product feed / catalog tiles",
+    "Companion banner"
+   ]
+  },
+  {
+   "layer": "L11 Interactive stickers",
+   "assets": [
+    "Poll",
+    "Quiz / emoji slider",
+    "Countdown",
+    "Location",
+    "@mention",
+    "Link sticker",
+    "Tappable text"
+   ]
+  },
+  {
+   "layer": "L12 Footage type",
+   "assets": [
+    "A-roll (main / talking head)",
+    "B-roll",
+    "Stock footage",
+    "Screen recording",
+    "Animation / 3D",
+    "Time-lapse / stop motion",
+    "Still image in video"
+   ]
+  },
+  {
+   "layer": "L13 Audio",
+   "assets": [
+    "Music (licensed)",
+    "Music (original)",
+    "Music (trending)",
+    "Voice-over",
+    "Dialogue",
+    "Sound effects",
+    "Sound design / ambient",
+    "Jingle",
+    "Sonic logo"
+   ]
+  },
+  {
+   "layer": "L14 Motion and edit",
+   "assets": [
+    "Cuts",
+    "Transitions",
+    "Kinetic typography",
+    "Lower third",
+    "Logo animation (sting)",
+    "Animation",
+    "Speed effects (slow-mo, speed ramp)",
+    "Zoom / camera move",
+    "Split screen / PIP",
+    "AR effects / filters"
+   ]
+  },
+  {
+   "layer": "Full frame (L1–L9)",
+   "assets": []
+  }
+ ],
+ "creative_details": {
+  "Platform": [
+   "Meta",
+   "YouTube / Google"
+  ],
+  "Placement": [
+   "Feed (Facebook + Instagram)",
+   "Page post (organic)",
+   "Page reel (organic)",
+   "Facebook Feed",
+   "Instagram Feed",
+   "Stories",
+   "Reels",
+   "YouTube in-stream",
+   "YouTube Shorts",
+   "Bumper",
+   "Demand Gen",
+   "Display"
+  ],
+  "Format": [
+   "Image",
+   "Carousel",
+   "Video"
+  ]
+ }
+}

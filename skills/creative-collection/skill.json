@@ -1,0 +1,39 @@
+{
+ "name": "creative-collection",
+ "version": "1.5.1",
+ "order": 3,
+ "depends_on": [
+  "competitor-discovery"
+ ],
+ "inputs": [
+  "brief.json",
+  "competitors.json"
+ ],
+ "outputs": [
+  "creatives.json",
+  "media/"
+ ],
+ "schemas": [
+  "creatives.schema.json"
+ ],
+ "knowledge": [
+  "breakdown.json"
+ ],
+ "tools": [
+  "web_search",
+  "web_fetch",
+  "browser",
+  "tools/youtube.py",
+  "tools/instagram.py",
+  "tools/frames.py",
+  "tools/transcript.py",
+  "tools/measure.py"
+ ],
+ "permissions": [
+  "internet_read",
+  "file_write_run"
+ ],
+ "human_approval": false,
+ "parallel": "per competitor",
+ "worker": "agents/collector.md"
+}

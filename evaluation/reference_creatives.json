@@ -1,0 +1,2956 @@
+[
+ {
+  "creative": "Creative 1",
+  "details": {
+   "Brand": "Ray-Ban Meta",
+   "Industry": "Wearable tech",
+   "Ad link": "https://www.facebook.com/ads/library/?id=925480417163056",
+   "Platform": "Meta",
+   "Placement": "Feed (Facebook + Instagram)",
+   "Format": "Image"
+  },
+  "findings": {
+   "B01": {
+    "finding": "The #1 selling AI glasses – starting at ₹39,900",
+    "layer": "L5 On-creative text\nL5 On-creative text\nL2 Product",
+    "assets": "Headline \"THE #1 SELLING AI GLASSES\"\nSub-headline \"Starting at ₹39,900\"\nPackshot – four frames"
+   },
+   "B02": {
+    "finding": "Bold claim",
+    "layer": "L5 On-creative text",
+    "assets": "Headline – \"#1 selling\" claim"
+   },
+   "B03": {
+    "finding": "Convenience",
+    "layer": "L6 Graphic elements\nL2 Product",
+    "assets": "\"Hey Meta…\" voice chip, sound-wave icon\nClose-up – camera lens on frame"
+   },
+   "B04": {
+    "finding": "Clear and early",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Headline + sub-headline, one idea\nPrimary text / caption"
+   },
+   "B05": {
+    "finding": "Feature; Benefit",
+    "layer": "L5 On-creative text\nL6 Graphic elements\nL2 Product",
+    "assets": "Sub-headline \"Explore Gen 2 frames\"\n\"Hey Meta…\" voice chip\nClose-up – camera lens, temple"
+   },
+   "B06": {
+    "finding": "Partial",
+    "layer": "L6 Graphic elements\nL5 On-creative text",
+    "assets": "\"Hey Meta…\" chip – hands-free use implied\nNo problem stated"
+   },
+   "B07": {
+    "finding": "Hero",
+    "layer": "L2 Product",
+    "assets": "Packshot – 4 colourways, front frame dominant"
+   },
+   "B08": {
+    "finding": "Tech-savvy professionals who multitask",
+    "layer": "L2 Product\nL5 On-creative text\nL4 People / characters",
+    "assets": "Product range – premium tech frames\nHeadline \"AI glasses\"\nNot present"
+   },
+   "B09": {
+    "finding": "Solution-aware",
+    "layer": "L5 On-creative text",
+    "assets": "Headline – category \"AI glasses\" named"
+   },
+   "B10": {
+    "finding": "Consideration",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Offer / price text \"Starting at ₹39,900\"\nPlatform CTA button \"Shop now\""
+   },
+   "B11": {
+    "finding": "Mixed",
+    "layer": "L5 On-creative text\nL2 Product\nL1 Background",
+    "assets": "Headline – status claim\nProduct range – style\nOff-white solid"
+   },
+   "B12": {
+    "finding": "Launch",
+    "layer": "L5 On-creative text",
+    "assets": "Sub-headline \"Gen 2 frames\""
+   },
+   "B13": {
+    "finding": "English",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "All text in English\nPrimary text / caption"
+   },
+   "B14": {
+    "finding": "Starting at",
+    "layer": "L5 On-creative text",
+    "assets": "Offer / price text \"Starting at ₹39,900\""
+   },
+   "B15": {
+    "finding": "None",
+    "layer": "L5 On-creative text\nL6 Graphic elements",
+    "assets": "No urgency text\nNo timer or badge"
+   },
+   "B16": {
+    "finding": "None",
+    "layer": "L6 Graphic elements\nL4 People / characters",
+    "assets": "No review card or seal\nNo customer"
+   },
+   "B17": {
+    "finding": "Explicit and credible",
+    "layer": "L5 On-creative text\nL6 Graphic elements",
+    "assets": "Headline \"#1 selling\"\n\"Hey Meta…\" AI chip"
+   },
+   "B18": {
+    "finding": "Superlative claim",
+    "layer": "L5 On-creative text",
+    "assets": "Headline \"#1 selling\" – no source or disclaimer"
+   },
+   "B19": {
+    "finding": "No person",
+    "layer": "L4 People / characters",
+    "assets": "Not present"
+   },
+   "B20": {
+    "finding": "Co-brand",
+    "layer": "L7 Brand\nL10 Ad text and platform",
+    "assets": "Ray-Ban logo + Meta logo (partner)\nPage name + profile photo"
+   },
+   "B21": {
+    "finding": "Logo; Pack / product",
+    "layer": "L7 Brand\nL2 Product",
+    "assets": "Ray-Ban / Meta logo lock-up\nRay-Ban logo on lenses and temples"
+   },
+   "B22": {
+    "finding": "Own website",
+    "layer": "L10 Ad text and platform\nL8 CTA",
+    "assets": "Platform CTA button \"Shop now\" → brand site\nNo URL on image"
+   },
+   "B23": {
+    "finding": "Specific verb (Shop now) | Platform button only",
+    "layer": "L10 Ad text and platform\nL8 CTA",
+    "assets": "Platform CTA button \"Shop now\"\nNo CTA on image"
+   },
+   "B24": {
+    "finding": "Casual | Within limit",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Headline (5 words) + sub-headline\nPrimary text / caption"
+   },
+   "S01": {
+    "finding": "Designed static",
+    "layer": "Full frame (L1–L9)",
+    "assets": "Single image 1:1"
+   },
+   "S02": {
+    "finding": "Minimal / clean",
+    "layer": "L1 Background\nL2 Product\nL9 Lighting and finish",
+    "assets": "Off-white solid\nClean packshot render\nSoft shadows"
+   },
+   "S03": {
+    "finding": "High (commercial)",
+    "layer": "L2 Product\nL9 Lighting and finish",
+    "assets": "Studio packshot / 3D render\nRetouch"
+   },
+   "S04": {
+    "finding": "Variant line-up",
+    "layer": "L2 Product",
+    "assets": "Product range – 4 colourways stacked"
+   },
+   "S05": {
+    "finding": "Plain / solid",
+    "layer": "L1 Background",
+    "assets": "Off-white solid colour"
+   },
+   "S06": {
+    "finding": "Accent only",
+    "layer": "L7 Brand\nL2 Product",
+    "assets": "Logos in black\nNavy, maroon frame colours"
+   },
+   "S07": {
+    "finding": "Pastel / muted | 3–4 colours",
+    "layer": "L1 Background\nL2 Product\nL5 On-creative text",
+    "assets": "Off-white\nNavy, maroon, grey, black\nBlack text"
+   },
+   "S08": {
+    "finding": "High",
+    "layer": "L5 On-creative text\nL1 Background",
+    "assets": "Black headline\nOff-white behind text"
+   },
+   "S09": {
+    "finding": "20–40%",
+    "layer": "L5 On-creative text\nL1–L4 Image layers",
+    "assets": "Headline + sub-headline – top third\nFrames – lower two-thirds"
+   },
+   "S10": {
+    "finding": "2 fonts | Clear hierarchy | Legible on mobile",
+    "layer": "L5 On-creative text",
+    "assets": "Bold condensed headline + regular sub-headline"
+   },
+   "S11": {
+    "finding": "Icons",
+    "layer": "L6 Graphic elements",
+    "assets": "Sound-wave icon, \"Hey Meta…\" pill"
+   },
+   "S12": {
+    "finding": "Single focal point",
+    "layer": "L2 Product",
+    "assets": "Front black frame"
+   },
+   "S13": {
+    "finding": "Intended order followed",
+    "layer": "L5 On-creative text\nL2 Product\nL6 Graphic elements",
+    "assets": "Headline (1st)\nFrames (2nd)\nVoice chip (3rd)"
+   },
+   "S14": {
+    "finding": "Centred",
+    "layer": "L7 Brand\nL5 On-creative text\nL2 Product",
+    "assets": "Logos – top-centre\nText – centred, top third\nFrames – diagonal stack, bottom"
+   },
+   "S15": {
+    "finding": "Balanced",
+    "layer": "L1 Background",
+    "assets": "Even margins, open space around text"
+   },
+   "S16": {
+    "finding": "60% or more",
+    "layer": "L2 Product",
+    "assets": "Frames fill about 65% of frame"
+   },
+   "S17": {
+    "finding": "No people",
+    "layer": "L4 People / characters",
+    "assets": "Not present"
+   },
+   "S18": {
+    "finding": "Top-centre | Moderate",
+    "layer": "L7 Brand",
+    "assets": "Ray-Ban / Meta lock-up – top-centre"
+   },
+   "S19": {
+    "finding": "1:1 | Native",
+    "layer": "Full frame (L1–L9)\nL10 Ad text and platform",
+    "assets": "1:1 square\nFeed placement"
+   },
+   "S20": {
+    "finding": "Fully clear",
+    "layer": "L5 On-creative text\nL7 Brand\nL10 Ad text and platform",
+    "assets": "Text in top third\nLogo at top\nNo UI overlap in feed"
+   }
+  }
+ },
+ {
+  "creative": "Creative 2",
+  "details": {
+   "Brand": "Mamaearth",
+   "Industry": "Baby care",
+   "Ad link": "https://www.facebook.com/ads/library/?id=1015845750902324",
+   "Platform": "Meta",
+   "Placement": "Feed (Facebook + Instagram)",
+   "Format": "Video"
+  },
+  "findings": {
+   "B01": {
+    "finding": "Sun protect your… – keep your tiny tots sun safe",
+    "shot": "SH1 Hook 0–2 s\nAll beats",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Kinetic text \"SUN PROTECT YOUR BABY'S SKIN\"\nPrimary text \"Keep your tiny tots sun safe…\""
+   },
+   "B02": {
+    "finding": "Persona call-out",
+    "shot": "SH1 Hook 0–2 s",
+    "layer": "L5 On-creative text\nL1 Background",
+    "assets": "\"YOUR BABY'S SKIN\" – parent call-out\nYellow sunburst"
+   },
+   "B03": {
+    "finding": "Safety / trust",
+    "shot": "SH4 Demo / benefit 5–13 s",
+    "layer": "L5 On-creative text\nL4 People / characters",
+    "assets": "\"SPF 50 & PA++++\", \"Reflects UV Rays\"\nMother and baby"
+   },
+   "B04": {
+    "finding": "Clear and early",
+    "shot": "All beats",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "One idea – baby sun protection\nPrimary text / caption"
+   },
+   "B05": {
+    "finding": "Benefit; Feature",
+    "shot": "SH4 Demo / benefit 5–13 s",
+    "layer": "L5 On-creative text",
+    "assets": "\"SPF 50 & PA++++\", \"Water Resistant for upto 120 Min\", \"Moisturizes & Soothes Skin\""
+   },
+   "B06": {
+    "finding": "Partial",
+    "shot": "SH1 Hook 0–2 s\nSH4 Demo / benefit 5–13 s",
+    "layer": "L5 On-creative text\nL4 People / characters",
+    "assets": "Problem implied – sun on baby skin\nMother applying on baby"
+   },
+   "B07": {
+    "finding": "Visible, secondary",
+    "shot": "SH3 Product reveal 2–5 s\nSH6 Offer 13–15.5 s",
+    "layer": "L2 Product\nL2 Product",
+    "assets": "Packshot – tube with floating tubes\nPackshot beside offer"
+   },
+   "B08": {
+    "finding": "Parents of babies and toddlers",
+    "shot": "SH4 Demo / benefit 5–13 s\nSH1 Hook 0–2 s",
+    "layer": "L4 People / characters\nL5 On-creative text",
+    "assets": "Mother + babies\n\"YOUR BABY'S SKIN\""
+   },
+   "B09": {
+    "finding": "Solution-aware",
+    "shot": "SH3 Product reveal 2–5 s",
+    "layer": "L5 On-creative text",
+    "assets": "Product name \"Rich Moisturizing Ultra Light Sunscreen\""
+   },
+   "B10": {
+    "finding": "Action",
+    "shot": "SH6 Offer 13–15.5 s\nAll beats",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Offer \"Upto 25% Off\", code \"SAVE25\"\nPlatform CTA button \"Shop now\""
+   },
+   "B11": {
+    "finding": "Mixed",
+    "shot": "SH4 Demo / benefit 5–13 s",
+    "layer": "L4 People / characters\nL5 On-creative text",
+    "assets": "Smiling baby, mother's care\nSPF numbers (rational)"
+   },
+   "B12": {
+    "finding": "Evergreen",
+    "shot": "All beats",
+    "layer": "L1 Background",
+    "assets": "Sunburst – no season cue"
+   },
+   "B13": {
+    "finding": "English",
+    "shot": "All beats",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "All text in English\nPrimary text / caption"
+   },
+   "B14": {
+    "finding": "Discount %",
+    "shot": "SH6 Offer 13–15.5 s\n\nAll beats",
+    "layer": "L6 Graphic elements\nL5 On-creative text\nL10 Ad text and platform",
+    "assets": "Yellow circle sticker \"Upto 25% Off\"\nPromo code \"SAVE25\"\nHeadline field \"Upto 25% Off, Code: SAVE25\""
+   },
+   "B15": {
+    "finding": "None",
+    "shot": "SH6 Offer 13–15.5 s",
+    "layer": "L5 On-creative text",
+    "assets": "No urgency text"
+   },
+   "B16": {
+    "finding": "None",
+    "shot": "SH5 Proof – not present",
+    "layer": "L6 Graphic elements",
+    "assets": "No review or seal"
+   },
+   "B17": {
+    "finding": "Category-generic",
+    "shot": "SH4 Demo / benefit 5–13 s",
+    "layer": "L5 On-creative text",
+    "assets": "Standard sunscreen benefits"
+   },
+   "B18": {
+    "finding": "Numeric claim",
+    "shot": "SH4 Demo / benefit 5–13 s\nAll beats",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "\"SPF 50\", \"120 Min\"\nPrimary text \"water resistant for upto 120 minutes\""
+   },
+   "B19": {
+    "finding": "Model",
+    "shot": "SH4 Demo / benefit 5–13 s",
+    "layer": "L4 People / characters\nL12 Footage type",
+    "assets": "Mother + baby (models)\nB-roll"
+   },
+   "B20": {
+    "finding": "Brand page",
+    "shot": "All beats",
+    "layer": "L10 Ad text and platform",
+    "assets": "Page name \"Mamaearth\" + profile photo"
+   },
+   "B21": {
+    "finding": "Logo; Brand colours; Pack / product",
+    "shot": "All beats\nSH3 Product reveal 2–5 s",
+    "layer": "L7 Brand\nL2 Product",
+    "assets": "Logo watermark – top-right\nPackaging (tube)"
+   },
+   "B22": {
+    "finding": "Own website",
+    "shot": "All beats",
+    "layer": "L10 Ad text and platform",
+    "assets": "Link \"MAMAEARTH.IN\", Platform CTA button \"Shop now\""
+   },
+   "B23": {
+    "finding": "Specific verb (Shop now) | Platform button only",
+    "shot": "All beats\nSH7 End card – not present",
+    "layer": "L10 Ad text and platform\nL8 CTA",
+    "assets": "Platform CTA button \"Shop now\"\nNo CTA in video"
+   },
+   "B24": {
+    "finding": "Calm | Within limit",
+    "shot": "All beats",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Short kinetic lines, 2–5 words\nPrimary text, 2 sentences"
+   },
+   "B25": {
+    "finding": "Yes – visual",
+    "shot": "SH1 Hook 0–2 s",
+    "layer": "L5 On-creative text\nL14 Motion and edit",
+    "assets": "Kinetic text \"SUN\" on sunburst\nKinetic typography"
+   },
+   "B26": {
+    "finding": "Under 1 s",
+    "shot": "SH1 Hook 0–2 s",
+    "layer": "L7 Brand",
+    "assets": "Logo watermark from 0 s"
+   },
+   "B27": {
+    "finding": "2–5 s",
+    "shot": "SH3 Product reveal 2–5 s",
+    "layer": "L2 Product",
+    "assets": "Tube appears at 2 s"
+   },
+   "B28": {
+    "finding": "Montage",
+    "shot": "All beats\nSH4 Demo / benefit 5–13 s",
+    "layer": "L14 Motion and edit\nL12 Footage type",
+    "assets": "Cuts between graphic cards and footage\nB-roll – baby, mother"
+   },
+   "B29": {
+    "finding": "None seen up to 11 s",
+    "shot": "SH7 End card – not present\nAll beats",
+    "layer": "L8 CTA\nL10 Ad text and platform",
+    "assets": "No CTA in video\nPlatform CTA button \"Shop now\""
+   },
+   "S01": {
+    "finding": "Motion graphics and footage",
+    "shot": "All beats",
+    "layer": "L12 Footage type\nL14 Motion and edit",
+    "assets": "Animation cards + B-roll\nKinetic typography"
+   },
+   "S02": {
+    "finding": "Bold graphic",
+    "shot": "SH1 Hook 0–2 s\nAll beats",
+    "layer": "L1 Background\nL14 Motion and edit",
+    "assets": "Yellow sunburst\nAnimation"
+   },
+   "S03": {
+    "finding": "Medium",
+    "shot": "SH4 Demo / benefit 5–13 s\nAll beats",
+    "layer": "L12 Footage type\nL14 Motion and edit",
+    "assets": "Stock-style B-roll\nKinetic typography"
+   },
+   "S04": {
+    "finding": "Lifestyle in use; Packshot",
+    "shot": "SH3 Product reveal 2–5 s\nSH4 Demo / benefit 5–13 s",
+    "layer": "L2 Product\nL2 Product",
+    "assets": "Packshot\nProduct in use – applied on baby"
+   },
+   "S05": {
+    "finding": "Abstract / graphic",
+    "shot": "All beats\nSH4 Demo / benefit 5–13 s",
+    "layer": "L1 Background\nL1 Background",
+    "assets": "Yellow sunburst gradient\nHome scenes"
+   },
+   "S06": {
+    "finding": "Accent only",
+    "shot": "All beats",
+    "layer": "L7 Brand\nL1 Background",
+    "assets": "Logo colours small\nYellow, not brand colours"
+   },
+   "S07": {
+    "finding": "Bright / saturated | 3–4 colours",
+    "shot": "All beats\n\nSH4 Demo / benefit 5–13 s",
+    "layer": "L1 Background\nL5 On-creative text\nL9 Lighting and finish",
+    "assets": "Yellow\nWhite, yellow text\nBright, high-key grade"
+   },
+   "S08": {
+    "finding": "Medium",
+    "shot": "All beats\nSH4 Demo / benefit 5–13 s",
+    "layer": "L5 On-creative text\nL5 On-creative text",
+    "assets": "White text on yellow – lower contrast\nYellow text on footage"
+   },
+   "S09": {
+    "finding": "10–20%",
+    "shot": "SH1 Hook 0–2 s\nSH4 Demo / benefit 5–13 s",
+    "layer": "L5 On-creative text\nL5 On-creative text",
+    "assets": "Kinetic text cards\nLower captions on footage"
+   },
+   "S10": {
+    "finding": "2 fonts | Clear hierarchy | Legible on mobile",
+    "shot": "All beats",
+    "layer": "L5 On-creative text\nL14 Motion and edit",
+    "assets": "Bold sans + accent script\nKinetic typography"
+   },
+   "S11": {
+    "finding": "None",
+    "shot": "SH6 Offer 13–15.5 s",
+    "layer": "L6 Graphic elements",
+    "assets": "Offer sticker only"
+   },
+   "S12": {
+    "finding": "Single focal point",
+    "shot": "SH1 Hook 0–2 s\nSH4 Demo / benefit 5–13 s",
+    "layer": "L5 On-creative text\nL4 People / characters",
+    "assets": "Centred \"SUN\"\nBaby face"
+   },
+   "S13": {
+    "finding": "Intended order followed",
+    "shot": "SH1 Hook 0–2 s\nSH3 Product reveal 2–5 s\nSH6 Offer 13–15.5 s",
+    "layer": "L5 On-creative text\nL2 Product\nL6 Graphic elements",
+    "assets": "Message (1st)\nTube (2nd)\nOffer (3rd)"
+   },
+   "S14": {
+    "finding": "Centred",
+    "shot": "SH1 Hook 0–2 s\nSH3 Product reveal 2–5 s\nSH6 Offer 13–15.5 s",
+    "layer": "L5 On-creative text\nL2 Product\nL2 Product",
+    "assets": "Text centred\nTube centred\nTube left, offer right"
+   },
+   "S15": {
+    "finding": "Balanced",
+    "shot": "All beats",
+    "layer": "L1 Background",
+    "assets": "Even space around centred items"
+   },
+   "S16": {
+    "finding": "30–59%",
+    "shot": "SH3 Product reveal 2–5 s\nSH6 Offer 13–15.5 s",
+    "layer": "L2 Product\nL2 Product",
+    "assets": "Tube about 50% of height\nTube about 45%"
+   },
+   "S17": {
+    "finding": "Multiple people | Positive",
+    "shot": "SH4 Demo / benefit 5–13 s",
+    "layer": "L4 People / characters",
+    "assets": "Mother and babies – smiling"
+   },
+   "S18": {
+    "finding": "Persistent watermark | Subtle (top-right)",
+    "shot": "All beats",
+    "layer": "L7 Brand",
+    "assets": "Logo – top-right"
+   },
+   "S19": {
+    "finding": "1:1 | Native",
+    "shot": "All beats",
+    "layer": "Full frame (L1–L9)\nL10 Ad text and platform",
+    "assets": "1:1 square\nFeed"
+   },
+   "S20": {
+    "finding": "Fully clear",
+    "shot": "All beats",
+    "layer": "L5 On-creative text\nL7 Brand",
+    "assets": "Text centred\nLogo top-right"
+   },
+   "S21": {
+    "finding": "Strong",
+    "shot": "SH1 Hook 0–2 s",
+    "layer": "L1 Background\nL5 On-creative text",
+    "assets": "Bright yellow sunburst\n\"SUN\""
+   },
+   "S22": {
+    "finding": "Moderate",
+    "shot": "All beats",
+    "layer": "L14 Motion and edit",
+    "assets": "Cut every 1–2 s, animation"
+   },
+   "S23": {
+    "finding": "15–30 s",
+    "shot": "All beats",
+    "layer": "L14 Motion and edit",
+    "assets": "Total runtime 15.5 s"
+   },
+   "S24": {
+    "finding": "Audio track present",
+    "shot": "All beats",
+    "layer": "L13 Audio",
+    "assets": "Audio track present"
+   },
+   "S25": {
+    "finding": "Kinetic text",
+    "shot": "All beats",
+    "layer": "L5 On-creative text\nL14 Motion and edit",
+    "assets": "Kinetic text on every scene\nKinetic typography"
+   }
+  }
+ },
+ {
+  "creative": "Creative 3",
+  "details": {
+   "Brand": "SUGAR Cosmetics",
+   "Industry": "Beauty / cosmetics",
+   "Ad link": "https://www.instagram.com/trysugar/p/DfrtNmVCKwr/",
+   "Platform": "Meta",
+   "Placement": "Page post (organic)",
+   "Format": "Carousel"
+  },
+  "findings": {
+   "B01": {
+    "finding": "Your eyes have Mettle",
+    "layer": "L5 On-creative text",
+    "assets": "Headline \"Your Eyes Have METTLE\""
+   },
+   "B02": {
+    "finding": "Bold claim",
+    "layer": "L5 On-creative text",
+    "assets": "Headline – bold claim"
+   },
+   "B03": {
+    "finding": "Identity",
+    "layer": "L5 On-creative text\nL4 People / characters",
+    "assets": "Headline – \"you have mettle\"\nFace close-up – eyes"
+   },
+   "B04": {
+    "finding": "Clear and early",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Headline, single line\nPrimary text / caption"
+   },
+   "B05": {
+    "finding": "Feature",
+    "layer": "L2 Product\nL3 Props and set",
+    "assets": "Close-up / texture – shimmer, crushed pigment\nSequins – metallic finish"
+   },
+   "B06": {
+    "finding": "Absent",
+    "layer": "L5 On-creative text",
+    "assets": "No problem stated"
+   },
+   "B07": {
+    "finding": "In use / demo",
+    "layer": "L4 People / characters\nL2 Product",
+    "assets": "Eye close-up, brush applying shade\nProduct in use – shade on eyelid"
+   },
+   "B08": {
+    "finding": "Young women who like bold eye make-up",
+    "layer": "L4 People / characters\nL2 Product",
+    "assets": "Face close-up – female eyes\nTeal shimmer shade"
+   },
+   "B09": {
+    "finding": "Product-aware",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Headline – shade name \"Mettle\"\nPrimary text / caption"
+   },
+   "B10": {
+    "finding": "Awareness",
+    "layer": "L8 CTA\nL10 Ad text and platform",
+    "assets": "No CTA on image\nCaption \"Link in bio\""
+   },
+   "B11": {
+    "finding": "Emotional – aspiration",
+    "layer": "L4 People / characters\nL5 On-creative text\nL9 Lighting and finish",
+    "assets": "Eye close-up\nHeadline \"Your Eyes Have METTLE\"\nGlossy highlights"
+   },
+   "B12": {
+    "finding": "Launch",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Headline – new shade name\nPrimary text / caption"
+   },
+   "B13": {
+    "finding": "English",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "All text in English\nPrimary text / caption"
+   },
+   "B14": {
+    "finding": "No offer",
+    "layer": "L5 On-creative text",
+    "assets": "No offer / price text"
+   },
+   "B15": {
+    "finding": "None",
+    "layer": "L5 On-creative text",
+    "assets": "No urgency text"
+   },
+   "B16": {
+    "finding": "None",
+    "layer": "L6 Graphic elements",
+    "assets": "No review card or seal"
+   },
+   "B17": {
+    "finding": "Implied",
+    "layer": "L2 Product",
+    "assets": "Texture close-ups – metallic finish"
+   },
+   "B18": {
+    "finding": "No claims",
+    "layer": "L5 On-creative text",
+    "assets": "No claims or disclaimer"
+   },
+   "B19": {
+    "finding": "Model",
+    "layer": "L4 People / characters",
+    "assets": "Model / talent – eye close-up"
+   },
+   "B20": {
+    "finding": "Brand page",
+    "layer": "L10 Ad text and platform\nL7 Brand",
+    "assets": "Page name + profile photo (brand page)\n\"ft. SUGAR\" wordmark"
+   },
+   "B21": {
+    "finding": "Logo; Pack / product",
+    "layer": "L7 Brand\nL2 Product",
+    "assets": "\"ft. SUGAR\" wordmark\nShade texture in hero teal"
+   },
+   "B22": {
+    "finding": "Own website",
+    "layer": "L10 Ad text and platform",
+    "assets": "Caption \"Link in bio\""
+   },
+   "B23": {
+    "finding": "Soft / implied (Link in bio) | Text only",
+    "layer": "L10 Ad text and platform\nL8 CTA",
+    "assets": "Caption \"Link in bio\"\nNo CTA on image"
+   },
+   "B24": {
+    "finding": "Calm | Within limit",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Headline (5 words)\nPrimary text / caption"
+   },
+   "S01": {
+    "finding": "Carousel",
+    "layer": "Full frame (L1–L9)\nL6 Graphic elements",
+    "assets": "Carousel – card 1\nCollage frames"
+   },
+   "S02": {
+    "finding": "Collage",
+    "layer": "L6 Graphic elements\nL2 Product",
+    "assets": "Shapes / frames – 5-tile collage\nTexture tiles"
+   },
+   "S03": {
+    "finding": "High (commercial)",
+    "layer": "L4 People / characters\nL9 Lighting and finish",
+    "assets": "Studio macro of eye\nRetouch"
+   },
+   "S04": {
+    "finding": "Lifestyle in use; Texture close-ups",
+    "layer": "L2 Product",
+    "assets": "Product in use (eyelid), Close-up / texture tiles"
+   },
+   "S05": {
+    "finding": "Plain / solid",
+    "layer": "L1 Background",
+    "assets": "White solid behind collage"
+   },
+   "S06": {
+    "finding": "Dominant",
+    "layer": "L2 Product\nL5 On-creative text",
+    "assets": "Teal shade across all tiles\n\"METTLE\" in teal glitter"
+   },
+   "S07": {
+    "finding": "Monochrome | 1–2 colours",
+    "layer": "L1 Background\nL2 Product\nL3 Props and set",
+    "assets": "White\nTeal-aqua tones\nTeal sequins"
+   },
+   "S08": {
+    "finding": "High",
+    "layer": "L5 On-creative text\nL1 Background",
+    "assets": "Black text and teal \"METTLE\"\nWhite behind text"
+   },
+   "S09": {
+    "finding": "Up to 10%",
+    "layer": "L5 On-creative text\nL1–L4 Image layers",
+    "assets": "Headline block – top-left\nCollage tiles"
+   },
+   "S10": {
+    "finding": "2 fonts | Clear hierarchy | Legible on mobile",
+    "layer": "L5 On-creative text",
+    "assets": "Sans-serif + glitter display letters \"METTLE\""
+   },
+   "S11": {
+    "finding": "None",
+    "layer": "L6 Graphic elements",
+    "assets": "No badges – collage frames only"
+   },
+   "S12": {
+    "finding": "Single focal point",
+    "layer": "L4 People / characters",
+    "assets": "Eye close-up – centre band"
+   },
+   "S13": {
+    "finding": "Intended order followed",
+    "layer": "L5 On-creative text\nL4 People / characters\nL2 Product",
+    "assets": "Headline (1st)\nEye close-up (2nd)\nTexture tiles (3rd)"
+   },
+   "S14": {
+    "finding": "Split screen",
+    "layer": "L5 On-creative text\nL3 Props and set\nL4 People / characters\nL2 Product",
+    "assets": "Headline – top-left\nSequin tile – top-right\nEye – middle band\nTexture tiles – bottom row"
+   },
+   "S15": {
+    "finding": "Balanced",
+    "layer": "L1 Background",
+    "assets": "Thin white gutters between tiles"
+   },
+   "S16": {
+    "finding": "30–59%",
+    "layer": "L2 Product",
+    "assets": "Shade on lid + texture tiles about 40%"
+   },
+   "S17": {
+    "finding": "Partial face (eyes) | Neutral",
+    "layer": "L4 People / characters",
+    "assets": "Face close-up – eyes only, neutral"
+   },
+   "S18": {
+    "finding": "Top-left | Subtle",
+    "layer": "L7 Brand",
+    "assets": "\"ft. SUGAR\" – top-left, under headline"
+   },
+   "S19": {
+    "finding": "4:5 | Native",
+    "layer": "Full frame (L1–L9)\nL10 Ad text and platform",
+    "assets": "4:5 portrait\nFeed post"
+   },
+   "S20": {
+    "finding": "Fully clear",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Text top-left\nNo UI overlap"
+   }
+  }
+ },
+ {
+  "creative": "Creative 4",
+  "details": {
+   "Brand": "boAt",
+   "Industry": "Consumer electronics",
+   "Ad link": "https://www.instagram.com/boat.nirvana/reel/DeTkPjezwxh/",
+   "Platform": "Meta",
+   "Placement": "Page reel (organic)",
+   "Format": "Video"
+  },
+  "findings": {
+   "B01": {
+    "finding": "From your wishlist, straight into your cart – up to 85% off",
+    "shot": "All beats\nSH1 Hook 0–2 s",
+    "layer": "L10 Ad text and platform\nL7 Brand",
+    "assets": "Caption \"From your wishlist, straight into your cart\"\nPartner logo \"Great Indian Festival – Live Now\""
+   },
+   "B02": {
+    "finding": "Offer-led",
+    "shot": "SH1 Hook 0–2 s\n\nSH6 Offer 9.5–12 s",
+    "layer": "L6 Graphic elements\nL8 CTA\nL5 On-creative text",
+    "assets": "Animated sale emblem\n\"SHOP NOW\" button\n\"Up to 85% off\""
+   },
+   "B03": {
+    "finding": "Price / savings",
+    "shot": "SH6 Offer 9.5–12 s\nAll beats",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "\"Up to 85% off\"\nCaption \"up to 85% OFF\""
+   },
+   "B04": {
+    "finding": "Clear and early",
+    "shot": "All beats\nSH4 Demo / benefit 3–9.5 s",
+    "layer": "L10 Ad text and platform\nL6 Graphic elements",
+    "assets": "Caption – wishlist to cart\nWishlist window"
+   },
+   "B05": {
+    "finding": "Feature; Product range",
+    "shot": "SH3 Product reveal 2–3 s",
+    "layer": "L2 Product",
+    "assets": "Product range – 6 products with names (Stone 1500, Zenith Pro, Eutopia 2 ANC, Aavante Prime X)"
+   },
+   "B06": {
+    "finding": "Absent",
+    "shot": "All beats",
+    "layer": "L5 On-creative text",
+    "assets": "No problem stated"
+   },
+   "B07": {
+    "finding": "Hero",
+    "shot": "SH3 Product reveal 2–3 s\nSH4 Demo / benefit 3–9.5 s",
+    "layer": "L2 Product\nL2 Product",
+    "assets": "Product range in \"Festive Wishlist\" window\nProducts dropped into cart"
+   },
+   "B08": {
+    "finding": "Festive shoppers planning gadget purchases",
+    "shot": "SH1 Hook 0–2 s\nSH4 Demo / benefit 3–9.5 s",
+    "layer": "L7 Brand\nL6 Graphic elements",
+    "assets": "Festival sale emblem\n\"Festive Wishlist\" window, cart icon"
+   },
+   "B09": {
+    "finding": "Product-aware",
+    "shot": "SH3 Product reveal 2–3 s\nSH6 Offer 9.5–12 s",
+    "layer": "L2 Product\nL5 On-creative text",
+    "assets": "Named products\n\"UPGRADE to boAt\""
+   },
+   "B10": {
+    "finding": "Action",
+    "shot": "SH1 Hook 0–2 s\nSH7 End card 9.5–12 s",
+    "layer": "L8 CTA\nL5 On-creative text",
+    "assets": "\"SHOP NOW\" button\n\"SALE IS LIVE\""
+   },
+   "B11": {
+    "finding": "Mixed",
+    "shot": "SH1 Hook 0–2 s\nSH6 Offer 9.5–12 s",
+    "layer": "L6 Graphic elements\nL5 On-creative text",
+    "assets": "Festive elephants emblem\nDiscount (rational)"
+   },
+   "B12": {
+    "finding": "Sale event",
+    "shot": "SH1 Hook 0–2 s\nSH7 End card 9.5–12 s",
+    "layer": "L7 Brand\nL5 On-creative text",
+    "assets": "\"Great Indian Festival – Live Now\"\n\"SALE IS LIVE\""
+   },
+   "B13": {
+    "finding": "English",
+    "shot": "All beats",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "All text in English\nCaption"
+   },
+   "B14": {
+    "finding": "Discount %",
+    "shot": "SH6 Offer 9.5–12 s",
+    "layer": "L5 On-creative text",
+    "assets": "\"Up to 85% off\""
+   },
+   "B15": {
+    "finding": "Time-limited",
+    "shot": "SH1 Hook 0–2 s\nSH7 End card 9.5–12 s",
+    "layer": "L5 On-creative text\nL5 On-creative text",
+    "assets": "\"Live Now\"\n\"SALE IS LIVE\""
+   },
+   "B16": {
+    "finding": "None",
+    "shot": "SH5 Proof – not present",
+    "layer": "L6 Graphic elements",
+    "assets": "No reviews or seals"
+   },
+   "B17": {
+    "finding": "Category-generic",
+    "shot": "SH6 Offer 9.5–12 s\nSH7 End card 9.5–12 s",
+    "layer": "L5 On-creative text\nL7 Brand",
+    "assets": "\"UPGRADE to boAt\"\n\"INDIA'S #1 AUDIO BRAND\""
+   },
+   "B18": {
+    "finding": "Superlative claim",
+    "shot": "SH7 End card 9.5–12 s",
+    "layer": "L7 Brand",
+    "assets": "\"INDIA'S #1 AUDIO BRAND\" – no source"
+   },
+   "B19": {
+    "finding": "No person",
+    "shot": "All beats",
+    "layer": "L4 People / characters",
+    "assets": "Not present"
+   },
+   "B20": {
+    "finding": "Retailer / marketplace",
+    "shot": "SH1 Hook 0–2 s\nAll beats",
+    "layer": "L7 Brand\nL10 Ad text and platform",
+    "assets": "Partner logo – Amazon Great Indian Festival\nPage name \"boat.nirvana\""
+   },
+   "B21": {
+    "finding": "Logo; Brand colours; Pack / product",
+    "shot": "SH7 End card 9.5–12 s\nAll beats\nSH3 Product reveal 2–3 s",
+    "layer": "L7 Brand\nL1 Background\nL7 Brand",
+    "assets": "boAt logo + \"INDIA'S #1 AUDIO BRAND\"\nBrand red background\nSmall logo in wishlist window"
+   },
+   "B22": {
+    "finding": "Marketplace logos",
+    "shot": "SH1 Hook 0–2 s\nAll beats",
+    "layer": "L7 Brand\nL10 Ad text and platform",
+    "assets": "Amazon festival emblem\nCaption \"Amazon Great Indian Festival Sale\""
+   },
+   "B23": {
+    "finding": "Specific verb (Shop now) | In-image button",
+    "shot": "SH1 Hook 0–2 s\nSH7 End card 9.5–12 s",
+    "layer": "L8 CTA\nL8 CTA",
+    "assets": "\"SHOP NOW\" button + cursor click\nEnd card \"SALE IS LIVE\""
+   },
+   "B24": {
+    "finding": "Casual | Within limit",
+    "shot": "All beats\nSH6 Offer 9.5–12 s",
+    "layer": "L10 Ad text and platform\nL5 On-creative text",
+    "assets": "Caption, 2 lines + emoji\nShort lines"
+   },
+   "B25": {
+    "finding": "Yes – visual",
+    "shot": "SH1 Hook 0–2 s",
+    "layer": "L6 Graphic elements\nL14 Motion and edit",
+    "assets": "Animated sale emblem\nCursor click animation"
+   },
+   "B26": {
+    "finding": "End card only",
+    "shot": "SH7 End card 9.5–12 s",
+    "layer": "L7 Brand",
+    "assets": "boAt logo at 9.5 s"
+   },
+   "B27": {
+    "finding": "2–5 s",
+    "shot": "SH3 Product reveal 2–3 s",
+    "layer": "L2 Product",
+    "assets": "Products at 2 s"
+   },
+   "B28": {
+    "finding": "Demo",
+    "shot": "SH4 Demo / benefit 3–9.5 s",
+    "layer": "L14 Motion and edit",
+    "assets": "Drag-and-drop animation – wishlist to cart"
+   },
+   "B29": {
+    "finding": "Early and end card",
+    "shot": "SH1 Hook 0–2 s\nSH7 End card 9.5–12 s",
+    "layer": "L8 CTA\nL5 On-creative text",
+    "assets": "\"SHOP NOW\" at 0 s\n\"SALE IS LIVE\" at 9.5 s"
+   },
+   "S01": {
+    "finding": "Animation / motion graphics",
+    "shot": "All beats",
+    "layer": "L12 Footage type\nL14 Motion and edit",
+    "assets": "Animation / motion graphics\nAnimation"
+   },
+   "S02": {
+    "finding": "Bold graphic",
+    "shot": "All beats\nSH3 Product reveal 2–3 s",
+    "layer": "L1 Background\nL6 Graphic elements",
+    "assets": "Red patterned background\nApp-window frame"
+   },
+   "S03": {
+    "finding": "Medium",
+    "shot": "All beats",
+    "layer": "L12 Footage type\nL13 Audio",
+    "assets": "Template-style animation\nOriginal audio"
+   },
+   "S04": {
+    "finding": "Packshot on plain",
+    "shot": "SH3 Product reveal 2–3 s",
+    "layer": "L2 Product",
+    "assets": "Packshots on white window"
+   },
+   "S05": {
+    "finding": "Texture",
+    "shot": "All beats",
+    "layer": "L1 Background",
+    "assets": "Red festive pattern texture"
+   },
+   "S06": {
+    "finding": "Dominant",
+    "shot": "All beats\nSH7 End card 9.5–12 s",
+    "layer": "L1 Background\nL7 Brand",
+    "assets": "Brand red\nboAt logo in white"
+   },
+   "S07": {
+    "finding": "Bright / saturated | 3–4 colours",
+    "shot": "All beats\nSH3 Product reveal 2–3 s\nSH1 Hook 0–2 s",
+    "layer": "L1 Background\nL1 Background\nL6 Graphic elements",
+    "assets": "Red\nWhite window\nGold, purple emblem"
+   },
+   "S08": {
+    "finding": "High",
+    "shot": "SH7 End card 9.5–12 s\nSH3 Product reveal 2–3 s",
+    "layer": "L5 On-creative text\nL5 On-creative text",
+    "assets": "White text on red\nDark labels on white"
+   },
+   "S09": {
+    "finding": "10–20%",
+    "shot": "SH7 End card 9.5–12 s\nSH3 Product reveal 2–3 s",
+    "layer": "L5 On-creative text\nL5 On-creative text",
+    "assets": "End-card text\nProduct labels"
+   },
+   "S10": {
+    "finding": "2 fonts | Clear hierarchy | Legible on mobile",
+    "shot": "SH7 End card 9.5–12 s",
+    "layer": "L5 On-creative text",
+    "assets": "Bold sans + highlighted \"UPGRADE\" banner"
+   },
+   "S11": {
+    "finding": "Icons",
+    "shot": "SH4 Demo / benefit 3–9.5 s",
+    "layer": "L6 Graphic elements",
+    "assets": "Cart icon, cursor, window dots"
+   },
+   "S12": {
+    "finding": "Single focal point",
+    "shot": "SH3 Product reveal 2–3 s",
+    "layer": "L6 Graphic elements",
+    "assets": "Wishlist window – centre"
+   },
+   "S13": {
+    "finding": "Intended order followed",
+    "shot": "SH1 Hook 0–2 s\nSH3 Product reveal 2–3 s\nSH7 End card 9.5–12 s",
+    "layer": "L6 Graphic elements\nL2 Product\nL5 On-creative text",
+    "assets": "Sale emblem (1st)\nProducts (2nd)\nOffer (3rd)"
+   },
+   "S14": {
+    "finding": "Centred",
+    "shot": "All beats\nSH7 End card 9.5–12 s",
+    "layer": "L6 Graphic elements\nL5 On-creative text",
+    "assets": "Window centred\nCentred text stack"
+   },
+   "S15": {
+    "finding": "Balanced",
+    "shot": "All beats",
+    "layer": "L1 Background",
+    "assets": "Red margins around window"
+   },
+   "S16": {
+    "finding": "30–59%",
+    "shot": "SH3 Product reveal 2–3 s",
+    "layer": "L2 Product",
+    "assets": "Product grid about 40%"
+   },
+   "S17": {
+    "finding": "No people",
+    "shot": "All beats",
+    "layer": "L4 People / characters",
+    "assets": "Not present"
+   },
+   "S18": {
+    "finding": "Centre (end card) | Dominant",
+    "shot": "SH7 End card 9.5–12 s",
+    "layer": "L7 Brand",
+    "assets": "boAt logo – centre"
+   },
+   "S19": {
+    "finding": "9:16 | Native",
+    "shot": "All beats",
+    "layer": "Full frame (L1–L9)\nL10 Ad text and platform",
+    "assets": "9:16 full screen\nReels"
+   },
+   "S20": {
+    "finding": "Fully clear",
+    "shot": "All beats\nSH7 End card 9.5–12 s",
+    "layer": "L6 Graphic elements\nL5 On-creative text",
+    "assets": "Window in centre zone\nText in centre"
+   },
+   "S21": {
+    "finding": "Strong",
+    "shot": "SH1 Hook 0–2 s",
+    "layer": "L6 Graphic elements\nL8 CTA",
+    "assets": "Animated festive emblem\n\"SHOP NOW\" button"
+   },
+   "S22": {
+    "finding": "Moderate",
+    "shot": "All beats",
+    "layer": "L14 Motion and edit",
+    "assets": "Animation steps about every 1 s"
+   },
+   "S23": {
+    "finding": "6–15 s",
+    "shot": "All beats",
+    "layer": "L14 Motion and edit",
+    "assets": "Total runtime 12 s"
+   },
+   "S24": {
+    "finding": "Original audio",
+    "shot": "All beats",
+    "layer": "L13 Audio",
+    "assets": "Music (original) – \"Original audio\" label"
+   },
+   "S25": {
+    "finding": "On-screen text, readable muted",
+    "shot": "All beats",
+    "layer": "L5 On-creative text",
+    "assets": "On-screen text, readable muted"
+   }
+  }
+ },
+ {
+  "creative": "Creative 5",
+  "details": {
+   "Brand": "Subway India",
+   "Industry": "Quick-service restaurant",
+   "Ad link": "https://www.facebook.com/ads/library/?id=3056290068046648",
+   "Platform": "Meta",
+   "Placement": "Stories",
+   "Format": "Image"
+  },
+  "findings": {
+   "B01": {
+    "finding": "New Sub Cravers – starting just at ₹79",
+    "layer": "L5 On-creative text\nL6 Graphic elements\nL4 People / characters",
+    "assets": "Headline \"NEW sub cravers\"\nPrice pill \"₹79\"\nModel biting the sub"
+   },
+   "B02": {
+    "finding": "Offer-led",
+    "layer": "L6 Graphic elements\nL5 On-creative text",
+    "assets": "Price pill \"₹79\"\nOffer text \"STARTING JUST AT\""
+   },
+   "B03": {
+    "finding": "Price / savings",
+    "layer": "L6 Graphic elements\nL5 On-creative text",
+    "assets": "Price pill \"₹79\"\nOffer / price text"
+   },
+   "B04": {
+    "finding": "Clear and early",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Headline + price, one idea\nPrimary text / caption"
+   },
+   "B05": {
+    "finding": "Feature; Benefit",
+    "layer": "L2 Product\nL5 On-creative text",
+    "assets": "Close-up – filling visible\nHeadline \"sub cravers\""
+   },
+   "B06": {
+    "finding": "Absent",
+    "layer": "L5 On-creative text",
+    "assets": "No problem stated"
+   },
+   "B07": {
+    "finding": "Hero",
+    "layer": "L2 Product",
+    "assets": "Sub on tray (foreground) + sub in hand"
+   },
+   "B08": {
+    "finding": "Young urban adults looking for a quick, low-cost meal",
+    "layer": "L4 People / characters\nL1 Background",
+    "assets": "Model / talent – young woman\nCafé interior"
+   },
+   "B09": {
+    "finding": "Product-aware",
+    "layer": "L5 On-creative text",
+    "assets": "Headline – product name \"sub cravers\""
+   },
+   "B10": {
+    "finding": "Consideration",
+    "layer": "L6 Graphic elements\nL10 Ad text and platform",
+    "assets": "Price pill \"₹79\"\nPlatform CTA button \"Learn more\""
+   },
+   "B11": {
+    "finding": "Mixed",
+    "layer": "L4 People / characters\nL6 Graphic elements",
+    "assets": "Face – enjoying the bite\nPrice pill (rational)"
+   },
+   "B12": {
+    "finding": "Launch",
+    "layer": "L6 Graphic elements",
+    "assets": "\"NEW\" badge"
+   },
+   "B13": {
+    "finding": "English",
+    "layer": "L5 On-creative text",
+    "assets": "All text in English"
+   },
+   "B14": {
+    "finding": "Starting at",
+    "layer": "L5 On-creative text\nL6 Graphic elements",
+    "assets": "Offer text \"STARTING JUST AT\"\nPrice pill \"₹79\""
+   },
+   "B15": {
+    "finding": "None",
+    "layer": "L5 On-creative text",
+    "assets": "No urgency text"
+   },
+   "B16": {
+    "finding": "None",
+    "layer": "L6 Graphic elements",
+    "assets": "No review card or seal"
+   },
+   "B17": {
+    "finding": "Implied",
+    "layer": "L2 Product",
+    "assets": "Visible filling and size"
+   },
+   "B18": {
+    "finding": "Claim with asterisk and T&C",
+    "layer": "L6 Graphic elements\nL5 On-creative text",
+    "assets": "Asterisk on price pill\nDisclaimer \"*Valid on dine-in only.\""
+   },
+   "B19": {
+    "finding": "Model",
+    "layer": "L4 People / characters",
+    "assets": "Model / talent – young woman"
+   },
+   "B20": {
+    "finding": "Co-brand",
+    "layer": "L3 Props and set\nL7 Brand",
+    "assets": "Coca-Cola Zero Sugar can (partner)\nSUBWAY logo"
+   },
+   "B21": {
+    "finding": "Logo; Brand colours; Pack / product",
+    "layer": "L7 Brand\nL2 Product",
+    "assets": "Logo, neon \"S\" sign, yellow-green colours\nBranded tray paper"
+   },
+   "B22": {
+    "finding": "Offline store",
+    "layer": "L5 On-creative text\nL1 Background",
+    "assets": "Disclaimer \"dine-in only\"\nRestaurant interior"
+   },
+   "B23": {
+    "finding": "Generic (Learn more) | Platform button only",
+    "layer": "L10 Ad text and platform\nL8 CTA",
+    "assets": "Platform CTA button \"Learn more\"\nNo CTA on image"
+   },
+   "B24": {
+    "finding": "Energetic | Within limit",
+    "layer": "L5 On-creative text",
+    "assets": "Headline (3 words) + price"
+   },
+   "S01": {
+    "finding": "Designed static",
+    "layer": "Full frame (L1–L9)",
+    "assets": "Single image 9:16"
+   },
+   "S02": {
+    "finding": "Polished photo",
+    "layer": "L1 Background\nL9 Lighting and finish",
+    "assets": "Photo scene\nWarm colour grade"
+   },
+   "S03": {
+    "finding": "High (commercial)",
+    "layer": "L1 Background\nL9 Lighting and finish",
+    "assets": "Styled set\nRetouch, studio lighting"
+   },
+   "S04": {
+    "finding": "Lifestyle in use",
+    "layer": "L2 Product",
+    "assets": "Product in use (bite) + tray packshot"
+   },
+   "S05": {
+    "finding": "Lifestyle scene",
+    "layer": "L1 Background\nL3 Props and set",
+    "assets": "Restaurant interior\nCoke can, tray"
+   },
+   "S06": {
+    "finding": "Dominant",
+    "layer": "L7 Brand\nL1 Background\nL2 Product",
+    "assets": "Green-yellow brand colours\nGreen wall, neon \"S\"\nBranded tray"
+   },
+   "S07": {
+    "finding": "High contrast | 3–4 colours",
+    "layer": "L1 Background\nL5 On-creative text\nL6 Graphic elements",
+    "assets": "Dark green / black\nYellow, white\nGreen price on white"
+   },
+   "S08": {
+    "finding": "High",
+    "layer": "L5 On-creative text\nL1 Background",
+    "assets": "White and yellow text\nDark top area behind text"
+   },
+   "S09": {
+    "finding": "10–20%",
+    "layer": "L5 On-creative text\nL1–L4 Image layers",
+    "assets": "Text in top third\nPhoto scene"
+   },
+   "S10": {
+    "finding": "2 fonts | Clear hierarchy | T&C line too small",
+    "layer": "L5 On-creative text",
+    "assets": "Rounded display headline + bold sans; disclaimer very small"
+   },
+   "S11": {
+    "finding": "NEW / launch tag; Price sticker",
+    "layer": "L6 Graphic elements",
+    "assets": "\"NEW\" badge, price pill"
+   },
+   "S12": {
+    "finding": "Single focal point",
+    "layer": "L4 People / characters",
+    "assets": "Model biting the sub"
+   },
+   "S13": {
+    "finding": "Intended order followed",
+    "layer": "L5 On-creative text\nL6 Graphic elements\nL2 Product",
+    "assets": "Headline (1st)\nPrice \"₹79\" (2nd)\nSub on tray (3rd)"
+   },
+   "S14": {
+    "finding": "Z-pattern",
+    "layer": "L7 Brand\nL5 On-creative text\nL6 Graphic elements\nL2 Product",
+    "assets": "Logo – top-right\nHeadline – top-left\nPrice – right\nTray – bottom"
+   },
+   "S15": {
+    "finding": "Balanced",
+    "layer": "L1 Background",
+    "assets": "Dark top area holds the text"
+   },
+   "S16": {
+    "finding": "10–29%",
+    "layer": "L2 Product",
+    "assets": "Sub on tray about 20%"
+   },
+   "S17": {
+    "finding": "Face visible | Positive",
+    "layer": "L4 People / characters",
+    "assets": "Face close-up – smiling bite"
+   },
+   "S18": {
+    "finding": "Top-right | Moderate",
+    "layer": "L7 Brand",
+    "assets": "SUBWAY logo – top-right"
+   },
+   "S19": {
+    "finding": "9:16 | Native",
+    "layer": "Full frame (L1–L9)\nL10 Ad text and platform",
+    "assets": "9:16 full screen\nStories"
+   },
+   "S20": {
+    "finding": "Minor overlap",
+    "layer": "L7 Brand\nL5 On-creative text\nL10 Ad text and platform",
+    "assets": "Logo inside top 14%\nDisclaimer in bottom zone\nStory CTA overlaps bottom"
+   }
+  }
+ },
+ {
+  "creative": "Creative 6",
+  "details": {
+   "Brand": "Kissan",
+   "Industry": "Packaged food",
+   "Ad link": "https://www.facebook.com/ads/library/?id=1107199345651901",
+   "Platform": "Meta",
+   "Placement": "Stories",
+   "Format": "Video"
+  },
+  "findings": {
+   "B01": {
+    "finding": "Thecha chutney ke saath zanzanit Diwali manao!",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text",
+    "assets": "Headline \"THECHA CHUTNEY KE SAATH ZANZANIT DIWALI MANAO!\""
+   },
+   "B02": {
+    "finding": "Occasion-led",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text\nL3 Props and set",
+    "assets": "Headline – \"Diwali\"\nDiyas, marigolds"
+   },
+   "B03": {
+    "finding": "Quality",
+    "shot": "SH3 Product reveal 0 s\nSH4 Demo / benefit 2–6 s",
+    "layer": "L2 Product\nL2 Product",
+    "assets": "Pouch \"Chilli Peanut Thecha Chutney\"\nChutney in brass bowl"
+   },
+   "B04": {
+    "finding": "Clear and early",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text",
+    "assets": "One headline, one scene"
+   },
+   "B05": {
+    "finding": "Spec / ingredient",
+    "shot": "SH3 Product reveal 0 s",
+    "layer": "L2 Product",
+    "assets": "Pouch – \"Chilli Peanut\", peanuts and chillies on pack"
+   },
+   "B06": {
+    "finding": "Absent",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text",
+    "assets": "No problem stated"
+   },
+   "B07": {
+    "finding": "Hero",
+    "shot": "SH3 Product reveal 0 s\nSH4 Demo / benefit 2–6 s",
+    "layer": "L2 Product\nL2 Product",
+    "assets": "Pouch – left-centre\nChutney bowl + snack"
+   },
+   "B08": {
+    "finding": "Families planning festive snacks and meals",
+    "shot": "All beats (single take)",
+    "layer": "L1 Background\nL3 Props and set",
+    "assets": "Festive table setting\nPlatter of snacks"
+   },
+   "B09": {
+    "finding": "Product-aware",
+    "shot": "SH3 Product reveal 0 s",
+    "layer": "L2 Product",
+    "assets": "Pouch with product name"
+   },
+   "B10": {
+    "finding": "Action",
+    "shot": "All beats (single take)",
+    "layer": "L10 Ad text and platform",
+    "assets": "Platform CTA button \"Shop now\""
+   },
+   "B11": {
+    "finding": "Emotional – belonging",
+    "shot": "All beats (single take)",
+    "layer": "L3 Props and set\nL9 Lighting and finish",
+    "assets": "Diyas, marigolds, brass plate\nWarm golden light"
+   },
+   "B12": {
+    "finding": "Festival / holiday",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text\nL3 Props and set",
+    "assets": "\"Diwali\"\nDiyas, flowers"
+   },
+   "B13": {
+    "finding": "Hinglish",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text",
+    "assets": "Headline in Hinglish (Roman script)"
+   },
+   "B14": {
+    "finding": "No offer",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text",
+    "assets": "No offer text"
+   },
+   "B15": {
+    "finding": "None",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text",
+    "assets": "No urgency text"
+   },
+   "B16": {
+    "finding": "None",
+    "shot": "All beats (single take)",
+    "layer": "L6 Graphic elements",
+    "assets": "No review or seal"
+   },
+   "B17": {
+    "finding": "Implied",
+    "shot": "SH4 Demo / benefit 2–6 s",
+    "layer": "L2 Product",
+    "assets": "Thick, coarse chutney texture"
+   },
+   "B18": {
+    "finding": "No claims",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text",
+    "assets": "Small note bottom-left, no claims"
+   },
+   "B19": {
+    "finding": "No person",
+    "shot": "SH4 Demo / benefit 2–6 s",
+    "layer": "L4 People / characters",
+    "assets": "Hands only – no messenger"
+   },
+   "B20": {
+    "finding": "Retailer / marketplace",
+    "shot": "All beats (single take)",
+    "layer": "L10 Ad text and platform",
+    "assets": "Quick-commerce destination link"
+   },
+   "B21": {
+    "finding": "Logo; Brand colours; Pack / product",
+    "shot": "SH3 Product reveal 0 s",
+    "layer": "L7 Brand\nL2 Product",
+    "assets": "Kissan logo on pouch\nRed-green pack colours"
+   },
+   "B22": {
+    "finding": "Quick commerce (link only)",
+    "shot": "All beats (single take)",
+    "layer": "L10 Ad text and platform",
+    "assets": "Destination link to quick-commerce app"
+   },
+   "B23": {
+    "finding": "Specific verb (Shop now) | Platform button only",
+    "shot": "All beats (single take)\nSH7 Close 6–8 s",
+    "layer": "L10 Ad text and platform\nL8 CTA",
+    "assets": "Platform CTA button \"Shop now\"\nNo CTA in video"
+   },
+   "B24": {
+    "finding": "Casual | Within limit",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text",
+    "assets": "Headline, 7 words"
+   },
+   "B25": {
+    "finding": "Yes – visual",
+    "shot": "SH1 Hook 0–2 s",
+    "layer": "L4 People / characters\nL5 On-creative text",
+    "assets": "Hand picks a snack\nHeadline"
+   },
+   "B26": {
+    "finding": "Under 1 s",
+    "shot": "SH3 Product reveal 0 s",
+    "layer": "L7 Brand",
+    "assets": "Logo on pouch from 0 s"
+   },
+   "B27": {
+    "finding": "Under 2 s",
+    "shot": "SH3 Product reveal 0 s",
+    "layer": "L2 Product",
+    "assets": "Pouch visible from 0 s"
+   },
+   "B28": {
+    "finding": "Demo",
+    "shot": "SH4 Demo / benefit 2–6 s\nAll beats (single take)",
+    "layer": "L4 People / characters\nL12 Footage type",
+    "assets": "Hand dips snack in chutney\nSingle take"
+   },
+   "B29": {
+    "finding": "No in-video CTA",
+    "shot": "SH7 Close 6–8 s",
+    "layer": "L8 CTA",
+    "assets": "No CTA in video"
+   },
+   "S01": {
+    "finding": "Cinemagraph",
+    "shot": "All beats (single take)",
+    "layer": "L12 Footage type\nL14 Motion and edit",
+    "assets": "Still image with moving hand (cinemagraph)\nAnimation – hand only"
+   },
+   "S02": {
+    "finding": "Polished photo",
+    "shot": "All beats (single take)",
+    "layer": "L1 Background\nL9 Lighting and finish",
+    "assets": "Styled festive set\nWarm colour grade"
+   },
+   "S03": {
+    "finding": "High (commercial)",
+    "shot": "All beats (single take)",
+    "layer": "L1 Background\nL9 Lighting and finish",
+    "assets": "Studio food set\nRetouch, soft light"
+   },
+   "S04": {
+    "finding": "Serving / usage suggestion",
+    "shot": "SH4 Demo / benefit 2–6 s\nSH3 Product reveal 0 s",
+    "layer": "L2 Product\nL2 Product",
+    "assets": "Product in use – snack dipped in chutney\nPouch"
+   },
+   "S05": {
+    "finding": "Lifestyle scene",
+    "shot": "All beats (single take)",
+    "layer": "L1 Background\nL3 Props and set",
+    "assets": "Festive table\nDiyas, flowers, banana leaf, brass plate"
+   },
+   "S06": {
+    "finding": "Dominant",
+    "shot": "SH3 Product reveal 0 s\nAll beats (single take)",
+    "layer": "L2 Product\nL5 On-creative text",
+    "assets": "Red-green pouch\nMaroon headline"
+   },
+   "S07": {
+    "finding": "Bright / saturated | 5+ colours",
+    "shot": "All beats (single take)\nSH3 Product reveal 0 s",
+    "layer": "L3 Props and set\nL2 Product",
+    "assets": "Orange marigold, white flowers, green leaf, gold brass\nRed cap, green pouch"
+   },
+   "S08": {
+    "finding": "High",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text",
+    "assets": "Maroon headline on light cream background"
+   },
+   "S09": {
+    "finding": "10–20%",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text",
+    "assets": "Headline – top band"
+   },
+   "S10": {
+    "finding": "1 font | Clear hierarchy | Legible on mobile",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text",
+    "assets": "Bold condensed caps"
+   },
+   "S11": {
+    "finding": "None",
+    "shot": "All beats (single take)",
+    "layer": "L6 Graphic elements",
+    "assets": "Not present"
+   },
+   "S12": {
+    "finding": "Two competing",
+    "shot": "SH3 Product reveal 0 s\nSH4 Demo / benefit 2–6 s",
+    "layer": "L2 Product\nL4 People / characters",
+    "assets": "Pouch\nHand with snack"
+   },
+   "S13": {
+    "finding": "Partly",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text\nL2 Product",
+    "assets": "Headline (1st)\nPouch and hand compete (2nd)"
+   },
+   "S14": {
+    "finding": "Rule of thirds",
+    "shot": "All beats (single take)\nSH3 Product reveal 0 s\nSH4 Demo / benefit 2–6 s\nAll beats (single take)",
+    "layer": "L5 On-creative text\nL2 Product\nL4 People / characters\nL3 Props and set",
+    "assets": "Headline – top\nPouch – left third\nHand – right third\nPlatter – bottom"
+   },
+   "S15": {
+    "finding": "Busy",
+    "shot": "All beats (single take)",
+    "layer": "L3 Props and set",
+    "assets": "Many props fill the frame"
+   },
+   "S16": {
+    "finding": "30–59%",
+    "shot": "SH3 Product reveal 0 s",
+    "layer": "L2 Product",
+    "assets": "Pouch + platter about 45%"
+   },
+   "S17": {
+    "finding": "Hands only",
+    "shot": "SH4 Demo / benefit 2–6 s",
+    "layer": "L4 People / characters",
+    "assets": "Hands only"
+   },
+   "S18": {
+    "finding": "On product | Moderate",
+    "shot": "SH3 Product reveal 0 s",
+    "layer": "L7 Brand",
+    "assets": "Logo on pouch"
+   },
+   "S19": {
+    "finding": "9:16 | Native",
+    "shot": "All beats (single take)",
+    "layer": "Full frame (L1–L9)\nL10 Ad text and platform",
+    "assets": "9:16 full screen\nStories"
+   },
+   "S20": {
+    "finding": "Minor overlap",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Headline near top 14%\nStory UI at top"
+   },
+   "S21": {
+    "finding": "Strong",
+    "shot": "SH1 Hook 0–2 s",
+    "layer": "L1 Background\nL5 On-creative text",
+    "assets": "Bright festive set\nHeadline"
+   },
+   "S22": {
+    "finding": "Single take",
+    "shot": "All beats (single take)",
+    "layer": "L12 Footage type",
+    "assets": "One continuous shot"
+   },
+   "S23": {
+    "finding": "6–15 s",
+    "shot": "All beats (single take)",
+    "layer": "L14 Motion and edit",
+    "assets": "Total runtime 8 s"
+   },
+   "S24": {
+    "finding": "Audio track present",
+    "shot": "All beats (single take)",
+    "layer": "L13 Audio",
+    "assets": "Audio track present"
+   },
+   "S25": {
+    "finding": "Static headline, readable muted",
+    "shot": "All beats (single take)",
+    "layer": "L5 On-creative text",
+    "assets": "Static headline, readable muted"
+   }
+  }
+ },
+ {
+  "creative": "Creative 7",
+  "details": {
+   "Brand": "Lenskart",
+   "Industry": "Eyewear retail",
+   "Ad link": "https://www.youtube.com/watch?v=yd09O0swg74",
+   "Platform": "YouTube / Google",
+   "Placement": "YouTube in-stream",
+   "Format": "Video"
+  },
+  "findings": {
+   "B01": {
+    "finding": "Progressive, not expensive",
+    "shot": "SH1 Hook 0–1.5 s",
+    "layer": "L13 Audio\nL4 People / characters",
+    "assets": "Dialogue – \"Progressive, not expensive\"\nStore expert to camera"
+   },
+   "B02": {
+    "finding": "Problem call-out",
+    "shot": "SH1 Hook 0–1.5 s\nSH2 Context / problem 1.5–4.5 s",
+    "layer": "L13 Audio\nL2 Product",
+    "assets": "Dialogue – problem call-out\nPrescription card on table"
+   },
+   "B03": {
+    "finding": "Price / savings",
+    "shot": "SH6 Offer 22–25 s\nSH1 Hook 0–1.5 s",
+    "layer": "L6 Graphic elements\nL13 Audio",
+    "assets": "Sticker \"2 FOR ₹4000\"\nDialogue \"not expensive\""
+   },
+   "B04": {
+    "finding": "Clear but buried",
+    "shot": "All beats\nSH6 Offer 22–25 s",
+    "layer": "L13 Audio\nL6 Graphic elements",
+    "assets": "Message carried by dialogue\nPrice sticker only at 22 s"
+   },
+   "B05": {
+    "finding": "Problem; Feature; How it works",
+    "shot": "SH2 Context / problem 1.5–4.5 s\nSH4 Demo / benefit 4.5–21 s",
+    "layer": "L2 Product\nL2 Product\nL6 Graphic elements",
+    "assets": "Prescription card\nTrial frame eye test\nCallouts \"PRECISION\", \"VARIETY OF FRAMES\""
+   },
+   "B06": {
+    "finding": "Clear",
+    "shot": "SH2 Context / problem 1.5–4.5 s\nSH4 Demo / benefit 4.5–21 s",
+    "layer": "L4 People / characters\nL4 People / characters",
+    "assets": "Customer with two vision needs\nCustomer trying progressives"
+   },
+   "B07": {
+    "finding": "In use / demo",
+    "shot": "SH4 Demo / benefit 4.5–21 s",
+    "layer": "L4 People / characters\nL2 Product",
+    "assets": "Customer wearing progressive glasses\nProduct in use"
+   },
+   "B08": {
+    "finding": "Adults who need one pair for both reading and distance",
+    "shot": "SH2 Context / problem 1.5–4.5 s\nSH4 Demo / benefit 4.5–21 s",
+    "layer": "L4 People / characters\nL4 People / characters",
+    "assets": "Middle-aged customer\nCustomer close-ups"
+   },
+   "B09": {
+    "finding": "Problem-aware",
+    "shot": "SH1 Hook 0–1.5 s\nSH2 Context / problem 1.5–4.5 s",
+    "layer": "L13 Audio\nL2 Product",
+    "assets": "Dialogue about progressives\nPrescription card"
+   },
+   "B10": {
+    "finding": "Consideration",
+    "shot": "SH6 Offer 22–25 s\nSH7 End card 30–35 s",
+    "layer": "L6 Graphic elements\nL8 CTA",
+    "assets": "\"2 FOR ₹4000\"\n\"DOWNLOAD THE APP\", \"CALL NOW\""
+   },
+   "B11": {
+    "finding": "Rational",
+    "shot": "SH4 Demo / benefit 4.5–21 s\nSH6 Offer 22–25 s",
+    "layer": "L6 Graphic elements\nL6 Graphic elements",
+    "assets": "Feature callouts\nPrice sticker"
+   },
+   "B12": {
+    "finding": "Evergreen",
+    "shot": "All beats",
+    "layer": "L1 Background",
+    "assets": "Store set – no season cue"
+   },
+   "B13": {
+    "finding": "English (on-screen text)",
+    "shot": "All beats",
+    "layer": "L5 On-creative text\nL13 Audio",
+    "assets": "On-screen text in English\nDialogue"
+   },
+   "B14": {
+    "finding": "BOGO / bundle",
+    "shot": "SH6 Offer 22–25 s",
+    "layer": "L6 Graphic elements",
+    "assets": "Sticker \"2 FOR ₹4000\""
+   },
+   "B15": {
+    "finding": "None",
+    "shot": "SH6 Offer 22–25 s",
+    "layer": "L5 On-creative text",
+    "assets": "No urgency text"
+   },
+   "B16": {
+    "finding": "None",
+    "shot": "SH5 Proof – not present",
+    "layer": "L6 Graphic elements",
+    "assets": "No reviews or seals"
+   },
+   "B17": {
+    "finding": "Implied",
+    "shot": "SH4 Demo / benefit 4.5–21 s",
+    "layer": "L6 Graphic elements",
+    "assets": "\"PRECISION\", \"VARIETY OF FRAMES\""
+   },
+   "B18": {
+    "finding": "No claims",
+    "shot": "All beats",
+    "layer": "L5 On-creative text",
+    "assets": "No claims or disclaimer"
+   },
+   "B19": {
+    "finding": "Presenter / actor",
+    "shot": "SH1 Hook 0–1.5 s\nSH4 Demo / benefit 4.5–21 s\nAll beats",
+    "layer": "L4 People / characters\nL4 People / characters\nL13 Audio",
+    "assets": "Store expert (actor)\nCustomer (actor)\nDialogue"
+   },
+   "B20": {
+    "finding": "Brand page",
+    "shot": "All beats\nSH2 Context / problem 1.5–4.5 s",
+    "layer": "L10 Ad text and platform\nL7 Brand",
+    "assets": "Channel name + logo\nLogo on prescription card"
+   },
+   "B21": {
+    "finding": "Logo; Brand colours",
+    "shot": "All beats\nSH1 Hook 0–1.5 s\nSH7 End card 30–35 s",
+    "layer": "L7 Brand\nL4 People / characters\nL7 Brand",
+    "assets": "Logo watermark – bottom-right\nStaff in brand polo\nNavy end card with logo"
+   },
+   "B22": {
+    "finding": "Own app",
+    "shot": "SH7 End card 30–35 s",
+    "layer": "L8 CTA",
+    "assets": "Google Play + App Store badges"
+   },
+   "B23": {
+    "finding": "Specific verb (Download the app, Call now) | End card",
+    "shot": "SH7 End card 30–35 s\nAll beats",
+    "layer": "L8 CTA\nL10 Ad text and platform",
+    "assets": "\"DOWNLOAD THE APP\" + badges, \"CALL NOW 1800 111 111\"\nPlatform CTA button"
+   },
+   "B24": {
+    "finding": "Calm | Within limit",
+    "shot": "All beats\nSH4 Demo / benefit 4.5–21 s",
+    "layer": "L13 Audio\nL6 Graphic elements",
+    "assets": "Conversational dialogue\nTwo-word callouts"
+   },
+   "B25": {
+    "finding": "Yes – spoken",
+    "shot": "SH1 Hook 0–1.5 s",
+    "layer": "L13 Audio\nL4 People / characters",
+    "assets": "Dialogue\nFace to camera"
+   },
+   "B26": {
+    "finding": "Under 1 s",
+    "shot": "SH1 Hook 0–1.5 s\nAll beats",
+    "layer": "L4 People / characters\nL7 Brand",
+    "assets": "Brand polo on staff\nLogo watermark from 0 s"
+   },
+   "B27": {
+    "finding": "Later",
+    "shot": "SH3 Product reveal 6–9 s",
+    "layer": "L2 Product",
+    "assets": "Progressive glasses on face at about 6 s"
+   },
+   "B28": {
+    "finding": "Problem–agitate–solve",
+    "shot": "SH2 Context / problem 1.5–4.5 s\nSH4 Demo / benefit 4.5–21 s\nSH7 End card 30–35 s",
+    "layer": "L2 Product\nL4 People / characters\nL7 Brand",
+    "assets": "Problem – prescription\nSolution – eye test, glasses\nBrand close"
+   },
+   "B29": {
+    "finding": "Middle (offer) and end card",
+    "shot": "SH6 Offer 22–25 s\nSH7 End card 30–35 s",
+    "layer": "L6 Graphic elements\nL8 CTA",
+    "assets": "Offer at 22 s\nEnd-card CTA at 30 s"
+   },
+   "S01": {
+    "finding": "Film / skit",
+    "shot": "All beats",
+    "layer": "L12 Footage type\nL14 Motion and edit",
+    "assets": "A-roll – live-action skit\nCuts"
+   },
+   "S02": {
+    "finding": "Editorial",
+    "shot": "All beats",
+    "layer": "L1 Background\nL9 Lighting and finish",
+    "assets": "Styled store set\nWarm colour grade"
+   },
+   "S03": {
+    "finding": "High (commercial)",
+    "shot": "All beats",
+    "layer": "L12 Footage type\nL9 Lighting and finish",
+    "assets": "A-roll, studio lighting\nColour grade"
+   },
+   "S04": {
+    "finding": "Lifestyle in use",
+    "shot": "SH4 Demo / benefit 4.5–21 s",
+    "layer": "L2 Product",
+    "assets": "Glasses on face, trial frame"
+   },
+   "S05": {
+    "finding": "Studio",
+    "shot": "All beats",
+    "layer": "L1 Background",
+    "assets": "Store set – arched shelves, teal wall pattern"
+   },
+   "S06": {
+    "finding": "Accent only",
+    "shot": "SH7 End card 30–35 s\nAll beats",
+    "layer": "L7 Brand\nL7 Brand",
+    "assets": "Navy end card\nSmall logo"
+   },
+   "S07": {
+    "finding": "Bright / saturated | 3–4 colours",
+    "shot": "All beats\nSH7 End card 30–35 s",
+    "layer": "L1 Background\nL1 Background",
+    "assets": "Teal, mustard yellow, warm wood\nNavy"
+   },
+   "S08": {
+    "finding": "High",
+    "shot": "SH4 Demo / benefit 4.5–21 s\nSH7 End card 30–35 s",
+    "layer": "L6 Graphic elements\nL5 On-creative text",
+    "assets": "White callout text on dark labels\nWhite on navy"
+   },
+   "S09": {
+    "finding": "Up to 10%",
+    "shot": "SH4 Demo / benefit 4.5–21 s\nSH6 Offer 22–25 s",
+    "layer": "L6 Graphic elements\nL6 Graphic elements",
+    "assets": "Callout labels only\nPrice sticker"
+   },
+   "S10": {
+    "finding": "1 font | Clear hierarchy | Legible on mobile",
+    "shot": "SH4 Demo / benefit 4.5–21 s\nSH7 End card 30–35 s",
+    "layer": "L6 Graphic elements\nL5 On-creative text",
+    "assets": "Clean sans in callouts\nClean sans"
+   },
+   "S11": {
+    "finding": "Price sticker",
+    "shot": "SH6 Offer 22–25 s\nSH4 Demo / benefit 4.5–21 s",
+    "layer": "L6 Graphic elements\nL6 Graphic elements",
+    "assets": "White pill sticker \"2 FOR ₹4000\"\nLine callouts"
+   },
+   "S12": {
+    "finding": "Single focal point",
+    "shot": "SH4 Demo / benefit 4.5–21 s",
+    "layer": "L4 People / characters",
+    "assets": "Customer's face with glasses"
+   },
+   "S13": {
+    "finding": "Intended order followed",
+    "shot": "SH1 Hook 0–1.5 s\nSH4 Demo / benefit 4.5–21 s\nSH7 End card 30–35 s",
+    "layer": "L4 People / characters\nL2 Product\nL8 CTA",
+    "assets": "Expert (1st)\nGlasses (2nd)\nCTA (3rd)"
+   },
+   "S14": {
+    "finding": "Close-up",
+    "shot": "SH4 Demo / benefit 4.5–21 s\nSH6 Offer 22–25 s",
+    "layer": "L4 People / characters\nL4 People / characters",
+    "assets": "Face close-ups, centred\nWide two-shot"
+   },
+   "S15": {
+    "finding": "Balanced",
+    "shot": "All beats",
+    "layer": "L1 Background",
+    "assets": "Set fills the frame evenly"
+   },
+   "S16": {
+    "finding": "30–59%",
+    "shot": "SH4 Demo / benefit 4.5–21 s",
+    "layer": "L2 Product",
+    "assets": "Glasses about 30% of frame"
+   },
+   "S17": {
+    "finding": "Face visible | Gaze at camera | Positive",
+    "shot": "SH1 Hook 0–1.5 s\nSH4 Demo / benefit 4.5–21 s",
+    "layer": "L4 People / characters\nL4 People / characters",
+    "assets": "Expert gazes at camera\nCustomer smiling"
+   },
+   "S18": {
+    "finding": "Persistent watermark | Subtle (bottom-right)",
+    "shot": "All beats",
+    "layer": "L7 Brand",
+    "assets": "Logo – bottom-right"
+   },
+   "S19": {
+    "finding": "16:9 | Native",
+    "shot": "All beats",
+    "layer": "Full frame (L1–L9)\nL10 Ad text and platform",
+    "assets": "16:9\nYouTube in-stream"
+   },
+   "S20": {
+    "finding": "Minor overlap",
+    "shot": "SH6 Offer 22–25 s\nAll beats",
+    "layer": "L6 Graphic elements\nL7 Brand",
+    "assets": "Sticker bottom-left near ad UI\nLogo bottom-right near skip button"
+   },
+   "S21": {
+    "finding": "Weak",
+    "shot": "SH1 Hook 0–1.5 s",
+    "layer": "L4 People / characters",
+    "assets": "Plain medium shot, no text"
+   },
+   "S22": {
+    "finding": "Moderate",
+    "shot": "All beats",
+    "layer": "L14 Motion and edit",
+    "assets": "Cuts every 1.5–3 s"
+   },
+   "S23": {
+    "finding": "30–60 s",
+    "shot": "All beats",
+    "layer": "L14 Motion and edit",
+    "assets": "Total runtime 35 s"
+   },
+   "S24": {
+    "finding": "Dialogue",
+    "shot": "All beats",
+    "layer": "L13 Audio",
+    "assets": "Dialogue"
+   },
+   "S25": {
+    "finding": "Partial",
+    "shot": "SH4 Demo / benefit 4.5–21 s\nAll beats",
+    "layer": "L6 Graphic elements\nL5 On-creative text",
+    "assets": "Callouts only\nNo captions for dialogue"
+   }
+  }
+ },
+ {
+  "creative": "Creative 8",
+  "details": {
+   "Brand": "Licious",
+   "Industry": "Food (ready to cook)",
+   "Ad link": "https://www.youtube.com/watch?v=aP35zA5xZCI",
+   "Platform": "YouTube / Google",
+   "Placement": "YouTube in-stream",
+   "Format": "Video"
+  },
+  "findings": {
+   "B01": {
+    "finding": "The Mother of All Momos is here",
+    "shot": "SH7 End card 25–34 s\nAll beats",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Title \"THE MOTHER OF ALL MOMOS\"\nVideo title \"The Mother Of All Momos Is Here!\""
+   },
+   "B02": {
+    "finding": "Curiosity gap",
+    "shot": "SH1 Hook 0–4.5 s",
+    "layer": "L1 Background\nL2 Product",
+    "assets": "Dark frame, red glow\nSilhouette of momo pile"
+   },
+   "B03": {
+    "finding": "Quality",
+    "shot": "SH4 Demo / benefit 9–24 s",
+    "layer": "L5 On-creative text",
+    "assets": "\"MEATY\", \"JUICY\", \"THIN CASING\""
+   },
+   "B04": {
+    "finding": "Clear but buried",
+    "shot": "SH7 End card 25–34 s\nSH4 Demo / benefit 9–24 s",
+    "layer": "L5 On-creative text\nL5 On-creative text",
+    "assets": "Main line only at 25 s\nBenefit words"
+   },
+   "B05": {
+    "finding": "Benefit; Spec / ingredient",
+    "shot": "SH4 Demo / benefit 9–24 s",
+    "layer": "L5 On-creative text\nL2 Product",
+    "assets": "\"MEATY\", \"JUICY\", \"THIN CASING\", \"WITH SPICY CHUTNEY\"\nFilling close-up"
+   },
+   "B06": {
+    "finding": "Partial",
+    "shot": "SH4 Demo / benefit 9–24 s",
+    "layer": "L5 On-creative text",
+    "assets": "Benefits imply better momos – no problem shown"
+   },
+   "B07": {
+    "finding": "Hero",
+    "shot": "SH3 Product reveal 4.5–9 s\nSH7 End card 25–34 s",
+    "layer": "L2 Product\nL2 Product",
+    "assets": "Momo close-up rising\nPacks \"Cheeezy Chicken\", \"Chunky Prawn\""
+   },
+   "B08": {
+    "finding": "Snack lovers who buy frozen or ready-to-cook momos",
+    "shot": "SH4 Demo / benefit 9–24 s",
+    "layer": "L4 People / characters\nL2 Product",
+    "assets": "Young woman eating\nChutney dip"
+   },
+   "B09": {
+    "finding": "Solution-aware",
+    "shot": "SH7 End card 25–34 s",
+    "layer": "L2 Product",
+    "assets": "Packs with flavour names"
+   },
+   "B10": {
+    "finding": "Awareness",
+    "shot": "SH7 End card 25–34 s",
+    "layer": "L8 CTA\nL5 On-creative text",
+    "assets": "No CTA\nTitle"
+   },
+   "B11": {
+    "finding": "Emotional – surprise",
+    "shot": "SH1 Hook 0–4.5 s\nSH3 Product reveal 4.5–9 s",
+    "layer": "L9 Lighting and finish\nL14 Motion and edit",
+    "assets": "Dramatic red rim light\nSlow reveal, camera move"
+   },
+   "B12": {
+    "finding": "Launch",
+    "shot": "All beats\nSH7 End card 25–34 s",
+    "layer": "L10 Ad text and platform\nL2 Product",
+    "assets": "Title \"…Is Here!\"\nNew packs"
+   },
+   "B13": {
+    "finding": "English (on-screen text)",
+    "shot": "All beats",
+    "layer": "L5 On-creative text",
+    "assets": "On-screen text in English"
+   },
+   "B14": {
+    "finding": "No offer",
+    "shot": "All beats",
+    "layer": "L5 On-creative text",
+    "assets": "No offer text"
+   },
+   "B15": {
+    "finding": "None",
+    "shot": "All beats",
+    "layer": "L5 On-creative text",
+    "assets": "No urgency text"
+   },
+   "B16": {
+    "finding": "None",
+    "shot": "SH5 Proof – not present",
+    "layer": "L6 Graphic elements",
+    "assets": "No reviews or seals"
+   },
+   "B17": {
+    "finding": "Implied",
+    "shot": "SH4 Demo / benefit 9–24 s",
+    "layer": "L5 On-creative text",
+    "assets": "\"THIN CASING\", \"MEATY\""
+   },
+   "B18": {
+    "finding": "Claim with asterisk and T&C",
+    "shot": "All beats",
+    "layer": "L5 On-creative text",
+    "assets": "Small asterisk line – bottom-left"
+   },
+   "B19": {
+    "finding": "No person",
+    "shot": "SH4 Demo / benefit 9–24 s",
+    "layer": "L4 People / characters",
+    "assets": "Woman eating – no speaking role"
+   },
+   "B20": {
+    "finding": "Brand page",
+    "shot": "All beats",
+    "layer": "L10 Ad text and platform",
+    "assets": "Channel name + logo"
+   },
+   "B21": {
+    "finding": "Logo; Brand colours; Pack / product",
+    "shot": "All beats\nSH7 End card 25–34 s\nAll beats",
+    "layer": "L7 Brand\nL2 Product\nL1 Background",
+    "assets": "Logo watermark – top-right\nRed packs with logo\nBrand red"
+   },
+   "B22": {
+    "finding": "Not shown",
+    "shot": "SH7 End card 25–34 s",
+    "layer": "L8 CTA",
+    "assets": "No store or link shown"
+   },
+   "B23": {
+    "finding": "None seen",
+    "shot": "SH7 End card 25–34 s",
+    "layer": "L8 CTA",
+    "assets": "Not present"
+   },
+   "B24": {
+    "finding": "Humorous | Within limit",
+    "shot": "SH7 End card 25–34 s\nSH4 Demo / benefit 9–24 s",
+    "layer": "L5 On-creative text\nL5 On-creative text",
+    "assets": "\"Mother of all momos\" pun\nOne- or two-word supers"
+   },
+   "B25": {
+    "finding": "Yes – visual",
+    "shot": "SH1 Hook 0–4.5 s",
+    "layer": "L1 Background\nL14 Motion and edit",
+    "assets": "Red glow on dark\nSlow push-in"
+   },
+   "B26": {
+    "finding": "Under 1 s",
+    "shot": "SH1 Hook 0–4.5 s",
+    "layer": "L7 Brand",
+    "assets": "Logo watermark from 0 s"
+   },
+   "B27": {
+    "finding": "Under 2 s",
+    "shot": "SH1 Hook 0–4.5 s",
+    "layer": "L2 Product",
+    "assets": "Momo pile silhouette from 0 s"
+   },
+   "B28": {
+    "finding": "Montage",
+    "shot": "SH4 Demo / benefit 9–24 s",
+    "layer": "L14 Motion and edit\nL12 Footage type",
+    "assets": "Macro cuts – filling, dip, bite\nA-roll food macros"
+   },
+   "B29": {
+    "finding": "None seen",
+    "shot": "SH7 End card 25–34 s",
+    "layer": "L8 CTA",
+    "assets": "Not present"
+   },
+   "S01": {
+    "finding": "Film / skit",
+    "shot": "All beats",
+    "layer": "L12 Footage type\nL14 Motion and edit",
+    "assets": "Live-action food film + 3D-style packshots\nKinetic typography"
+   },
+   "S02": {
+    "finding": "Cinematic",
+    "shot": "All beats",
+    "layer": "L9 Lighting and finish\nL14 Motion and edit",
+    "assets": "Dark, red rim light, shallow depth\nSlow motion"
+   },
+   "S03": {
+    "finding": "High (commercial)",
+    "shot": "All beats",
+    "layer": "L12 Footage type\nL9 Lighting and finish",
+    "assets": "Macro food photography\nColour grade"
+   },
+   "S04": {
+    "finding": "3D render; Packshot on plain",
+    "shot": "SH7 End card 25–34 s\nSH3 Product reveal 4.5–9 s",
+    "layer": "L2 Product\nL2 Product",
+    "assets": "3D-style packs + floating momo\nClose-up / texture"
+   },
+   "S05": {
+    "finding": "Studio",
+    "shot": "All beats",
+    "layer": "L1 Background",
+    "assets": "Black-red studio backdrop"
+   },
+   "S06": {
+    "finding": "Dominant",
+    "shot": "All beats\nSH7 End card 25–34 s",
+    "layer": "L1 Background\nL2 Product",
+    "assets": "Brand red\nRed packs"
+   },
+   "S07": {
+    "finding": "Dark / moody | 3–4 colours",
+    "shot": "All beats\nSH4 Demo / benefit 9–24 s",
+    "layer": "L1 Background\nL5 On-creative text",
+    "assets": "Black, deep red\nYellow supers"
+   },
+   "S08": {
+    "finding": "High",
+    "shot": "SH4 Demo / benefit 9–24 s",
+    "layer": "L5 On-creative text",
+    "assets": "Yellow text on dark / red"
+   },
+   "S09": {
+    "finding": "Up to 10%",
+    "shot": "SH4 Demo / benefit 9–24 s",
+    "layer": "L5 On-creative text",
+    "assets": "One- or two-word supers"
+   },
+   "S10": {
+    "finding": "1 font | Clear hierarchy | Legible on mobile",
+    "shot": "SH4 Demo / benefit 9–24 s\nSH7 End card 25–34 s",
+    "layer": "L5 On-creative text\nL5 On-creative text",
+    "assets": "Bold condensed yellow display\nSame font"
+   },
+   "S11": {
+    "finding": "None",
+    "shot": "All beats",
+    "layer": "L6 Graphic elements",
+    "assets": "Not present"
+   },
+   "S12": {
+    "finding": "Single focal point",
+    "shot": "SH3 Product reveal 4.5–9 s",
+    "layer": "L2 Product",
+    "assets": "Single momo – centre"
+   },
+   "S13": {
+    "finding": "Intended order followed",
+    "shot": "SH3 Product reveal 4.5–9 s\nSH4 Demo / benefit 9–24 s\nSH7 End card 25–34 s",
+    "layer": "L2 Product\nL5 On-creative text\nL2 Product",
+    "assets": "Momo (1st)\nBenefit word (2nd)\nPack (3rd)"
+   },
+   "S14": {
+    "finding": "Centred",
+    "shot": "SH3 Product reveal 4.5–9 s\nSH7 End card 25–34 s",
+    "layer": "L2 Product\nL2 Product",
+    "assets": "Momo centred\nPack centred"
+   },
+   "S15": {
+    "finding": "Generous",
+    "shot": "All beats",
+    "layer": "L1 Background",
+    "assets": "Dark negative space"
+   },
+   "S16": {
+    "finding": "60% or more",
+    "shot": "SH3 Product reveal 4.5–9 s",
+    "layer": "L2 Product",
+    "assets": "Momo fills about 70%"
+   },
+   "S17": {
+    "finding": "Hands only",
+    "shot": "SH4 Demo / benefit 9–24 s",
+    "layer": "L4 People / characters",
+    "assets": "Hands dipping; woman eating at 21–24 s"
+   },
+   "S18": {
+    "finding": "Persistent watermark | Subtle (top-right)",
+    "shot": "All beats",
+    "layer": "L7 Brand",
+    "assets": "Logo – top-right"
+   },
+   "S19": {
+    "finding": "16:9 | Native",
+    "shot": "All beats",
+    "layer": "Full frame (L1–L9)\nL10 Ad text and platform",
+    "assets": "16:9\nYouTube in-stream"
+   },
+   "S20": {
+    "finding": "Fully clear",
+    "shot": "SH4 Demo / benefit 9–24 s\nAll beats",
+    "layer": "L5 On-creative text\nL7 Brand",
+    "assets": "Supers centre / lower-right\nLogo top-right"
+   },
+   "S21": {
+    "finding": "Weak",
+    "shot": "SH1 Hook 0–4.5 s",
+    "layer": "L1 Background",
+    "assets": "Almost black first frame"
+   },
+   "S22": {
+    "finding": "Moderate",
+    "shot": "All beats",
+    "layer": "L14 Motion and edit",
+    "assets": "Cuts every 1.5–3 s, slow motion"
+   },
+   "S23": {
+    "finding": "30–60 s",
+    "shot": "All beats",
+    "layer": "L14 Motion and edit",
+    "assets": "Total runtime 34 s"
+   },
+   "S24": {
+    "finding": "Audio track present",
+    "shot": "All beats",
+    "layer": "L13 Audio",
+    "assets": "Audio track present"
+   },
+   "S25": {
+    "finding": "Partial",
+    "shot": "SH4 Demo / benefit 9–24 s",
+    "layer": "L5 On-creative text",
+    "assets": "Benefit supers only"
+   }
+  }
+ },
+ {
+  "creative": "Creative 9",
+  "details": {
+   "Brand": "Minimalist",
+   "Industry": "Skincare",
+   "Ad link": "https://www.youtube.com/watch?v=4ykjL_R-WG0",
+   "Platform": "YouTube / Google",
+   "Placement": "YouTube in-stream",
+   "Format": "Video"
+  },
+  "findings": {
+   "B01": {
+    "finding": "Clinically proven and dermatologist-recommended serums",
+    "shot": "SH1 Hook 0–3.5 s",
+    "layer": "L5 On-creative text",
+    "assets": "\"Clinically Proven\", \"Recommended by Dermatologists\""
+   },
+   "B02": {
+    "finding": "Bold claim",
+    "shot": "SH1 Hook 0–3.5 s",
+    "layer": "L5 On-creative text\nL6 Graphic elements",
+    "assets": "\"Clinically Proven\"\nCollage of lab and doctor images"
+   },
+   "B03": {
+    "finding": "Results / transformation",
+    "shot": "SH2 Context / problem 5–13.5 s\nSH3 Product reveal 14–17.5 s",
+    "layer": "L5 On-creative text\nL5 On-creative text",
+    "assets": "Concern labels\n\"For Every Skin Concern\""
+   },
+   "B04": {
+    "finding": "Clear and early",
+    "shot": "SH1 Hook 0–3.5 s\nSH3 Product reveal 14–17.5 s",
+    "layer": "L5 On-creative text\nL5 On-creative text",
+    "assets": "Claim at 2 s\n\"Science Backed Serums\""
+   },
+   "B05": {
+    "finding": "Problem; Spec / ingredient; Proof point",
+    "shot": "SH2 Context / problem 5–13.5 s\n\n\nSH1 Hook 0–3.5 s\nSH5 Proof 3.5–5 s",
+    "layer": "L5 On-creative text\nL5 On-creative text\nL5 On-creative text\nL12 Footage type\nL4 People / characters",
+    "assets": "\"Uneven Skin Tone, Dullness\"\n\"Fine lines, Dryness\"\n\"Acne Marks, Redness, Oiliness\"\nLab footage\nDermatologist"
+   },
+   "B06": {
+    "finding": "Clear",
+    "shot": "SH2 Context / problem 5–13.5 s\nSH3 Product reveal 14–17.5 s",
+    "layer": "L5 On-creative text\nL2 Product",
+    "assets": "\"Concerned about your skin?\" + concerns\nSerum range as the answer"
+   },
+   "B07": {
+    "finding": "Hero",
+    "shot": "SH3 Product reveal 14–17.5 s",
+    "layer": "L2 Product",
+    "assets": "Serum bottle line-up, gloved hand picks one"
+   },
+   "B08": {
+    "finding": "Adults with specific skin concerns (fine lines, dryness, acne marks)",
+    "shot": "SH2 Context / problem 5–13.5 s",
+    "layer": "L4 People / characters\nL6 Graphic elements",
+    "assets": "Three models, face close-ups\nDotted face-mapping circles"
+   },
+   "B09": {
+    "finding": "Problem-aware",
+    "shot": "SH2 Context / problem 5–13.5 s",
+    "layer": "L5 On-creative text",
+    "assets": "\"Concerned about your skin?\""
+   },
+   "B10": {
+    "finding": "Consideration",
+    "shot": "SH7 End card 18–20 s\nSH3 Product reveal 14–17.5 s",
+    "layer": "L7 Brand\nL5 On-creative text",
+    "assets": "Logo end card\n\"Minimalist High Performance Serum Range\""
+   },
+   "B11": {
+    "finding": "Rational",
+    "shot": "SH1 Hook 0–3.5 s\nSH2 Context / problem 5–13.5 s",
+    "layer": "L12 Footage type\nL6 Graphic elements",
+    "assets": "Lab footage\nFace-mapping graphics"
+   },
+   "B12": {
+    "finding": "Evergreen",
+    "shot": "All beats",
+    "layer": "L1 Background",
+    "assets": "Clinical white – no season cue"
+   },
+   "B13": {
+    "finding": "English",
+    "shot": "All beats",
+    "layer": "L5 On-creative text",
+    "assets": "All text in English"
+   },
+   "B14": {
+    "finding": "No offer",
+    "shot": "All beats",
+    "layer": "L5 On-creative text",
+    "assets": "No offer text"
+   },
+   "B15": {
+    "finding": "None",
+    "shot": "All beats",
+    "layer": "L5 On-creative text",
+    "assets": "No urgency text"
+   },
+   "B16": {
+    "finding": "Expert / doctor",
+    "shot": "SH5 Proof 3.5–5 s\nSH1 Hook 0–3.5 s\nSH2 Context / problem 5–13.5 s",
+    "layer": "L4 People / characters\nL5 On-creative text\nL4 People / characters",
+    "assets": "Dermatologist in white coat\n\"Recommended by Dermatologists\"\nGloved hands examining face"
+   },
+   "B17": {
+    "finding": "Explicit and credible",
+    "shot": "SH1 Hook 0–3.5 s\nSH3 Product reveal 14–17.5 s",
+    "layer": "L5 On-creative text\nL5 On-creative text",
+    "assets": "\"Clinically Proven\"\n\"Science Backed Serums\""
+   },
+   "B18": {
+    "finding": "Claim with asterisk and T&C",
+    "shot": "SH1 Hook 0–3.5 s",
+    "layer": "L5 On-creative text",
+    "assets": "Claims with small disclaimer line"
+   },
+   "B19": {
+    "finding": "Expert",
+    "shot": "SH5 Proof 3.5–5 s\nSH2 Context / problem 5–13.5 s",
+    "layer": "L4 People / characters\nL4 People / characters",
+    "assets": "Dermatologist\nModels"
+   },
+   "B20": {
+    "finding": "Brand page",
+    "shot": "All beats",
+    "layer": "L10 Ad text and platform",
+    "assets": "Channel name + logo"
+   },
+   "B21": {
+    "finding": "Logo; Tagline",
+    "shot": "All beats\nSH7 End card 18–20 s",
+    "layer": "L7 Brand\nL7 Brand",
+    "assets": "Logo watermark – top-right\nLogo + tagline on black"
+   },
+   "B22": {
+    "finding": "Not shown",
+    "shot": "SH7 End card 18–20 s",
+    "layer": "L8 CTA",
+    "assets": "No store or link shown"
+   },
+   "B23": {
+    "finding": "Soft / implied | End card",
+    "shot": "SH7 End card 18–20 s\nAll beats",
+    "layer": "L7 Brand\nL10 Ad text and platform",
+    "assets": "Logo end card – no CTA text\nPlatform CTA button"
+   },
+   "B24": {
+    "finding": "Calm | Within limit",
+    "shot": "All beats",
+    "layer": "L5 On-creative text",
+    "assets": "Short labels, 2–5 words"
+   },
+   "B25": {
+    "finding": "Yes – visual",
+    "shot": "SH1 Hook 0–3.5 s",
+    "layer": "L12 Footage type\nL6 Graphic elements",
+    "assets": "Lab footage at 1 s\nImage collage"
+   },
+   "B26": {
+    "finding": "Under 1 s",
+    "shot": "SH1 Hook 0–3.5 s",
+    "layer": "L7 Brand",
+    "assets": "Logo watermark from 1 s"
+   },
+   "B27": {
+    "finding": "Later",
+    "shot": "SH3 Product reveal 14–17.5 s",
+    "layer": "L2 Product",
+    "assets": "Serums at 14 s"
+   },
+   "B28": {
+    "finding": "Problem–agitate–solve",
+    "shot": "SH2 Context / problem 5–13.5 s\nSH3 Product reveal 14–17.5 s\nSH7 End card 18–20 s",
+    "layer": "L5 On-creative text\nL2 Product\nL7 Brand",
+    "assets": "Concerns\nSerum range\nBrand"
+   },
+   "B29": {
+    "finding": "End card",
+    "shot": "SH7 End card 18–20 s",
+    "layer": "L7 Brand",
+    "assets": "Logo end card at 18 s"
+   },
+   "S01": {
+    "finding": "Film / skit",
+    "shot": "All beats",
+    "layer": "L12 Footage type\nL14 Motion and edit",
+    "assets": "A-roll models, lab B-roll, stock collage\nCuts"
+   },
+   "S02": {
+    "finding": "Minimal / clean",
+    "shot": "All beats\nSH7 End card 18–20 s",
+    "layer": "L1 Background\nL1 Background",
+    "assets": "White-grey studio\nBlack end card"
+   },
+   "S03": {
+    "finding": "High (commercial)",
+    "shot": "All beats",
+    "layer": "L12 Footage type\nL9 Lighting and finish",
+    "assets": "Studio A-roll\nEven clinical light"
+   },
+   "S04": {
+    "finding": "Variant line-up",
+    "shot": "SH3 Product reveal 14–17.5 s",
+    "layer": "L2 Product",
+    "assets": "5–6 dropper bottles in a row"
+   },
+   "S05": {
+    "finding": "Studio",
+    "shot": "All beats\nSH1 Hook 0–3.5 s",
+    "layer": "L1 Background\nL1 Background",
+    "assets": "Light-grey studio\nLab scene"
+   },
+   "S06": {
+    "finding": "Dominant",
+    "shot": "All beats\nSH7 End card 18–20 s",
+    "layer": "L1 Background\nL7 Brand",
+    "assets": "Black-white brand look\nWhite logo on black"
+   },
+   "S07": {
+    "finding": "Monochrome | 1–2 colours",
+    "shot": "All beats\nSH3 Product reveal 14–17.5 s",
+    "layer": "L1 Background\nL2 Product",
+    "assets": "White, grey, black\nAmber serum accent"
+   },
+   "S08": {
+    "finding": "High",
+    "shot": "SH2 Context / problem 5–13.5 s\nSH7 End card 18–20 s",
+    "layer": "L5 On-creative text\nL7 Brand",
+    "assets": "Dark text on light grey\nWhite on black"
+   },
+   "S09": {
+    "finding": "Up to 10%",
+    "shot": "SH2 Context / problem 5–13.5 s",
+    "layer": "L5 On-creative text",
+    "assets": "Short labels beside face"
+   },
+   "S10": {
+    "finding": "1 font | Clear hierarchy | Legible on mobile",
+    "shot": "All beats",
+    "layer": "L5 On-creative text",
+    "assets": "Clean sans"
+   },
+   "S11": {
+    "finding": "Icons",
+    "shot": "SH2 Context / problem 5–13.5 s\nSH1 Hook 0–3.5 s",
+    "layer": "L6 Graphic elements\nL6 Graphic elements",
+    "assets": "Dotted face-mapping circles\nCollage grid"
+   },
+   "S12": {
+    "finding": "Single focal point",
+    "shot": "SH2 Context / problem 5–13.5 s",
+    "layer": "L4 People / characters",
+    "assets": "Face close-up"
+   },
+   "S13": {
+    "finding": "Intended order followed",
+    "shot": "SH1 Hook 0–3.5 s\nSH2 Context / problem 5–13.5 s\nSH3 Product reveal 14–17.5 s",
+    "layer": "L5 On-creative text\nL4 People / characters\nL2 Product",
+    "assets": "Claim (1st)\nFace + concern (2nd)\nSerums (3rd)"
+   },
+   "S14": {
+    "finding": "Centred",
+    "shot": "SH2 Context / problem 5–13.5 s\nSH3 Product reveal 14–17.5 s",
+    "layer": "L4 People / characters\nL2 Product",
+    "assets": "Face left, label right\nBottles in a centred row"
+   },
+   "S15": {
+    "finding": "Generous",
+    "shot": "All beats",
+    "layer": "L1 Background",
+    "assets": "Empty grey space beside face"
+   },
+   "S16": {
+    "finding": "30–59%",
+    "shot": "SH3 Product reveal 14–17.5 s",
+    "layer": "L2 Product",
+    "assets": "Bottle row about 50%"
+   },
+   "S17": {
+    "finding": "Face visible | Gaze at camera | Neutral",
+    "shot": "SH2 Context / problem 5–13.5 s\nSH5 Proof 3.5–5 s",
+    "layer": "L4 People / characters\nL4 People / characters",
+    "assets": "Models look at camera, neutral\nDermatologist"
+   },
+   "S18": {
+    "finding": "Persistent watermark | Subtle (top-right)",
+    "shot": "All beats",
+    "layer": "L7 Brand",
+    "assets": "Logo – top-right"
+   },
+   "S19": {
+    "finding": "16:9 | Native",
+    "shot": "All beats",
+    "layer": "Full frame (L1–L9)\nL10 Ad text and platform",
+    "assets": "16:9\nYouTube in-stream"
+   },
+   "S20": {
+    "finding": "Fully clear",
+    "shot": "SH2 Context / problem 5–13.5 s\nAll beats",
+    "layer": "L5 On-creative text\nL7 Brand",
+    "assets": "Labels mid-right\nLogo top-right"
+   },
+   "S21": {
+    "finding": "Weak",
+    "shot": "SH1 Hook 0–3.5 s",
+    "layer": "L1 Background",
+    "assets": "Black first frame at 0 s"
+   },
+   "S22": {
+    "finding": "Moderate",
+    "shot": "All beats",
+    "layer": "L14 Motion and edit",
+    "assets": "Cuts every 1–2 s"
+   },
+   "S23": {
+    "finding": "15–30 s",
+    "shot": "All beats",
+    "layer": "L14 Motion and edit",
+    "assets": "Total runtime 20 s"
+   },
+   "S24": {
+    "finding": "Audio track present",
+    "shot": "All beats",
+    "layer": "L13 Audio",
+    "assets": "Audio track present"
+   },
+   "S25": {
+    "finding": "Partial",
+    "shot": "SH2 Context / problem 5–13.5 s\nAll beats",
+    "layer": "L5 On-creative text\nL5 On-creative text",
+    "assets": "Labels only\nNo captions"
+   }
+  }
+ },
+ {
+  "creative": "Creative 10",
+  "details": {
+   "Brand": "Minimalist",
+   "Industry": "Skincare",
+   "Ad link": "https://adstransparency.google.com/advertiser/AR03970684002292989953/creative/CR04660101681516642305?region=IN&format=IMAGE",
+   "Platform": "YouTube / Google",
+   "Placement": "Display",
+   "Format": "Image"
+  },
+  "findings": {
+   "B01": {
+    "finding": "Improve Skin Texture",
+    "layer": "L10 Ad text and platform\nL6 Graphic elements",
+    "assets": "Headline field \"Improve Skin Texture\"\nReview card"
+   },
+   "B02": {
+    "finding": "Testimonial",
+    "layer": "L6 Graphic elements\nL5 On-creative text",
+    "assets": "Review card\nQuote \"Effective Retinol Serum…\""
+   },
+   "B03": {
+    "finding": "Results / transformation",
+    "layer": "L10 Ad text and platform\nL5 On-creative text",
+    "assets": "Headline field \"Improve Skin Texture\"\nQuote – texture result"
+   },
+   "B04": {
+    "finding": "Clear and early",
+    "layer": "L10 Ad text and platform",
+    "assets": "Headline field + description"
+   },
+   "B05": {
+    "finding": "Benefit; Spec / ingredient; Proof point",
+    "layer": "L5 On-creative text\nL2 Product\nL6 Graphic elements",
+    "assets": "Quote – benefit\nLabel \"Retinol 0.3%\"\n5 stars"
+   },
+   "B06": {
+    "finding": "Partial",
+    "layer": "L10 Ad text and platform",
+    "assets": "Headline – texture problem implied"
+   },
+   "B07": {
+    "finding": "Hero",
+    "layer": "L2 Product",
+    "assets": "Packshot – tilted dropper bottle"
+   },
+   "B08": {
+    "finding": "Skincare buyers who want smoother skin texture",
+    "layer": "L10 Ad text and platform\nL5 On-creative text",
+    "assets": "Headline \"Improve Skin Texture\"\nQuote"
+   },
+   "B09": {
+    "finding": "Solution-aware",
+    "layer": "L10 Ad text and platform\nL2 Product",
+    "assets": "Headline – outcome\nIngredient on label"
+   },
+   "B10": {
+    "finding": "Consideration",
+    "layer": "L10 Ad text and platform",
+    "assets": "Platform CTA button \"Open\""
+   },
+   "B11": {
+    "finding": "Rational",
+    "layer": "L5 On-creative text\nL6 Graphic elements",
+    "assets": "Quote – results\n5 stars"
+   },
+   "B12": {
+    "finding": "Evergreen",
+    "layer": "L10 Ad text and platform",
+    "assets": "Description – no season or event"
+   },
+   "B13": {
+    "finding": "English",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "All text in English\nHeadline, description"
+   },
+   "B14": {
+    "finding": "No offer",
+    "layer": "L5 On-creative text",
+    "assets": "No offer / price text"
+   },
+   "B15": {
+    "finding": "None",
+    "layer": "L5 On-creative text",
+    "assets": "No urgency text"
+   },
+   "B16": {
+    "finding": "Rating / stars; Testimonial",
+    "layer": "L6 Graphic elements\nL5 On-creative text",
+    "assets": "Review card, 5 stars\n\"Sonal S · Verified Buyer\""
+   },
+   "B17": {
+    "finding": "Implied",
+    "layer": "L2 Product",
+    "assets": "Label \"Retinol 0.3%\""
+   },
+   "B18": {
+    "finding": "No claims",
+    "layer": "L5 On-creative text",
+    "assets": "No claims or disclaimer – quote only"
+   },
+   "B19": {
+    "finding": "Customer (quote only)",
+    "layer": "L5 On-creative text\nL4 People / characters",
+    "assets": "Quote + name \"Sonal S\"\nNot present"
+   },
+   "B20": {
+    "finding": "Brand page",
+    "layer": "L10 Ad text and platform\nL7 Brand",
+    "assets": "Business name \"Minimalist\"\nLogo"
+   },
+   "B21": {
+    "finding": "Logo; Pack / product",
+    "layer": "L7 Brand\nL2 Product",
+    "assets": "Logo – centre\nBrand name on bottle label"
+   },
+   "B22": {
+    "finding": "Own website",
+    "layer": "L10 Ad text and platform",
+    "assets": "Platform CTA button \"Open\" → brand site"
+   },
+   "B23": {
+    "finding": "Generic (Open) | Platform button only",
+    "layer": "L10 Ad text and platform",
+    "assets": "Platform CTA button \"Open\" – black bar"
+   },
+   "B24": {
+    "finding": "Calm | Within limit",
+    "layer": "L10 Ad text and platform",
+    "assets": "Headline (3 words) + description (1 sentence)"
+   },
+   "S01": {
+    "finding": "Designed static",
+    "layer": "Full frame (L1–L9)\nL10 Ad text and platform",
+    "assets": "Responsive display card – image + text\nHeadline, description, CTA bar"
+   },
+   "S02": {
+    "finding": "Minimal / clean",
+    "layer": "L1 Background\nL2 Product",
+    "assets": "White solid\nClean packshot"
+   },
+   "S03": {
+    "finding": "High (commercial)",
+    "layer": "L2 Product\nL3 Props and set",
+    "assets": "Studio packshot\nSerum splash render"
+   },
+   "S04": {
+    "finding": "Packshot on plain",
+    "layer": "L2 Product",
+    "assets": "Packshot on plain"
+   },
+   "S05": {
+    "finding": "Plain / solid",
+    "layer": "L1 Background\nL3 Props and set",
+    "assets": "White solid\nSerum droplets"
+   },
+   "S06": {
+    "finding": "Accent only",
+    "layer": "L2 Product\nL10 Ad text and platform",
+    "assets": "Purple label stripe\nBlack CTA bar"
+   },
+   "S07": {
+    "finding": "Pastel / muted | 3–4 colours",
+    "layer": "L1 Background\nL3 Props and set\nL2 Product",
+    "assets": "White\nGolden serum\nDark amber bottle"
+   },
+   "S08": {
+    "finding": "High",
+    "layer": "L10 Ad text and platform",
+    "assets": "Dark-grey headline on white, white on black CTA"
+   },
+   "S09": {
+    "finding": "10–20%",
+    "layer": "L5 On-creative text\nL1–L4 Image layers",
+    "assets": "Review quote in image\nBottle + droplets"
+   },
+   "S10": {
+    "finding": "2 fonts | Clear hierarchy | Review text too small",
+    "layer": "L5 On-creative text\nL10 Ad text and platform",
+    "assets": "Small sans quote text (too small)\nLarge headline"
+   },
+   "S11": {
+    "finding": "Rating stars",
+    "layer": "L6 Graphic elements",
+    "assets": "5 stars, quote mark"
+   },
+   "S12": {
+    "finding": "Single focal point",
+    "layer": "L2 Product",
+    "assets": "Bottle"
+   },
+   "S13": {
+    "finding": "Intended order followed",
+    "layer": "L2 Product\nL10 Ad text and platform\nL10 Ad text and platform",
+    "assets": "Bottle (1st)\nHeadline (2nd)\nCTA \"Open\" (3rd)"
+   },
+   "S14": {
+    "finding": "Z-pattern",
+    "layer": "L6 Graphic elements\nL2 Product\nL10 Ad text and platform\nL10 Ad text and platform",
+    "assets": "Review card – top-left\nBottle – top-right\nHeadline + description – centre\nCTA bar – bottom"
+   },
+   "S15": {
+    "finding": "Balanced",
+    "layer": "L1 Background",
+    "assets": "White space around card text"
+   },
+   "S16": {
+    "finding": "30–59%",
+    "layer": "L2 Product",
+    "assets": "Bottle about 35% of image"
+   },
+   "S17": {
+    "finding": "No people",
+    "layer": "L4 People / characters",
+    "assets": "Not present"
+   },
+   "S18": {
+    "finding": "Centre | Subtle",
+    "layer": "L7 Brand",
+    "assets": "Small logo – centred above headline"
+   },
+   "S19": {
+    "finding": "Responsive card (portrait) | Native",
+    "layer": "Full frame (L1–L9)\nL10 Ad text and platform",
+    "assets": "Portrait responsive card\nDisplay placement"
+   },
+   "S20": {
+    "finding": "Fully clear",
+    "layer": "L10 Ad text and platform",
+    "assets": "AdChoices icon top-right, clear of content"
+   }
+  }
+ }
+]

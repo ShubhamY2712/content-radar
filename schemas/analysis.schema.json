@@ -1,0 +1,93 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "analysis",
+ "type": "object",
+ "properties": {
+  "creative_id": {
+   "type": "string"
+  },
+  "version": {
+   "enum": [
+    2
+   ],
+   "description": "2 = evidence-first analysis with a check (19 Nov 2026); absent on older runs"
+  },
+  "format": {
+   "enum": [
+    "Image",
+    "Carousel",
+    "Video"
+   ]
+  },
+  "findings": {
+   "type": "object",
+   "patternProperties": {
+    "^[BS][0-9]{2}$": {
+     "type": "object",
+     "properties": {
+      "evidence": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "description": "Where it was seen, written before the finding: 'measure: ...', 'frame 2 s', 'transcript 0.4-1.6 s', 'copy', 'image'"
+      },
+      "finding": {
+       "type": "string"
+      },
+      "option": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "visible": {
+       "type": "boolean"
+      },
+      "where": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "shot": {
+          "type": [
+           "string",
+           "null"
+          ]
+         },
+         "layer": {
+          "type": "string"
+         },
+         "assets": {
+          "type": "array",
+          "items": {
+           "type": "string"
+          }
+         }
+        },
+        "required": [
+         "layer",
+         "assets"
+        ],
+        "additionalProperties": false
+       }
+      }
+     },
+     "required": [
+      "finding",
+      "visible",
+      "where"
+     ],
+     "additionalProperties": false
+    }
+   },
+   "additionalProperties": false
+  }
+ },
+ "required": [
+  "creative_id",
+  "format",
+  "findings"
+ ],
+ "additionalProperties": false
+}

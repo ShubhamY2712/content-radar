@@ -1,0 +1,54 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "browser1": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@playwright/mcp@latest",
+        "--isolated",
+        "--storage-state",
+        "auth.json"
+      ],
+      "enabled": true
+    },
+    "browser2": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@playwright/mcp@latest",
+        "--isolated",
+        "--storage-state",
+        "auth.json"
+      ],
+      "enabled": true
+    },
+    "browser3": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@playwright/mcp@latest",
+        "--isolated",
+        "--storage-state",
+        "auth.json"
+      ],
+      "enabled": true
+    },
+    "browser4": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@playwright/mcp@latest",
+        "--isolated",
+        "--storage-state",
+        "auth.json"
+      ],
+      "enabled": true
+    }
+  }
+}
+

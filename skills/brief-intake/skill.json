@@ -1,0 +1,21 @@
+{
+ "name": "brief-intake",
+ "version": "1.2.0",
+ "order": 1,
+ "depends_on": [],
+ "inputs": [
+  "user request"
+ ],
+ "outputs": [
+  "brief.json"
+ ],
+ "schemas": [
+  "brief.schema.json"
+ ],
+ "knowledge": [],
+ "tools": [],
+ "permissions": [
+  "file_write_run"
+ ],
+ "human_approval": false
+}

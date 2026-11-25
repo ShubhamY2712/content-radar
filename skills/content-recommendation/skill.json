@@ -1,0 +1,31 @@
+{
+ "name": "content-recommendation",
+ "version": "1.3.0",
+ "order": 6,
+ "depends_on": [
+  "benchmark-synthesis"
+ ],
+ "inputs": [
+  "brief.json",
+  "synthesis.json",
+  "analysis/"
+ ],
+ "outputs": [
+  "recommendations.json",
+  "report.md"
+ ],
+ "schemas": [
+  "recommendations.schema.json"
+ ],
+ "knowledge": [
+  "parameters.json",
+  "breakdown.json"
+ ],
+ "tools": [
+  "tools/render_report.py"
+ ],
+ "permissions": [
+  "file_write_run"
+ ],
+ "human_approval": false
+}

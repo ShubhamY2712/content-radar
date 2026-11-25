@@ -1,0 +1,88 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "brief",
+ "type": "object",
+ "properties": {
+  "brand": {
+   "type": "string"
+  },
+  "product": {
+   "type": "string"
+  },
+  "product_type": {
+   "type": "string",
+   "description": "Generic type of the product, e.g. 'face wash' for 'Vitamin C face wash'"
+  },
+  "brand_links": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "pattern": "^https?://"
+   }
+  },
+  "competitors_given": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "links": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "pattern": "^https?://"
+      }
+     }
+    },
+    "required": [
+     "name",
+     "links"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "market": {
+   "type": "string"
+  },
+  "platforms": {
+   "type": "array",
+   "items": {
+    "enum": [
+     "Instagram",
+     "Facebook",
+     "YouTube",
+     "Google"
+    ]
+   }
+  },
+  "time_window_days": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "creatives_per_competitor": {
+   "type": "integer",
+   "minimum": 1,
+   "maximum": 10
+  },
+  "brand_creatives": {
+   "type": "integer",
+   "minimum": 1,
+   "maximum": 10,
+   "description": "The brand's own creatives collected as the baseline (default 5)"
+  },
+  "notes": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "brand",
+  "product",
+  "market",
+  "platforms",
+  "time_window_days",
+  "creatives_per_competitor"
+ ],
+ "additionalProperties": false
+}

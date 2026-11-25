@@ -1,0 +1,52 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "review",
+ "type": "object",
+ "properties": {
+  "passed": {
+   "type": "boolean"
+  },
+  "checked_at": {
+   "type": "string"
+  },
+  "auto_issues": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "manual_checks": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "check": {
+      "type": "string"
+     },
+     "result": {
+      "enum": [
+       "pass",
+       "fixed",
+       "open"
+      ]
+     },
+     "note": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "check",
+     "result"
+    ],
+    "additionalProperties": false
+   }
+  }
+ },
+ "required": [
+  "passed",
+  "checked_at",
+  "auto_issues",
+  "manual_checks"
+ ],
+ "additionalProperties": false
+}

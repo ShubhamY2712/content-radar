@@ -1,0 +1,9 @@
+[
+ {"brand": "Mamaearth", "product": "Vitamin C face wash", "market": "India",
+  "check": "3 skincare competitors found; mix of Meta ads, reels and YouTube"},
+ {"brand": "Licious", "product": "Ready-to-cook momos", "market": "India",
+  "competitors_given": ["FreshToHome", "Zorabian"],
+  "check": "uses only the 2 given competitors"},
+ {"brand": "boAt", "product": "Wireless earbuds", "market": "India",
+  "check": "brand with heavy organic reels; report says if few ads are running"}
+]
