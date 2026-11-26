@@ -1,4 +1,5 @@
-"""Write report.md for a run from its JSON files (same layout as templates/report.md).
+"""Write report.md (the summary) and creative_notes.md (every creative's 54-parameter notes) for a run
+from its JSON files (same layout as templates/report.md).
 
   python tools/render_report.py runs/<brand>-<date>
 """
@@ -72,19 +73,21 @@ def render(run):
           c["format"] + (f", {c['duration_s']:g} s" if c.get("duration_s") else ""),
           c["paid_or_organic"], c.get("selection_reason"), c["date_seen"], link("open", c["link"])] for c in cr])
 
-    out += ["", "## Creative notes"]
+    out += ["", "Every creative's notes on all 54 parameters are in [creative_notes.md](creative_notes.md)."]
+
+    notes = [f"# Creative notes: {b['brand']} – {b['product']}", "", "Appendix to [report.md](report.md)."]
     for c in cr:
         a = analyses.get(c["id"])
-        out += ["", f"### {c['id']} {c['competitor']} – {c['placement']}, {c['format']}", ""]
+        notes += ["", f"## {c['id']} {c['competitor']} – {c['placement']}, {c['format']}", ""]
         if not a:
-            out.append("Not analysed."); continue
+            notes.append("Not analysed."); continue
         rows = []
         for pid, f in a["findings"].items():
             w = f["where"] or [{}]
             rows.append([pid, PARAMS.get(pid, ""), f["finding"] + (f" ({f['option']})" if f.get("option") else ""),
                          " / ".join(x.get("shot") or "–" for x in w), " / ".join(x.get("layer", "–") for x in w),
                          " / ".join(", ".join(x.get("assets", [])) or "–" for x in w)])
-        out += table(["ID", "Parameter", "Finding", "Shot", "Layer", "Assets"], rows)
+        notes += table(["ID", "Parameter", "Finding", "Shot", "Layer", "Assets"], rows)
 
     out += ["", "## Market patterns", ""] + table(
         ["Parameter", "What most do", "Rare or missing (gaps)", "Evidence"],
@@ -97,8 +100,10 @@ def render(run):
           r["style_layers"], ", ".join(r["based_on"])] for i, r in enumerate(rec, 1)])
 
     out.append("")
+    notes.append("")
     (run / "report.md").write_text("\n".join(out), encoding="utf-8")
-    print(f"report.md written: {len(comp)} competitors, {len(cr)} creatives, {len(rec)} ideas")
+    (run / "creative_notes.md").write_text("\n".join(notes), encoding="utf-8")
+    print(f"report.md + creative_notes.md written: {len(comp)} competitors, {len(cr)} creatives, {len(rec)} ideas")
 
 
 if __name__ == "__main__":

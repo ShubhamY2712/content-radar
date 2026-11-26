@@ -17,7 +17,7 @@ If either is missing, or the id is not in `<run>/creatives.json`, stop and repor
    ```json
    {"creative_id": "C2-3", "answers": {"B02": {"option": "Problem call-out", "visible": true, "evidence": ["frame 0 s", "measure: text 'Oily skin?' 0 s"]}, "...": {}}}
    ```
-   `option` uses the exact option names (two joined by " + " only when both clearly apply); `visible: false` with `option: null` when it cannot be judged.
+   `option` uses the exact option names (" + " only where `knowledge/option_guide.md` → General rules allows it; otherwise exactly one option); `visible: false` with `option: null` when it cannot be judged.
 6. Check: `python tools/validate.py <run> checks/<id>.json` until it prints `OK`.
 
 ## Report back (last message, nothing else)

@@ -32,12 +32,6 @@ Coverage: {competitor count} competitors, {creative count} creatives ({paid} pai
 |---|---|---|---|---|---|---|---|---|---|
 | {C1-1} | {name} | {Vitamin C face wash tube} | {Exact product} | {Meta · Reels} | {Video, 15 s} | {Paid} | {Running 64 days, 3 versions} | {date} | [open]({url}) |
 
-## Creative notes
-### {C1-1} {competitor} – {placement}, {format}
-| ID | Parameter | Finding | Shot | Layer | Assets |
-|---|---|---|---|---|---|
-| B01 | Hook message | {finding} | {SH1 Hook} | {L5 On-creative text} | {Headline} |
-
 ## Market patterns
 | Parameter | What most do | Rare or missing (gaps) | Evidence |
 |---|---|---|---|
@@ -47,3 +41,10 @@ Coverage: {competitor count} competitors, {creative count} creatives ({paid} pai
 | # | Idea | Audience | Format and platform | Hook | Message and proof | Offer / CTA | Style (layers) | Based on |
 |---|---|---|---|---|---|---|---|---|
 | 1 | {idea} | {audience} | {format} | {hook} | {message} | {offer} | {style} | {creative ids / pattern} |
+
+Every creative's notes on all 54 parameters are in [creative_notes.md](creative_notes.md).
+
+<!-- creative_notes.md: "# Creative notes: {brand} – {product}", then for each creative "## {C1-1} {competitor} – {placement}, {format}" and the table
+| ID | Parameter | Finding | Shot | Layer | Assets |
+|---|---|---|---|---|---|
+| B01 | Hook message | {finding} | {SH1 Hook} | {L5 On-creative text} | {Headline} | -->

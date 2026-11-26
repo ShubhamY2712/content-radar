@@ -65,11 +65,14 @@ def check(run, links):
         if c.get("product_match") != "Exact product" or not mpath.exists():
             continue
         frames = json.loads(mpath.read_text(encoding="utf-8"))["frames"]
-        seen = any(f.get("pack", {}).get("found") for f in frames)
+        seen = any(f.get("pack", {}).get("found") and not f["pack"].get("partial") for f in frames)
         text = (" ".join(l["text"] for f in frames for l in f["text"]) + " " + c.get("copy", "")).lower().replace(" ", "")
-        if not seen and not (words and words in text):
+        pname = next((x.get("product_name", "") for x in comp["competitors"] if x["name"] == c.get("competitor")), "")
+        brand_words = set(re.findall(r"\w+", c.get("competitor", "").lower()))
+        pname = "".join(w for w in re.findall(r"\w+", pname.lower()) if w not in brand_words)
+        if not seen and not (words and words in text) and not (pname and pname in text):
             issues.append(f"{c['id']} is marked Exact product, but measures show no pack match and no "
-                          f"'{brief.get('product_type')}' text: check it or lower the match level")
+                          f"'{brief.get('product_type')}' or product name text: check it or lower the match level")
 
     # numbers in the synthesis must be the ones tools/stats.py counted
     if (run / "stats.json").exists():
@@ -118,6 +121,8 @@ def check(run, links):
             issues.append("report.md is older than the data - run tools/render_report.py again")
         if re.search(r"\{[a-z_ ]+\}", report.read_text(encoding="utf-8")):
             issues.append("report.md still has template placeholders")
+        if not (run / "creative_notes.md").exists():
+            issues.append("creative_notes.md missing - run tools/render_report.py again")
 
     if links:
         import requests

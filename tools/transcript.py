@@ -116,7 +116,9 @@ def video_file(path):
     model = WhisperModel("small", device="cpu", compute_type="int8")
     # Decode with ffmpeg ourselves: faster-whisper's own decoder (PyAV) breaks on newer PyAV versions.
     wave = pcm16k(path) if audio else None
-    segs, info = model.transcribe(wave if wave is not None and len(wave) else path, vad_filter=True)
+    # condition_on_previous_text=False: with it on, Whisper can stop decoding mid-video (C1-1, boat run).
+    segs, info = model.transcribe(wave if wave is not None and len(wave) else path, vad_filter=True,
+                                  condition_on_previous_text=False)
     segments = [{"start": round(s.start, 2), "end": round(s.end, 2), "text": s.text.strip()} for s in segs]
     if audio:
         speech = round(sum(s["end"] - s["start"] for s in segments), 2)

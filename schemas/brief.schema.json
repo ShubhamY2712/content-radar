@@ -13,6 +13,13 @@
    "type": "string",
    "description": "Generic type of the product, e.g. 'face wash' for 'Vitamin C face wash'"
   },
+  "product_scope": {
+   "enum": [
+    "model",
+    "range"
+   ],
+   "description": "'model' = one product or model; 'range' = a product line with several models (any model in the line counts as the exact product)"
+  },
   "brand_links": {
    "type": "array",
    "items": {

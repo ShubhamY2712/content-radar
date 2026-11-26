@@ -1,6 +1,6 @@
 {
  "name": "creative-analysis",
- "version": "2.0.0",
+ "version": "2.1.0",
  "order": 4,
  "depends_on": [
   "creative-collection"

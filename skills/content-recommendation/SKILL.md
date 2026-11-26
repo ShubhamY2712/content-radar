@@ -6,7 +6,7 @@ description: Recommend content ideas for the brand on the same benchmark paramet
 # Content recommendation and report
 
 ## Goal
-`recommendations.json` (5 ideas by default) and the final `report.md`.
+`recommendations.json` (5 ideas by default), the final `report.md` (summary) and `creative_notes.md` (each creative's notes, the appendix).
 
 ## Steps
 1. Read `brief.json` and `synthesis.json` (and analyses when you need detail).
@@ -30,4 +30,5 @@ description: Recommend content ideas for the brand on the same benchmark paramet
 
 ## Rules
 - Ideas are for the brand in the brief, never copies of a competitor's creative - take the pattern, not the content.
+- Ideas are for the product in the brief: the named model, or for a range the whole line (a model may lead an idea only if the user named it). Never switch to a model the brief did not name.
 - Do not promise results. Recommendations are hypotheses to test.

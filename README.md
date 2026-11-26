@@ -4,7 +4,7 @@ Give it a brand and a product. It finds the competitors, collects their stronges
 
 The agent is a folder, not an app: Markdown instructions, a skill registry, knowledge files and small read-only Python tools. Any AI that can read files and browse the web can run it (OpenCode, Claude Code, Gemini CLI, ChatGPT / Gemini apps). The AI you run it in does the thinking, so no model API key is needed.
 
-An overview of the design for readers is in [`docs/Content_Radar_Agent1.html`](docs/Content_Radar_Agent1.html) (open in a browser), with the run flow in [`docs/Content_Radar_Run_Flow.html`](docs/Content_Radar_Run_Flow.html).
+An overview of the design for readers is in [`docs/Content_Radar_Agent1.html`](docs/Content_Radar_Agent1.html) (open in a browser), with the run flow in [`docs/Content_Radar_Run_Flow.html`](docs/Content_Radar_Run_Flow.html). What it does not do yet is listed in [`docs/KNOWN_LIMITATIONS.md`](docs/KNOWN_LIMITATIONS.md).
 
 ## How a run works
 
@@ -15,10 +15,10 @@ An overview of the design for readers is in [`docs/Content_Radar_Agent1.html`](d
 | 3 | creative-collection | `creatives.json`, `media/` with frames, transcripts and measures | collectors, one per brand, in parallel |
 | 4 | creative-analysis | `analysis/<id>.json`, `checks/<id>.json` | 2 analysts (Business, Style) + 1 independent checker per creative |
 | 5 | benchmark-synthesis | `stats.json`, `synthesis.json` | main agent |
-| 6 | content-recommendation | `recommendations.json`, `report.md` | main agent |
+| 6 | content-recommendation | `recommendations.json`, `report.md`, `creative_notes.md` | main agent |
 | 7 | report-review | `review.json` | main agent |
 
-Everything a run writes goes to `runs/<brand>-<date>/`, so a stopped run resumes where it left off. Once the review passes, the downloaded videos are deleted to save space (about 1 GB per run); frames, measures, transcripts and the report stay, about 100 MB per run. The report is `runs/<brand>-<date>/report.md`.
+Everything a run writes goes to `runs/<brand>-<date>/`, so a stopped run resumes where it left off. Once the review passes, the downloaded videos are deleted to save space (about 1 GB per run); frames, measures, transcripts and the report stay, about 100 MB per run. The report is `runs/<brand>-<date>/report.md` (summary: findings, competitors, brand vs market, patterns, ideas); every creative's 54-parameter notes are in `creative_notes.md` next to it.
 
 Accuracy features: creatives are picked for the exact product first; on-screen text, safe zones, faces, colours, product sightings, cuts and sound are measured by code rather than guessed; every finding cites its evidence; a checker re-reads each creative without seeing the analysis and every disagreement is resolved; all counts in the report come from code; `evaluation/compare.py` scores the agent against manual analyses.
 
@@ -124,7 +124,7 @@ python tools/youtube.py videos --channel <channel> --days 90       recent videos
 python tools/merge_parts.py runs/<run> [--analysis <id>]           join workers' parts
 python tools/check_compare.py runs/<run> <id>      analysis vs checker
 python tools/stats.py runs/<run>                   option counts for the synthesis
-python tools/render_report.py runs/<run>           rebuild report.md
+python tools/render_report.py runs/<run>           rebuild report.md and creative_notes.md
 python tools/review.py runs/<run> --links          cross-file checks and link check
 python tools/clean_media.py runs/<run>             after review passes: delete downloaded videos, keep frames and evidence
 ```
@@ -148,6 +148,9 @@ python tools/registry.py build
 ```
 
 ## Data and sharing
+
+- Reports and `runs/` contain other brands' ads; they are for internal use until Pinaka Intelligence approves sharing. `runs/` is not committed.
+- Keys live only in `.env`, which is not committed.
 - The agent is read-only on the web: it never signs in, posts, likes, follows or buys.
 
 ## License

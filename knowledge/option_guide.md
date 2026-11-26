@@ -7,9 +7,9 @@ Times are from the start of the video; "first screen" = what shows before any sc
 ## General rules
 - **Evidence first.** Write where you saw it before you choose (see the creative-analysis skill). A measured fact (`measures.json`, transcript) beats an eye judgment; when a frame clearly shows the measure is wrong (OCR misread), say so.
 - **Absence is a normal answer.** Choose an option only when its rule below is met; otherwise choose the "none / absent / not shown" option. Do not lean towards yes.
-- Pick the option that fits best. Join two with " + " only when both clearly apply (e.g. hook type "Problem call-out + Before / after").
+- Pick the one option that fits best. " + " is allowed only on the multi-dimension and list parameters below; every other parameter takes exactly one option (when two seem to apply, choose the one that carries more of the creative).
 - Parameters whose options cover several dimensions (B23, B24, S07, S10, S17, S18, S19) take one option per dimension, joined by " + " (e.g. S18 "Top-left + Subtle").
-- Parameters that list everything present (B05, B16, B21, B22) join all that apply, in order of prominence.
+- Parameters that list everything present (B05, B16, B18, B20, B21, B22, S04, S11, S24) join all that apply, in order of prominence; B07 may join Hero with In use / demo (e.g. B18 "Superlative claim + Numeric claim", S24 "Creator voice + Background music").
 - When the evidence is not in the creative (sound with no transcript, a cropped placement), set `visible: false`; never pick the closest option.
 - Judge the creative as the viewer sees it in its placement, not the brand's other content.
 
@@ -39,7 +39,7 @@ Times are from the start of the video; "first screen" = what shows before any sc
 - Clear but buried: one message, but it appears after 3 s, below the fold, or only in the caption.
 - Several competing messages: two or more unrelated claims with equal weight.
 
-**B05 Supporting facts** (list all present): Problem = the problem is stated; Feature = what the product has; Benefit = what it does for the viewer; Spec / ingredient = a named ingredient, %, size or number (Vitamin C, SPF 50, 175 ml); How it works = the mechanism; Comparison = against another product or the old way; Proof point = test result, rating, award. Ex: C1 "Feature; Benefit"; C2 "Benefit; Feature" (SPF 50, water resistant 120 min).
+**B05 Supporting facts** (list all present): Problem = the problem is stated; Feature = what the product has; Benefit = what it does for the viewer; Spec / ingredient = a named ingredient, %, size or number (Vitamin C, SPF 50, 175 ml); How it works = the mechanism; Comparison = against another product or the old way; Proof point = a test result, rating, review score or award shown as evidence for the viewer (an independent test, "Dermatologically tested" as a message, 4.5★ from 10K reviews). Not: a footnote that only sources a claim to the brand's own lab or tests ("*As per OnePlus Test Laboratory"); that is a disclaimer, coded in B18 as Claim with asterisk and T&C. Ex: C1 "Feature; Benefit"; C2 "Benefit; Feature" (SPF 50, water resistant 120 min).
 
 **B06 Problem–solution clarity**
 - Clear: the problem is shown or said AND the product is presented as the fix.
@@ -94,7 +94,7 @@ Times are from the start of the video; "first screen" = what shows before any sc
 
 **B22 Availability / where to buy** (list all present): Own website (brand site link or platform CTA to it; Ex: C1, C2), Own app, Marketplace logos (Amazon, Flipkart, Nykaa shown or linked), Quick commerce (Blinkit, Zepto, Instamart), Offline store, Delivery promise ("delivery in 10 min"); Not shown.
 
-**B23 CTA**: one option for the wording (Specific verb (Shop now, Book demo) / Generic (Learn more) / Soft / implied / None) + one for the form (In-image button / Text only / End card / Spoken / Platform button only). Ex: C1, C2 "Specific verb (Shop now) / Platform button only" — the platform button's wording counts when the creative has no CTA of its own.
+**B23 CTA**: one option for the wording (Specific verb (Shop now, Book demo) / Generic (Learn more) / Soft / implied / None) + one for the form (In-image button / Text only / End card / Spoken / Platform button only). Specific verb = an action the viewer can take now, tied to buying, visiting or signing up (Shop now, Buy on the website, Pre-book, Download). Soft / implied = a brand slogan or invitation with no place or way to act ("Upgrade to boAt", "Make the switch"), even when spoken, unless it names where or how to buy in the same line ("Upgrade to boAt, shop on boat-lifestyle.com" = Specific verb). Ex: C1, C2 "Specific verb (Shop now, Book demo) + Platform button only" — the platform button's wording counts when the creative has no CTA of its own.
 
 **B24 Copy tone and length**: one tone (Casual / Formal / Humorous / Urgent / Calm / Energetic) + one length. Within limit = primary text up to about 125 characters and headline up to about 40, or no "…more" cut before the key message; Truncated = the key message is cut off. Ex: C1 "Casual / Within limit"; C2 "Calm / Within limit".
 

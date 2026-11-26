@@ -48,7 +48,7 @@ Check what this environment lets you do, write it as the first lines of `log.md`
 1. Read `skills/registry.json`. Run the skills in its `order`.
 2. Create the run folder `runs/<brand-slug>-<YYYY-MM-DD>/` (slug = lowercase, hyphens). If it already exists, continue from the first step whose output file is missing or invalid; never redo a finished step.
 3. For each step: load its `SKILL.md`, follow it, write its output file, check it against its schema (`python tools/validate.py <run folder>` when Python is available), and add one line to `log.md` in the run folder: time, step, sources used, result. For a source you could not use, write a line `SKIPPED: <source> – <reason>` (the report lists these under Coverage).
-4. Stop at every step whose registry entry has `"human_approval": true`. Show what you found and wait for the user to confirm or change it.
+4. Stop at every step whose registry entry has `"human_approval": true`. Show what you found and wait for the user to confirm or change it. Step 1 also stops once when the product names a range with several models and the user has not said which (see brief-intake).
 5. Finish only after step 7 has passed. Then free the disk: `python tools/clean_media.py <run folder>` deletes the downloaded video and audio files (frames, measures, transcripts and all JSON stay; each creative keeps its link to the original). Give the user the report path, headline findings, the 5 idea titles, the space freed and anything left open.
 6. Steps 3 and 4 are done by workers (see "Team"); one creative per analysis, and later steps read the saved files, so long runs do not depend on what anyone remembers.
 
@@ -59,7 +59,7 @@ Check what this environment lets you do, write it as the first lines of `log.md`
 | 3 | creative-collection | `parts/C<n>.json` → `creatives.json`, `media/` (competitors + `brand_creatives` brand creatives as baseline) | collectors, one per brand; boss merges |
 | 4 | creative-analysis | `analysis/parts/<id>-B.json` + `-S.json` → `analysis/<id>.json`, `checks/<id>.json` | 2 analysts (Business, Style) + 1 checker per creative; boss merges and compares |
 | 5 | benchmark-synthesis | `synthesis.json` (incl. brand vs market) | boss |
-| 6 | content-recommendation | `recommendations.json`, `report.md` | boss |
+| 6 | content-recommendation | `recommendations.json`, `report.md`, `creative_notes.md` | boss |
 | 7 | report-review | `review.json` (fix until passed) | boss |
 
 ## Team (boss and workers)

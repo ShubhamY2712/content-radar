@@ -16,6 +16,8 @@ PARAMS = {p["id"]: p for p in json.loads((ROOT / "knowledge/parameters.json").re
 BD = json.loads((ROOT / "knowledge/breakdown.json").read_text(encoding="utf-8"))
 SHOTS = set(BD["shots"])
 ASSETS = {l["layer"]: set(l["assets"]) for l in BD["layers"]}
+# parameters that may join options with " + " (knowledge/option_guide.md -> General rules)
+MULTI = {"B23", "B24", "S07", "S10", "S17", "S18", "S19", "B05", "B07", "B16", "B18", "B20", "B21", "B22", "S04", "S11", "S24"}
 
 
 def schema_errors(data, name):
@@ -51,6 +53,8 @@ def analysis_errors(a, part=None):
             bad = [o for o in f["option"].split(" + ") if o not in p["options"]]
             if bad:
                 errs.append(f"{pid}: option not in list: {bad}")
+            if " + " in f["option"] and pid not in MULTI:
+                errs.append(f"{pid}: one option only (\" + \" is for {', '.join(sorted(MULTI))})")
         for w in f.get("where", []):
             if w["layer"] not in ASSETS:
                 errs.append(f"{pid}: unknown layer {w['layer']}")
@@ -80,6 +84,13 @@ def checks_errors(run, cid, fmt, analysis=None):
     missing = sorted(set(judged(fmt)) - set(c.get("answers", {})))
     if missing:
         errs.append(f"checks/{cid}.json: checker did not answer {missing}")
+    for pid, a in c.get("answers", {}).items():
+        if pid in PARAMS and a.get("visible") and PARAMS[pid]["options"] and a.get("option"):
+            bad = [o for o in a["option"].split(" + ") if o not in PARAMS[pid]["options"]]
+            if bad:
+                errs.append(f"{pid}: option not in list: {bad}")
+            if " + " in a["option"] and pid not in MULTI:
+                errs.append(f"{pid}: one option only (\" + \" is for {', '.join(sorted(MULTI))})")
     if analysis is not None:
         if "disagreements" not in c:
             errs.append(f"checks/{cid}.json: run tools/check_compare.py {run} {cid}")

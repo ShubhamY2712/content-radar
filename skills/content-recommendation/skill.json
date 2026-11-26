@@ -1,6 +1,6 @@
 {
  "name": "content-recommendation",
- "version": "1.3.0",
+ "version": "1.4.0",
  "order": 6,
  "depends_on": [
   "benchmark-synthesis"
@@ -12,7 +12,8 @@
  ],
  "outputs": [
   "recommendations.json",
-  "report.md"
+  "report.md",
+  "creative_notes.md"
  ],
  "schemas": [
   "recommendations.schema.json"

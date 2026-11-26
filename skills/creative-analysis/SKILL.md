@@ -33,7 +33,7 @@ Read `knowledge/parameters.md` (or `parameters.json`), `knowledge/breakdown.json
 | S07 Colour palette, S06 Brand colour use | `colours` (main colours with shares) |
 | S08 Contrast and legibility | `text[].contrast` (4.5 or more = easy; 3 = minimum for large text) |
 | S09 Text vs image ratio | `text_area_pct` (largest and typical frame) |
-| S16 Product / subject size in frame | `pack.size_pct`; for people, `faces[].size_pct` |
+| S16 Product / subject size in frame | `pack.size_pct`; for people, `faces[].size_pct`. `pack.partial: true` = only a small part (e.g. the logo) matched: size unknown, judge by eye |
 | S17 People | `faces` (count, size, first time); null = judge by eye |
 | S19 Aspect ratio | `size` (width × height) |
 | S20 Safe zones | `safe_zone` (9:16 only: text in the top 14 %, bottom 35 % or 6 % sides) |
@@ -48,7 +48,7 @@ Read `knowledge/parameters.md` (or `parameters.json`), `knowledge/breakdown.json
 3. For each parameter write, **in this order**:
    - `evidence`: where you saw it, one item per source: `measure: <field> <value>` (e.g. `measure: text 'Glow in 7 days' top, 0 s`), `frame 2 s`, `transcript 0.4–1.6 s`, `copy`, `image`. A visible finding with no evidence fails validation.
    - `finding`: what you see, specific and short. Quote on-screen text in quotes. For video include the time (e.g. "0–2 s: close-up of oily T-zone").
-   - `option`: one option from the parameter's list (or two joined by " + " when both clearly apply), chosen by the option guide's rule. `null` for free-text parameters. Absence is a normal answer: when the guide's "present" rule is not met, choose the "none / absent" option; do not lean towards yes.
+   - `option`: one option from the parameter's list (" + " only where the option guide's general rules allow it: one option per dimension on B23, B24, S07, S10, S17, S18, S19, and all that apply on the list parameters B05, B16, B18, B20, B21, B22, S04, S11, S24, and B07 "Hero + In use / demo"; every other parameter takes exactly one option), chosen by the option guide's rule. `null` for free-text parameters. Absence is a normal answer: when the guide's "present" rule is not met, choose the "none / absent" option; do not lean towards yes.
    - `visible`: `false` when it cannot be judged from what you have (e.g. audio with no transcript); then `finding` = "Not visible" plus why, and `option` = null.
    - `where`: one line per place it shows up. Each line = the **layer** (L1–L14, or "Full frame (L1–L9)") and its **assets** - names from that layer's asset list, or a property term the parameter's own mapping uses (e.g. "Colours", "Position", "All text"). For video also the **shot**: the actual beat where you saw it (SH1–SH7, or "All beats (SH1–SH7)"); where the mapping says something like "Beat where brand first appears", write that beat. Use the parameter's `photo` / `video` mapping as the starting point and keep only the lines that are true for this creative.
 4. Check against the benchmark line of each parameter and note clear misses in the finding (e.g. "Brand first appears at 6 s - later than the 2 s benchmark for Meta").

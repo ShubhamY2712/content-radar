@@ -74,6 +74,13 @@ def read_text(engines, img):
                 continue
             xs, ys = [p[0] for p in box], [p[1] for p in box]
             b = [max(min(xs) / w, 0), max(min(ys) / h, 0), min(max(xs) / w, 1), min(max(ys) / h, 1)]
+            if score < 0.7 and b[3] - b[1] > 0.2:  # unsure "line" taller than 20% of frame: pattern or light, not text
+                continue
+            if sum(ch.isalnum() for ch in text) <= 2 and (b[2] - b[0]) * (b[3] - b[1]) > 0.15:  # 1-2 glyphs over 15% of the frame: a face, pattern or shape
+                continue
+            text = "".join(ch for ch in text if not "\u4e00" <= ch <= "\u9fff").strip()  # CJK glyphs from the Latin reader are misread icons
+            if not any(ch.isalnum() for ch in text):
+                continue
             same = next((l for l in lines if iou(l["box"], b) > 0.5), None)
             if same is None:
                 lines.append({"text": text, "score": round(float(score), 2), "box": [round(float(v), 3) for v in b]})
@@ -186,6 +193,9 @@ class Pack:
         area = cv2.contourArea(corners) / (w * h)
         if not 0.002 < area < 1.2:  # a degenerate fit is not a sighting
             return {"found": False, "inliers": inliers}
+        sp = src[inl.ravel() == 1].reshape(-1, 2)
+        if np.prod(sp.max(0) - sp.min(0)) < 0.1 * pw * ph:  # only a small part of the pack matched (e.g. the logo): size unknown
+            return {"found": True, "inliers": inliers, "partial": True, "size_pct": None, "box": None}
         xs, ys = corners[:, 0, 0] / w, corners[:, 0, 1] / h
         return {"found": True, "inliers": inliers, "size_pct": round(min(area, 1) * 100, 1),
                 "box": [round(float(np.clip(v, 0, 1)), 3) for v in (xs.min(), ys.min(), xs.max(), ys.max())]}

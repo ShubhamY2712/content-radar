@@ -13,7 +13,7 @@ If `media/<id>/` already holds the files for a creative recorded in an earlier p
 
 ## Which creatives to pick (selection rule)
 **Product first.** The brief is about one product, so every slot below is filled in this order of product match, and only then by popularity:
-1. **Exact product**: the competitor's `product_name` (or for the brand, the brief's product).
+1. **Exact product**: the competitor's `product_name` (or for the brand, the brief's product). When the brief's `product_scope` is `"range"`, any model of that product line counts (e.g. Airdopes 141 for "Airdopes").
 2. **Same product type**: another product of the brief's `product_type` (e.g. a Cica face wash when the brief is a Vitamin C face wash).
 3. **Brand range**: any other product of the brand, as a fallback only when levels 1 and 2 have nothing left for that slot.
 
