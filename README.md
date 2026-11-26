@@ -148,9 +148,6 @@ python tools/registry.py build
 ```
 
 ## Data and sharing
-
-- Reports and `runs/` contain other brands' ads; they are for internal use until Pinaka Intelligence approves sharing. `runs/` is not committed.
-- Keys live only in `.env`, which is not committed.
 - The agent is read-only on the web: it never signs in, posts, likes, follows or buys.
 
 ## License
