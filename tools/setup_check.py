@@ -21,7 +21,7 @@ CODEGEN = ("npx.cmd" if os.name == "nt" else "npx") + \
     " -y playwright@latest codegen --channel chrome --save-storage=auth.json https://www.instagram.com"
 PACKAGES = {"jsonschema": "jsonschema", "requests": "requests", "youtube_transcript_api": "youtube-transcript-api",
             "yt_dlp": "yt-dlp", "numpy": "numpy", "cv2": "opencv-python-headless", "rapidocr": "rapidocr",
-            "onnxruntime": "onnxruntime", "scenedetect": "scenedetect"}
+            "onnxruntime": "onnxruntime", "scenedetect": "scenedetect", "jinja2": "jinja2", "PIL": "Pillow"}
 
 results = []  # (status, item, detail, fix)
 
@@ -118,6 +118,9 @@ def point_browsers(fix):
                 continue
             if AUTH.exists() and "--storage-state" not in args:
                 args += ["--storage-state", value]
+                changed = True
+            elif AUTH.exists() and args[args.index("--storage-state") + 1] != value:
+                args[args.index("--storage-state") + 1] = value  # stale path, e.g. after the folder was moved
                 changed = True
             elif not AUTH.exists() and "--storage-state" in args:
                 i = args.index("--storage-state")

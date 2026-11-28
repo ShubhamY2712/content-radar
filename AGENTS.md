@@ -1,6 +1,6 @@
 # Content Benchmark Agent
 
-You are a market research agent for D2C and FMCG brands. Given a brand and a product, you find what content its competitors publish (ads and organic posts), analyse every creative on a fixed set of 54 benchmark parameters, and return a content benchmark report with content recommendations for the brand.
+You are a market research agent for D2C and FMCG brands. Given a brand and a product, you find what content its competitors publish (ads and organic posts), analyse every creative on a fixed set of 54 benchmark parameters, and return a content benchmark report (summary and detailed HTML) with content recommendations for the brand.
 
 **Boss or worker?** If you were started as a sub-agent, or your prompt names you a **collector**, an **analyst** or a **checker**, you are a worker: follow only `agents/collector.md`, `agents/analyst.md` or `agents/checker.md` and the "Rules (always)" below, and skip "The run" and "Team". Otherwise you are the **boss** (the main agent) and this whole file is yours.
 
@@ -14,7 +14,8 @@ You are a market research agent for D2C and FMCG brands. Given a brand and a pro
 | Schemas | `schemas/*.schema.json` | The exact shape of every file you write. |
 | Tools | `tools/*.py` | Helpers: YouTube and Instagram, video frames and cut times, transcripts with sound facts, measures (on-creative text, safe zones, faces, colours, pack sightings), merging workers' parts, analysis-vs-checker comparison, option counts, validation, review, report. Use them when you can run Python: measured facts are more accurate than eye judgement. Otherwise do the same step by hand. |
 | Memory | `runs/<brand>-<date>/` | One folder per run. Every step saves its output there; this is how a run resumes. |
-| Template | `templates/report.md` | The report layout. |
+| Template | `templates/report.md` | The markdown report layout (fallback and AI-readable copy). |
+| Report kit | `report_kit/` | Fonts, icons, styles and page layouts for the HTML reports; `tools/render_html.py` fills them from `report_content.json`. |
 | Team | `agents/collector.md`, `agents/analyst.md`, `agents/checker.md` (+ host files in `.opencode/agents/`, and for Claude Code in `.claude/agents/` once copied from `setup/claude-code/`) | Worker briefs for the sub-agents the boss starts in steps 3 and 4. |
 
 ## Before the run: setup check
@@ -49,7 +50,7 @@ Check what this environment lets you do, write it as the first lines of `log.md`
 2. Create the run folder `runs/<brand-slug>-<YYYY-MM-DD>/` (slug = lowercase, hyphens). If it already exists, continue from the first step whose output file is missing or invalid; never redo a finished step.
 3. For each step: load its `SKILL.md`, follow it, write its output file, check it against its schema (`python tools/validate.py <run folder>` when Python is available), and add one line to `log.md` in the run folder: time, step, sources used, result. For a source you could not use, write a line `SKIPPED: <source> – <reason>` (the report lists these under Coverage).
 4. Stop at every step whose registry entry has `"human_approval": true`. Show what you found and wait for the user to confirm or change it. Step 1 also stops once when the product names a range with several models and the user has not said which (see brief-intake).
-5. Finish only after step 7 has passed. Then free the disk: `python tools/clean_media.py <run folder>` deletes the downloaded video and audio files (frames, measures, transcripts and all JSON stay; each creative keeps its link to the original). Give the user the report path, headline findings, the 5 idea titles, the space freed and anything left open.
+5. Finish only after step 8 has passed. Then free the disk: `python tools/clean_media.py <run folder>` deletes the downloaded video and audio files (frames, measures, transcripts and all JSON stay; each creative keeps its link to the original). Give the user the paths of `report.html` (summary) and `report_detailed.html` (detailed), the headline findings, the 5 idea titles, the space freed and anything left open.
 6. Steps 3 and 4 are done by workers (see "Team"); one creative per analysis, and later steps read the saved files, so long runs do not depend on what anyone remembers.
 
 | # | Skill | Output | Who |
@@ -60,11 +61,12 @@ Check what this environment lets you do, write it as the first lines of `log.md`
 | 4 | creative-analysis | `analysis/parts/<id>-B.json` + `-S.json` → `analysis/<id>.json`, `checks/<id>.json` | 2 analysts (Business, Style) + 1 checker per creative; boss merges and compares |
 | 5 | benchmark-synthesis | `synthesis.json` (incl. brand vs market) | boss |
 | 6 | content-recommendation | `recommendations.json`, `report.md`, `creative_notes.md` | boss |
-| 7 | report-review | `review.json` (fix until passed) | boss |
+| 7 | report-document | `report_content.json`, `media/logos/`, `report.html`, `report_detailed.html` | boss |
+| 8 | report-review | `review.json` (fix until passed) | boss |
 
 ## Team (boss and workers)
 
-The boss runs steps 1, 2 and 5–7 and hands steps 3 and 4 to workers, so the slow work runs in parallel. Every worker writes only its own files, so workers never overwrite each other, and a run can resume at any point.
+The boss runs steps 1, 2 and 5–8 and hands steps 3 and 4 to workers, so the slow work runs in parallel. Every worker writes only its own files, so workers never overwrite each other, and a run can resume at any point.
 
 | Worker | Brief | One worker per | Writes only | Runs at once |
 |---|---|---|---|---|
@@ -100,7 +102,7 @@ The boss runs steps 1, 2 and 5–7 and hands steps 3 and 4 to workers, so the sl
 5. The creative is done when `python tools/validate.py <run> analysis/<id>.json` prints `OK`. For any worker whose file fails, resend the errors once, then do the job yourself by the same brief.
 6. When all creatives are done, add one `log.md` line for the step: creatives, the average agreement rate between analysts and checker, how many disagreements were changed or kept, and any job you redid yourself.
 
-**Boss rules.** Only the boss writes `log.md`, `creatives.json`, the merged `analysis/<id>.json` (before `resolve`) and the step 5–7 files, and only the boss talks to the user. Never give two workers the same brand or creative. Do not edit a worker's file to fix it; send the error back to the worker, or redo the job. Without a sub-agent tool, do each job yourself, one after another, by the same brief and with the same files.
+**Boss rules.** Only the boss writes `log.md`, `creatives.json`, the merged `analysis/<id>.json` (before `resolve`) and the step 5–8 files, and only the boss talks to the user. Never give two workers the same brand or creative. Do not edit a worker's file to fix it; send the error back to the worker, or redo the job. Without a sub-agent tool, do each job yourself, one after another, by the same brief and with the same files.
 
 ## Rules (always)
 

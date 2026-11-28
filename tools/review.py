@@ -3,7 +3,8 @@
   python tools/review.py runs/<brand>-<date> [--links]
 
 Checks that ids, names and counts across the files agree, that every recommendation and
-pattern points to real evidence, and that report.md is current. --links also opens every
+pattern points to real evidence, and that report.md and the HTML reports are current
+(report_content.json complete, no long text far over its writing guide). --links also opens every
 link (social sites often block scripts: their failures are listed to check by hand).
 Prints one issue per line and "0 issues" when clean. Exit 1 if there are issues.
 """
@@ -124,6 +125,8 @@ def check(run, links):
         if not (run / "creative_notes.md").exists():
             issues.append("creative_notes.md missing - run tools/render_report.py again")
 
+    issues += html_issues(run, ids)
+
     if links:
         import requests
         urls = {c["link"] for c in cr} | {v for c in comp["competitors"] + [comp["brand"]]
@@ -137,6 +140,75 @@ def check(run, links):
                 code = type(e).__name__
             if code != 200:
                 issues.append(f"link check by hand ({code}): {u}")
+    return issues
+
+
+# Writing guides from skills/report-document/SKILL.md; text over 1.5x its guide is flagged to shorten.
+LONG = 1.5
+GUIDES = {"dek": 25, "brief.method_note": 60, "findings.lede": 25, "findings.items.key_line": 35,
+          "findings.items.detail": 45, "competitors.selection_rule": 60, "competitors.creative_rule": 70,
+          "competitors.why": 30, "competitors.gaps": 30, "competitor_notes.summary": 80,
+          "competitor_notes.brands.strategy": 40, "brand_vs_market.gaps.meaning": 35,
+          "brand_vs_market.strengths.meaning": 35, "positioning_map.reason": 40,
+          "business_table.rows.market": 30, "business_table.rows.brand": 30, "business_table.rows.gap": 30,
+          "style_table.rows.market": 30, "style_table.rows.brand": 30, "style_table.rows.gap": 30,
+          "funnel_note": 30, "ideas.items.title": 9, "ideas.items.why": 40, "why_selected": 14, "story.what": 20}
+
+
+def long_text(content):
+    """Yield (field, words, guide) for text far over its writing guide."""
+    keyed = ("competitors.why", "why_selected", "story")  # maps keyed by brand or creative id
+
+    def walk(x, path, in_map=False):
+        if isinstance(x, dict):
+            for k, v in x.items():
+                if path in keyed and not in_map:
+                    yield from walk(v, path, True)
+                else:
+                    yield from walk(v, f"{path}.{k}" if path else k)
+        elif isinstance(x, list):
+            for v in x:
+                yield from walk(v, path, in_map)
+        elif isinstance(x, str) and path in GUIDES:
+            n = len(x.split())
+            if n > GUIDES[path] * LONG:
+                yield path, n, GUIDES[path]
+    yield from walk(content, "")
+    paras = content.get("brief", {}).get("paragraphs", [])
+    n = sum(len(p.split()) for p in paras)
+    if n > 110 * LONG:
+        yield "brief.paragraphs", n, 110
+
+
+def html_issues(run, ids):
+    """Step 7 outputs: report_content.json is complete and both HTML reports are current."""
+    path = run / "report_content.json"
+    if not path.exists():
+        return ["report_content.json missing - run step 7 (report-document)"]
+    issues = []
+    content = json.loads(path.read_text(encoding="utf-8"))
+    for i in sorted(set(ID.findall(text_of(content))) - ids):
+        issues.append(f"report_content.json mentions {i}, which is not a collected creative")
+    for n, m in re.findall(r"\b(\d+) of (\d+)\b", text_of(content)):
+        if int(n) > int(m):
+            issues.append(f"report_content.json: count '{n} of {m}' is impossible")
+    for field, n, guide in long_text(content):
+        issues.append(f"long text in {field}: {n} words (guide {guide}) - shorten it")
+    sys.path.insert(0, str(ROOT / "tools"))
+    from render_html import Report
+    try:
+        rep = Report(run)
+        rep.context(detailed=True)
+        issues += [f"report: {p}" for p in dict.fromkeys(rep.problems)]
+    except (KeyError, TypeError, ValueError) as e:
+        issues.append(f"report_content.json cannot be rendered ({type(e).__name__}: {e}) - check it with tools/validate.py")
+    newest = max((run / f).stat().st_mtime for f in ("report_content.json", "synthesis.json", "recommendations.json", "creatives.json"))
+    for name in ("report.html", "report_detailed.html"):
+        out = run / name
+        if not out.exists():
+            issues.append(f"{name} missing - run tools/render_html.py")
+        elif out.stat().st_mtime < newest:
+            issues.append(f"{name} is older than the data - run tools/render_html.py again")
     return issues
 
 

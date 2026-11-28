@@ -2,7 +2,7 @@
 
   python tools/validate.py runs/<brand>-<date>                  whole run
   python tools/validate.py runs/<brand>-<date> <file in run>    one file (workers): parts/C2.json, analysis/parts/C2-3-B.json,
-                                                                analysis/C2-3.json or checks/C2-3.json
+                                                                analysis/C2-3.json, checks/C2-3.json or report_content.json
   python tools/validate.py --judged <Image|Video>              the parameters a checker answers
 
 Prints one line per step (OK / MISSING / ERROR) and the step to resume from. Exit 1 if any error.
@@ -118,6 +118,8 @@ def check_file(run, rel):
         errs = schema_errors(data, "analysis") + analysis_errors(data)
         if data.get("version") == 2:
             errs += checks_errors(run, data["creative_id"], data["format"], data)
+    elif rel in ("report_content.json", "review.json"):
+        errs = schema_errors(data, rel.removesuffix(".json"))
     elif rel.startswith("checks/"):
         errs = checks_errors(run, data.get("creative_id", path.stem), fmt_of(run, path.stem))
     else:
@@ -140,6 +142,7 @@ def main(run):
     steps = [("brief-intake", ["brief.json"]), ("competitor-discovery", ["competitors.json"]),
              ("creative-collection", ["creatives.json"]), ("creative-analysis", ["analysis/"]),
              ("benchmark-synthesis", ["synthesis.json"]), ("content-recommendation", ["recommendations.json", "report.md"]),
+             ("report-document", ["report_content.json", "report.html", "report_detailed.html"]),
              ("report-review", ["review.json"])]
     resume, failed = None, False
     creative_ids = []

@@ -232,17 +232,17 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
     </div>
     <div class="arrow" aria-hidden="true">→</div>
     <div class="panel k-skill">
-      <h3>Output: <code>report.md</code></h3>
+      <h3>Output: <code>report.html</code> + <code>report_detailed.html</code></h3>
       <ul class="clean">
-        <li>Coverage line: what was searched, what was skipped and why, how many creatives show the exact product</li>
-        <li>3–5 headline findings</li>
-        <li>Competitors with website, Instagram, YouTube and Ad Library links</li>
-        <li>A short note per competitor on the parameters</li>
-        <li>Brand vs market table, parameter by parameter</li>
-        <li>Sample creatives with links, dates, why each was picked and how closely it matches the product</li>
-        <li>Full 54-parameter breakdown of every creative</li>
-        <li>Market patterns: what most do, what few do</li>
-        <li>Recommendation table: 5 content ideas on the same parameters</li>
+        <li>Two self-contained HTML reports for the brand's marketing team (fonts, icons, logos and creative thumbnails built in)</li>
+        <li>Product brief with a stat strip, and how "popular" was picked</li>
+        <li>Headline findings, each with its key number and the creatives that show it</li>
+        <li>Competitors and why they were chosen, with their links, and what the run could not cover</li>
+        <li>A note per competitor: strategy, what it repeats, its standout creative, what it does not do</li>
+        <li>Brand vs market: where the brand is behind and where it leads, plus a positioning map</li>
+        <li>Business view with the funnel, and creative and style view, parameter by parameter</li>
+        <li>Recommended content: 5 ideas on the same parameters, each with why it should work</li>
+        <li>Gallery of every creative; the detailed report adds every creative's key frames, hook, story structure and 54 findings, with filters</li>
       </ul>
     </div>
   </div>
@@ -296,15 +296,16 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
 ├─ <span class="d">setup/claude-code/</span>     workers, browsers, permissions for Claude Code
 ├─ <span class="d">skills/</span>
 │  ├─ <span class="r">registry.json</span>        built by tools/registry.py
-│  └─ <span class="s">&lt;7 skills&gt;/SKILL.md + skill.json</span>
+│  └─ <span class="s">&lt;8 skills&gt;/SKILL.md + skill.json</span>
 ├─ <span class="d">knowledge/</span>
 │  ├─ <span class="k">parameters.md · parameters.json</span>
 │  ├─ <span class="k">breakdown.json</span>       beats, layers, assets
 │  ├─ <span class="k">option_guide.md</span>      codebook
 │  └─ <span class="k">examples/</span>            1 photo + 1 video worked example
-├─ <span class="d">schemas/</span>               <span class="sc">8 × *.schema.json</span>
-├─ <span class="d">tools/</span>                 <span class="t">16 × *.py</span>
+├─ <span class="d">schemas/</span>               <span class="sc">9 × *.schema.json</span>
+├─ <span class="d">tools/</span>                 <span class="t">18 × *.py</span>
 ├─ templates/report.md
+├─ <span class="d">report_kit/</span>         <span class="t">HTML report styles, fonts, icons, layouts</span>
 ├─ <span class="d">evaluation/</span>            <span class="e">reference_creatives.json · test_briefs.json · compare.py</span>
 ├─ <span class="d">docs/</span>                  this page and the run-flow diagram
 ├─ requirements.txt · .env.example
@@ -313,12 +314,12 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
 
 <section id="skills">
   <div class="sec-head"><span class="num">03</span><h2>Skills</h2></div>
-  <p>Seven skills run in a fixed order. Each one reads the files the earlier steps saved, writes one output, checks it against its schema and logs one line.</p>
+  <p>Eight skills run in a fixed order. Each one reads the files the earlier steps saved, writes one output, checks it against its schema and logs one line.</p>
   <div class="skills">
     <div class="skill">
       <div class="step">1</div>
       <div class="body">
-        <div class="title"><h3>brief-intake</h3><span class="tag">v1.2.0</span></div>
+        <div class="title"><h3>brief-intake</h3><span class="tag">v1.3.0</span></div>
         <p>Turns the request into a complete research brief, fills defaults for anything not given and sets the product type the whole run focuses on.</p>
         <div class="io-line"><span><b>Reads</b> user request</span><span><b>Writes</b> <code>brief.json</code></span><span><b>By</b> boss</span></div>
       </div>
@@ -326,7 +327,7 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
     <div class="skill approval">
       <div class="step">2</div>
       <div class="body">
-        <div class="title"><h3>competitor-discovery</h3><span class="tag">v1.3.0</span><span class="tag approve">needs approval</span></div>
+        <div class="title"><h3>competitor-discovery</h3><span class="tag">v1.4.0</span><span class="tag approve">needs approval</span></div>
         <p>Uses the competitors given, or finds 3 that sell the same product type at a similar price and are active now. Records each competitor's matching product and product page, and every link where their content lives (website, Instagram, Facebook, YouTube, Meta Ad Library, Google Ads Transparency). Stops for approval.</p>
         <div class="io-line"><span><b>Reads</b> <code>brief.json</code></span><span><b>Writes</b> <code>competitors.json</code></span><span><b>By</b> boss</span></div>
       </div>
@@ -334,7 +335,7 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
     <div class="skill">
       <div class="step">3</div>
       <div class="body">
-        <div class="title"><h3>creative-collection</h3><span class="tag">v1.5.1</span><span class="tag">one collector per brand</span></div>
+        <div class="title"><h3>creative-collection</h3><span class="tag">v1.6.0</span><span class="tag">one collector per brand</span></div>
         <p>Product first: creatives showing the exact product, then the same product type, then the brand range. Ranks paid ads by days running and versions, organic posts by views and likes; at least 1 photo and 1 video, each with a reason and its product match. Adds 5 of the brand's own as a baseline. Saves media, frames, cut times, transcripts, sound tags and code measures; logs every skipped source and gap.</p>
         <div class="io-line"><span><b>Reads</b> <code>brief.json</code>, <code>competitors.json</code></span><span><b>Writes</b> <code>creatives.json</code>, <code>media/</code></span><span><b>By</b> collectors (up to 4 at once)</span></div>
       </div>
@@ -342,7 +343,7 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
     <div class="skill">
       <div class="step">4</div>
       <div class="body">
-        <div class="title"><h3>creative-analysis</h3><span class="tag">v2.0.0</span><span class="tag">2 analysts + 1 checker per creative</span></div>
+        <div class="title"><h3>creative-analysis</h3><span class="tag">v2.1.0</span><span class="tag">2 analysts + 1 checker per creative</span></div>
         <p>Evidence first: for each parameter, what was seen (frame, time, measured value), then the option from the codebook. One analyst reads the 29 business parameters, another the 25 style parameters; a checker reads the same creative on its own. Disagreements are settled by re-reading the evidence. Translates Hindi and Hinglish.</p>
         <div class="io-line"><span><b>Reads</b> <code>creatives.json</code>, <code>media/</code>, knowledge</span><span><b>Writes</b> <code>analysis/&lt;id&gt;.json</code>, <code>checks/&lt;id&gt;.json</code></span><span><b>By</b> analysts + checker</span></div>
       </div>
@@ -358,15 +359,23 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
     <div class="skill">
       <div class="step">6</div>
       <div class="body">
-        <div class="title"><h3>content-recommendation</h3><span class="tag">v1.3.0</span></div>
-        <p>Writes 5 content ideas: 2 proven patterns the brand does not use, 2 gaps nobody fills, 1 for another stage or format. Each idea gives audience, format, hook, message and proof, offer and CTA, style and layers, the parameters it uses and the creatives it is based on. Renders the report.</p>
+        <div class="title"><h3>content-recommendation</h3><span class="tag">v1.4.1</span></div>
+        <p>Writes 5 content ideas: 2 proven patterns the brand does not use, 2 gaps nobody fills, 1 for another stage or format. Each idea gives audience, format, hook, message and proof, offer and CTA, style and layers, the parameters it uses and the creatives it is based on. Renders the markdown report.</p>
         <div class="io-line"><span><b>Reads</b> <code>brief.json</code>, <code>synthesis.json</code>, <code>analysis/</code></span><span><b>Writes</b> <code>recommendations.json</code>, <code>report.md</code></span><span><b>By</b> boss</span></div>
       </div>
     </div>
-    <div class="skill approval">
+    <div class="skill">
       <div class="step">7</div>
       <div class="body">
-        <div class="title"><h3>report-review</h3><span class="tag">v1.2.0</span><span class="tag approve">gate</span></div>
+        <div class="title"><h3>report-document</h3><span class="tag">v1.0.0</span></div>
+        <p>Writes the report's words and choices (findings, notes, tables, map axes, ideas, thumbnails, logos) into <code>report_content.json</code> from the run files only, then builds the summary and detailed HTML reports with the report kit and fixes every problem the renderer reports.</p>
+        <div class="io-line"><span><b>Reads</b> all run files</span><span><b>Writes</b> <code>report_content.json</code>, <code>report.html</code>, <code>report_detailed.html</code></span><span><b>By</b> boss</span></div>
+      </div>
+    </div>
+    <div class="skill approval">
+      <div class="step">8</div>
+      <div class="body">
+        <div class="title"><h3>report-review</h3><span class="tag">v1.3.0</span><span class="tag approve">gate</span></div>
         <p>Checks the finished run before it is called done: ids, counts and evidence agree across files, exact-product claims are proven, every idea is grounded in real creatives, gaps are reported, links open, nothing is guessed. Fixes what fails, re-renders, records the review and then deletes the downloaded videos to free space.</p>
         <div class="io-line"><span><b>Reads</b> all run files</span><span><b>Writes</b> <code>review.json</code></span><span><b>By</b> boss</span></div>
       </div>
@@ -376,7 +385,7 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
 
 <section id="team">
   <div class="sec-head"><span class="num">04</span><h2>Team: boss and workers</h2></div>
-  <p>The main agent is the boss. It runs steps 1, 2 and 5–7 and hands the two slow steps to workers that run side by side, up to 4 at once. Each worker writes only its own files and the boss merges them, so workers never overwrite each other and a stopped run resumes where it left off.</p>
+  <p>The main agent is the boss. It runs steps 1, 2 and 5–8 and hands the two slow steps to workers that run side by side, up to 4 at once. Each worker writes only its own files and the boss merges them, so workers never overwrite each other and a stopped run resumes where it left off.</p>
   <div class="tbl">
     <table>
       <thead><tr><th></th><th>Worker</th><th>One per</th><th>Does</th><th>Writes only</th></tr></thead>
@@ -457,9 +466,11 @@ python tools/registry.py build           <span class="c"># check and write skill
         <tr class="k-eval"><td class="mark"></td><td><code>check_compare.py</code></td><td class="num-col">Step 4</td><td>Compares the analysis with the checker's reading and prints the agreement rate and disagreements.</td></tr>
         <tr class="k-tool"><td class="mark"></td><td><code>stats.py</code></td><td class="num-col">Step 5</td><td>Counts every option across creatives, market and brand separately.</td></tr>
         <tr class="k-tool"><td class="mark"></td><td><code>validate.py</code></td><td class="num-col">Every step</td><td>Checks each file against its schema and the knowledge, and says where to resume.</td></tr>
-        <tr class="k-tool"><td class="mark"></td><td><code>review.py</code></td><td class="num-col">Step 7</td><td>Cross-file checks: ids, counts, evidence, product-match proof, gaps reported, report up to date, links open.</td></tr>
-        <tr class="k-tool"><td class="mark"></td><td><code>render_report.py</code></td><td class="num-col">Steps 6, 7</td><td>Builds <code>report.md</code> from the JSON files.</td></tr>
-        <tr class="k-tool"><td class="mark"></td><td><code>clean_media.py</code></td><td class="num-col">After step 7</td><td>Deletes the downloaded videos once the review passes; frames and evidence stay.</td></tr>
+        <tr class="k-tool"><td class="mark"></td><td><code>review.py</code></td><td class="num-col">Step 8</td><td>Cross-file checks: ids, counts, evidence, product-match proof, gaps reported, report up to date, links open.</td></tr>
+        <tr class="k-tool"><td class="mark"></td><td><code>render_report.py</code></td><td class="num-col">Steps 6, 8</td><td>Builds <code>report.md</code> from the JSON files.</td></tr>
+        <tr class="k-tool"><td class="mark"></td><td><code>render_html.py</code></td><td class="num-col">Steps 7, 8</td><td>Builds <code>report.html</code> and <code>report_detailed.html</code> from <code>report_content.json</code> and the run files; lists any problem.</td></tr>
+        <tr class="k-tool"><td class="mark"></td><td><code>fetch_logo.py</code></td><td class="num-col">Step 7</td><td>Saves each brand's logo from its website icon or profile picture.</td></tr>
+        <tr class="k-tool"><td class="mark"></td><td><code>clean_media.py</code></td><td class="num-col">After step 8</td><td>Deletes the downloaded videos once the review passes; frames and evidence stay.</td></tr>
         <tr class="k-registry"><td class="mark"></td><td><code>registry.py</code></td><td class="num-col">Setup</td><td>Builds, checks, lists, searches and shows skills.</td></tr>
         <tr class="k-knowledge"><td class="mark"></td><td><code>export_knowledge.py</code></td><td class="num-col">Setup</td><td>Exports the 54 parameters, beats, layers and assets from the Creative Benchmark Excel (read only).</td></tr>
         <tr class="k-eval"><td class="mark"></td><td><code>export_reference.py</code></td><td class="num-col">Setup</td><td>Exports the 10 manually analysed creatives for evaluation (read only).</td></tr>
@@ -531,7 +542,8 @@ python tools/registry.py build           <span class="c"># check and write skill
         <tr class="k-memory"><td class="mark"></td><td><code>stats.json</code></td><td class="num-col">5</td><td>Option counts, market and brand separately, product-match counts</td></tr>
         <tr class="k-memory"><td class="mark"></td><td><code>synthesis.json</code></td><td class="num-col">5</td><td>Competitor notes, market patterns with evidence ids, brand vs market, headline findings</td></tr>
         <tr class="k-memory"><td class="mark"></td><td><code>recommendations.json</code> + <code>report.md</code></td><td class="num-col">6</td><td>5 ideas, each with parameters and the creatives it is based on</td></tr>
-        <tr class="k-memory"><td class="mark"></td><td><code>review.json</code></td><td class="num-col">7</td><td>Passed, automatic issues, manual checks</td></tr>
+        <tr class="k-memory"><td class="mark"></td><td><code>report_content.json</code> + <code>report.html</code> + <code>report_detailed.html</code></td><td class="num-col">7</td><td>The report's words and choices, and the two HTML reports built from them</td></tr>
+        <tr class="k-memory"><td class="mark"></td><td><code>review.json</code></td><td class="num-col">8</td><td>Passed, automatic issues, manual checks</td></tr>
         <tr class="k-memory"><td class="mark"></td><td><code>log.md</code></td><td class="num-col">All</td><td>Setup and capability checks, one line per step and worker, agreement rate, every skipped source and gap with the reason</td></tr>
       </tbody>
     </table>
@@ -604,6 +616,7 @@ npx -y playwright@latest codegen --channel chrome --save-storage=auth.json https
 python tools/validate.py runs/&lt;brand&gt;-&lt;date&gt;          <span class="c"># steps done, errors, where to resume</span>
 python tools/review.py runs/&lt;brand&gt;-&lt;date&gt; --links    <span class="c"># cross-file checks</span>
 python tools/render_report.py runs/&lt;brand&gt;-&lt;date&gt;     <span class="c"># rebuild report.md</span>
+python tools/render_html.py runs/&lt;brand&gt;-&lt;date&gt;       <span class="c"># rebuild report.html + report_detailed.html</span>
 python evaluation/compare.py &lt;folder&gt; --report accuracy.md   <span class="c"># score against the manual analysis</span></pre>
 </section>
 

@@ -1,0 +1,100 @@
+{% macro section_head(s, lede=None) %}
+<div class="rk-section-head">
+  <span class="rk-section-num">{{ s.num }}</span>
+  <h2 class="rk-section-title">{{ s.title }}</h2>
+  {% if lede %}<p class="rk-section-lede">{{ lede }}</p>{% endif %}
+</div>
+{% endmacro %}
+
+{% macro stat_strip(stats) %}
+<div class="rk-stats" data-anim>
+  {% for st in stats %}
+  <div class="rk-stat">
+    <div class="rk-stat-icon">{{ icon(st.icon) }}</div>
+    <div class="rk-stat-value"><span data-count="{{ st.value }}">{{ st.value }}</span>{% if st.of %}<small>of {{ st.of }}</small>{% endif %}</div>
+    <div class="rk-stat-label">{{ st.label }}</div>
+    {% if st.logos %}<div class="rk-logos">{% for b in st.logos %}{{ logo(b) }}{% endfor %}</div>{% endif %}
+    {% if st.split %}
+    <div class="rk-split" aria-hidden="true">
+      {% for part in st.split %}<i class="rk-bar-fill" style="width:{{ part.pct }}%;background:{{ part.color }}"></i>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro chip(c) %}
+<a class="rk-chip{% if c.is_brand %} is-brand{% endif %}" href="{{ c.href }}"{% if c.external %} target="_blank" rel="noopener"{% endif %} title="{{ c.title }}">
+  {% if c.thumb %}<img src="{{ c.thumb }}" alt="">{% endif %}
+  <span><b>{{ c.id }}</b><em>{{ c.brand }} · {{ c.kind }}</em></span>
+</a>
+{% endmacro %}
+
+{% macro finding_card(f) %}
+<article class="rk-finding" data-anim>
+  <div class="rk-finding-num">
+    <div class="rk-big{% if (f.stat.value ~ (f.stat.suffix or '')) | length > 3 %} rk-big-long{% endif %}"><span data-count="{{ f.stat.value }}">{{ f.stat.value }}</span>{{ f.stat.suffix }}</div>
+    <div>
+      {% if f.stat.of %}<div class="rk-big-of">of {{ f.stat.of }}</div>{% endif %}
+      <div class="rk-big-label">{{ f.stat.label }}</div>
+    </div>
+  </div>
+  <div>
+    <div class="rk-finding-head">
+      <span class="rk-icon-badge">{{ icon(f.icon) }}</span>
+      <h3 class="rk-finding-title">{{ f.headline }}</h3>
+    </div>
+    <p class="rk-key">{{ mark(f.key_line, f.highlight) }}</p>
+    <p>{{ f.detail }}</p>
+    <div class="rk-chips">
+      {% for c in f.chips %}{{ chip(c) }}{% endfor %}
+    </div>
+  </div>
+</article>
+{% endmacro %}
+
+{% macro logo(b, size="") %}
+{% if b.logo %}<img class="rk-logo {{ size }}" src="{{ b.logo }}" alt="{{ b.name }} logo">{% else %}<span class="rk-logo rk-mono {{ size }}" style="background:{{ b.color }}" aria-hidden="true">{{ b.initials }}</span>{% endif %}
+{% endmacro %}
+
+{% macro vs_bar(label, n, of, color) %}
+<div class="rk-vs"><span>{{ label }}</span><span class="rk-vs-track"><i class="rk-bar-fill" style="width:{{ (100 * n / of) | round | int if of else 0 }}%;background:{{ color }}"></i></span><span>{{ n }} of {{ of }}</span></div>
+{% endmacro %}
+
+{% macro table(head, rows) %}
+<div class="rk-table-wrap"><table class="rk-table">
+  <thead><tr>{% for h in head %}<th scope="col">{{ h }}</th>{% endfor %}</tr></thead>
+  <tbody>{{ caller() }}</tbody>
+</table></div>
+{% endmacro %}
+
+{% macro idea_card(i) %}
+<article class="rk-idea" data-anim>
+  <div class="rk-idea-top"><span class="rk-idea-no">{{ i.no }}</span><span class="rk-tag rk-tag-{{ i.type_class }}">{{ i.type }}</span></div>
+  <h3>{{ i.title }}</h3>
+  <p>{{ i.idea }}</p>
+  <dl class="rk-fields">
+    {% for f in i.fields %}<div><dt>{{ icon(f.icon) }}{{ f.label }}</dt><dd>{{ f.text }}</dd></div>{% endfor %}
+  </dl>
+  {% if i.chips %}<div class="rk-chips">{% for c in i.chips %}{{ chip(c) }}{% endfor %}</div>{% endif %}
+  <div class="rk-why">{{ icon("lightbulb") }}<span>{{ i.why }}</span></div>
+</article>
+{% endmacro %}
+
+{% macro tile(t) %}
+<article class="rk-tile{% if t.is_brand %} is-brand{% endif %}" id="tile-{{ t.id }}">
+  <div class="rk-tile-img">{% if t.thumb %}<img src="{{ t.thumb }}" alt="{{ t.id }}: {{ t.brand.name }} {{ t.placement }}">{% endif %}</div>
+  <div class="rk-tile-body">
+    <div class="rk-tile-id">{{ logo(t.brand) }}{{ t.id }} · {{ t.brand.name }}</div>
+    <div class="rk-tile-tags">
+      <span class="rk-tag rk-tag-{{ 'paid' if t.paid else 'organic' }}">{{ 'Paid' if t.paid else 'Organic' }}</span>
+      <span class="rk-tag rk-tag-format">{{ t.format }}</span>
+      <span class="rk-tag rk-tag-{{ t.match_class }}">{{ t.match }}</span>
+    </div>
+    <div>{{ t.placement }}{% if t.signal %} · {{ t.signal }}{% endif %}</div>
+    {% if t.why %}<div class="rk-tile-why">{{ t.why }}</div>{% endif %}
+    <a class="rk-open" href="{{ t.link }}" target="_blank" rel="noopener">Open original {{ icon("arrow-up-right") }}</a>
+  </div>
+</article>
+{% endmacro %}

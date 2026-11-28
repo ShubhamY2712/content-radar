@@ -28,6 +28,11 @@ What Content Radar does not do yet, or does only partly. Each item is a known de
 
   Runs made before this change may break the stricter one-option rule when re-validated.
 
+## HTML reports
+- **Logos come from the brands' websites.** `tools/fetch_logo.py` takes the site's largest icon; some sites only offer a small favicon or an SVG, and then the report shows the brand's initials unless a profile picture URL is given.
+- **Thumbnails and key frames are chosen from saved frames.** If the frames were deleted or never saved, the report shows the creative without a picture and links to the original.
+- **Charts are drawn by the report kit,** not by Mermaid, so the files stay small and open offline.
+
 ## Engineering
 - **No automated test suite.** The tools were tested by hand on copies of real runs and on generated cases (planted faults, pasted packs, synthetic clips). There is no `tests/` folder.
 - **Cost.** A full run (about 20–25 creatives, with 2 analysts, 1 checker and a resolver per creative) uses a large share of a Claude Pro 5-hour limit. Expect one or more resumes. Progress is saved in the run folder, so a stopped run continues where it left off.

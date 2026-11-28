@@ -1,0 +1,43 @@
+{
+ "name": "report-document",
+ "version": "1.0.0",
+ "order": 7,
+ "depends_on": [
+  "content-recommendation"
+ ],
+ "inputs": [
+  "brief.json",
+  "competitors.json",
+  "creatives.json",
+  "analysis/",
+  "synthesis.json",
+  "stats.json",
+  "recommendations.json",
+  "log.md",
+  "media/"
+ ],
+ "outputs": [
+  "report_content.json",
+  "media/logos/",
+  "report.html",
+  "report_detailed.html"
+ ],
+ "schemas": [
+  "report_content.schema.json"
+ ],
+ "knowledge": [
+  "parameters.json",
+  "breakdown.json"
+ ],
+ "tools": [
+  "tools/fetch_logo.py",
+  "tools/render_html.py",
+  "tools/validate.py",
+  "web_fetch"
+ ],
+ "permissions": [
+  "internet_read",
+  "file_write_run"
+ ],
+ "human_approval": false
+}

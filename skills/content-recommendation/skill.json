@@ -1,6 +1,6 @@
 {
  "name": "content-recommendation",
- "version": "1.4.0",
+ "version": "1.4.1",
  "order": 6,
  "depends_on": [
   "benchmark-synthesis"

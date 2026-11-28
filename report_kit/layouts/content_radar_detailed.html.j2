@@ -1,0 +1,65 @@
+{% extends "content_radar_summary.html.j2" %}
+{% from "components.html.j2" import section_head, logo %}
+{% block detailed %}
+{# 10 Creative notes: every creative's 54 findings #}
+<section class="rk-section" id="{{ S.creatives.id }}">
+  {{ section_head(S.creatives, creatives.lede) }}
+  <div class="rk-body">
+    <div class="rk-filters">
+      {% for g in creatives.filters %}
+      <div class="rk-filter" data-group="{{ g.key }}"><span>{{ g.label }}</span>
+        <button type="button" data-value="all" aria-pressed="true">All</button>
+        {% for v in g["values"] %}<button type="button" data-value="{{ v.value }}" aria-pressed="false">{{ v.label }}</button>{% endfor %}
+      </div>
+      {% endfor %}
+      <span class="rk-filter-count"></span>
+    </div>
+    {% for c in creatives["items"] %}
+    <details class="rk-creative{% if c.is_brand %} is-brand{% endif %}" id="c-{{ c.id }}" data-filterable data-brand="{{ c.brand_key }}" data-type="{{ c.paid_key }}" data-format="{{ c.kind }}">
+      <summary>
+        {% if c.thumb %}<img src="{{ c.thumb }}" alt="">{% else %}<span></span>{% endif %}
+        <div>
+          <h3>{{ logo(c.brand) }}{{ c.id }} · {{ c.brand.name }}</h3>
+          <span class="rk-tag rk-tag-{{ 'paid' if c.paid else 'organic' }}">{{ 'Paid' if c.paid else 'Organic' }}</span>
+          <span class="rk-tag rk-tag-format">{{ c.format }}</span>
+          <span class="rk-tag rk-tag-{{ c.match_class }}">{{ c.match }}</span>
+          <span style="font-size:13.5px;color:var(--ink-2);margin-left:6px">{{ c.placement }}</span>
+        </div>
+        <span class="rk-caret">{{ icon("caret-down") }}</span>
+      </summary>
+      <div class="rk-creative-body">
+        {% if c.frames %}
+        <div class="rk-frames">{% for f in c.frames %}<figure><img src="{{ f.src }}" alt="{{ c.id }} at {{ f.label }}"><figcaption>{{ f.label }}</figcaption></figure>{% endfor %}</div>
+        {% endif %}
+        <dl class="rk-facts">
+          {% for f in c.facts %}<div><dt>{{ f.label }}</dt><dd>{% if f.url %}<a href="{{ f.url }}" target="_blank" rel="noopener">{{ f.text }}</a>{% else %}{{ f.text }}{% endif %}</dd></div>{% endfor %}
+        </dl>
+        {% if c.hook %}<div class="rk-hook"><b>Hook.</b> {{ c.hook.text }}{% if c.hook.translation %}<span class="rk-quote-tr">{{ c.hook.translation }}</span>{% endif %}</div>{% endif %}
+        {% if c.story %}
+        <div class="rk-story">
+          <h3 class="rk-sub" style="margin-top:8px">Story structure</h3>
+          <div class="rk-story-bar">{% for s in c.story %}<i style="flex:{{ s.width }};background:{{ s.color }}" title="{{ s.beat }} {{ s.span }}">{{ s.short }}</i>{% endfor %}</div>
+          <ul class="rk-story-list">{% for s in c.story %}<li><b>{{ s.beat }}</b> · {{ s.span }}<br>{{ s.what }}</li>{% endfor %}</ul>
+        </div>
+        {% endif %}
+        {% for t in c.tables %}
+        <h3 class="rk-sub">{{ t.title }}</h3>
+        <div class="rk-table-wrap"><table class="rk-table rk-findings-table">
+          <thead><tr><th scope="col">Parameter</th><th scope="col">Option</th><th scope="col">Finding</th></tr></thead>
+          <tbody>
+            {% for r in t.rows %}
+            <tr>
+              <td class="rk-param">{{ r.id }}<small>{{ r.name }}</small></td>
+              <td class="rk-opt">{% if r.visible %}{% for o in r.options %}<span class="rk-tag rk-tag-option">{{ o }}</span> {% else %}<span class="rk-not-visible">Free text</span>{% endfor %}{% else %}<span class="rk-not-visible">Not visible</span>{% endif %}</td>
+              <td>{{ r.finding }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table></div>
+        {% endfor %}
+      </div>
+    </details>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

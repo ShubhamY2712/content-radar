@@ -1,6 +1,6 @@
 # Content Radar · Agent 1 — Content Benchmark Research Agent
 
-Give it a brand and a product. It finds the competitors, collects their strongest recent ads and organic posts (plus the brand's own as a baseline), analyses every creative on 54 creative benchmark parameters (story beat × layer × assets), compares the brand with the market, and writes a benchmark report with content recommendations, which it reviews before calling the run done.
+Give it a brand and a product. It finds the competitors, collects their strongest recent ads and organic posts (plus the brand's own as a baseline), analyses every creative on 54 creative benchmark parameters (story beat × layer × assets), compares the brand with the market, and writes two HTML reports for the brand's marketing team (a summary and a detailed report with every creative's notes) with content recommendations, which it reviews before calling the run done.
 
 The agent is a folder, not an app: Markdown instructions, a skill registry, knowledge files and small read-only Python tools. Any AI that can read files and browse the web can run it (OpenCode, Claude Code, Gemini CLI, ChatGPT / Gemini apps). The AI you run it in does the thinking, so no model API key is needed.
 
@@ -16,16 +16,22 @@ An overview of the design for readers is in [`docs/Content_Radar_Agent1.html`](d
 | 4 | creative-analysis | `analysis/<id>.json`, `checks/<id>.json` | 2 analysts (Business, Style) + 1 independent checker per creative |
 | 5 | benchmark-synthesis | `stats.json`, `synthesis.json` | main agent |
 | 6 | content-recommendation | `recommendations.json`, `report.md`, `creative_notes.md` | main agent |
-| 7 | report-review | `review.json` | main agent |
+| 7 | report-document | `report_content.json`, `report.html`, `report_detailed.html` | main agent |
+| 8 | report-review | `review.json` | main agent |
 
-Everything a run writes goes to `runs/<brand>-<date>/`, so a stopped run resumes where it left off. Once the review passes, the downloaded videos are deleted to save space (about 1 GB per run); frames, measures, transcripts and the report stay, about 100 MB per run. The report is `runs/<brand>-<date>/report.md` (summary: findings, competitors, brand vs market, patterns, ideas); every creative's 54-parameter notes are in `creative_notes.md` next to it.
+Everything a run writes goes to `runs/<brand>-<date>/`, so a stopped run resumes where it left off. Once the review passes, the downloaded videos are deleted to save space (about 1 GB per run); frames, measures, transcripts and the report stay, about 100 MB per run. The reports are two self-contained HTML files in the run folder (fonts, icons and creative thumbnails built in, so each opens offline as one file):
+
+- `report.html` (summary): product brief, headline findings, competitors and why they were chosen, competitor notes, brand vs market with a positioning map, business view with the funnel, creative and style view, recommended content, and a gallery of every creative.
+- `report_detailed.html` (detailed): the same, plus every creative's notes: key frames, facts, hook, story structure and all 54 findings, with filters by brand, paid or organic, and photo or video.
+
+The markdown `report.md` and `creative_notes.md` are kept as plain-text copies.
 
 Accuracy features: creatives are picked for the exact product first; on-screen text, safe zones, faces, colours, product sightings, cuts and sound are measured by code rather than guessed; every finding cites its evidence; a checker re-reads each creative without seeing the analysis and every disagreement is resolved; all counts in the report come from code; `evaluation/compare.py` scores the agent against manual analyses.
 
 ## Folder structure
 
 ```
-AGENTS.md              the agent: role, setup and capability checks, 7-step run, team, rules (read by every AI)
+AGENTS.md              the agent: role, setup and capability checks, 8-step run, team, rules (read by every AI)
 CLAUDE.md, GEMINI.md   pointers to AGENTS.md for Claude Code and Gemini CLI
 opencode.jsonc         OpenCode: four isolated Playwright browsers (browser1-browser4)
 requirements.txt       Python packages for the tools
@@ -34,10 +40,11 @@ auth.json              your saved Instagram / Facebook logins (made once, never 
 agents/                worker briefs: collector.md, analyst.md, checker.md
 .opencode/agents/      the three workers registered as OpenCode sub-agents
 setup/claude-code/     the same sub-agents, browsers and tool permissions for Claude Code (copied by the setup check)
-skills/                7 skills (SKILL.md + skill.json each) and registry.json
+skills/                8 skills (SKILL.md + skill.json each) and registry.json
 knowledge/             54 parameters, story beats, layers, assets, option guide (codebook), 2 worked examples
 schemas/               JSON schema for every file a run writes
-templates/report.md    report layout
+templates/report.md    markdown report layout
+report_kit/            HTML report kit: styles, scripts, fonts, icons and page layouts (reusable for other reports)
 tools/                 Python tools (see "Tools"); models are downloaded into tools/models/ on first use
 evaluation/            10 manually analysed reference creatives, test briefs, compare.py
 runs/                  run outputs, one folder per run (not committed)
@@ -103,7 +110,7 @@ The agent first runs the setup check, then checks what the AI can do (web, image
 
 ## Team: main agent and workers
 
-The main agent runs steps 1, 2 and 5–7 and hands the slow steps to workers, up to 4 at a time:
+The main agent runs steps 1, 2 and 5–8 and hands the slow steps to workers, up to 4 at a time:
 
 - **Collectors** (step 3): one per brand, each with its own browser, writing `parts/C<n>.json` and its own media; `tools/merge_parts.py` joins the parts.
 - **Analysts** (step 4): one for the 29 Business and one for the 25 Style parameters per creative, evidence first, measured facts first.
@@ -125,6 +132,8 @@ python tools/merge_parts.py runs/<run> [--analysis <id>]           join workers'
 python tools/check_compare.py runs/<run> <id>      analysis vs checker
 python tools/stats.py runs/<run>                   option counts for the synthesis
 python tools/render_report.py runs/<run>           rebuild report.md and creative_notes.md
+python tools/fetch_logo.py runs/<run> C<n> <website or image URL>   save a brand logo for the HTML reports
+python tools/render_html.py runs/<run>             build report.html and report_detailed.html from report_content.json
 python tools/review.py runs/<run> --links          cross-file checks and link check
 python tools/clean_media.py runs/<run>             after review passes: delete downloaded videos, keep frames and evidence
 ```
@@ -148,6 +157,7 @@ python tools/registry.py build
 ```
 
 ## Data and sharing
+
 - The agent is read-only on the web: it never signs in, posts, likes, follows or buys.
 
 ## License

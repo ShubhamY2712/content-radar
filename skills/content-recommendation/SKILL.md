@@ -26,7 +26,7 @@ description: Recommend content ideas for the brand on the same benchmark paramet
    - `based_on`: the creative ids or the market pattern it comes from (required).
 4. Write `recommendations.json` and validate it.
 5. Build the report: `python tools/render_report.py <run folder>` when Python is available; otherwise fill `templates/report.md` by hand in the same order. Every creative and competitor in the report links to its source.
-6. Continue to step 7 (report-review) before telling the user the run is done.
+6. Continue to step 7 (report-document), which builds the HTML reports, then step 8 (report-review), before telling the user the run is done.
 
 ## Rules
 - Ideas are for the brand in the brief, never copies of a competitor's creative - take the pattern, not the content.

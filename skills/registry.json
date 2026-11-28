@@ -7,6 +7,7 @@
   "creative-analysis",
   "benchmark-synthesis",
   "content-recommendation",
+  "report-document",
   "report-review"
  ],
  "skills": [
@@ -185,7 +186,7 @@
   },
   {
    "name": "content-recommendation",
-   "version": "1.4.0",
+   "version": "1.4.1",
    "order": 6,
    "depends_on": [
     "benchmark-synthesis"
@@ -218,15 +219,63 @@
    "path": "skills/content-recommendation/SKILL.md"
   },
   {
-   "name": "report-review",
-   "version": "1.2.0",
+   "name": "report-document",
+   "version": "1.0.0",
    "order": 7,
    "depends_on": [
     "content-recommendation"
    ],
    "inputs": [
+    "brief.json",
+    "competitors.json",
+    "creatives.json",
+    "analysis/",
+    "synthesis.json",
+    "stats.json",
+    "recommendations.json",
+    "log.md",
+    "media/"
+   ],
+   "outputs": [
+    "report_content.json",
+    "media/logos/",
+    "report.html",
+    "report_detailed.html"
+   ],
+   "schemas": [
+    "report_content.schema.json"
+   ],
+   "knowledge": [
+    "parameters.json",
+    "breakdown.json"
+   ],
+   "tools": [
+    "tools/fetch_logo.py",
+    "tools/render_html.py",
+    "tools/validate.py",
+    "web_fetch"
+   ],
+   "permissions": [
+    "internet_read",
+    "file_write_run"
+   ],
+   "human_approval": false,
+   "description": "Turn the finished analysis into two client-ready HTML reports - a summary report and a detailed report with every creative's 54 findings - by writing report_content.json and rendering it with the report kit. Step 7.",
+   "path": "skills/report-document/SKILL.md"
+  },
+  {
+   "name": "report-review",
+   "version": "1.3.0",
+   "order": 8,
+   "depends_on": [
+    "report-document"
+   ],
+   "inputs": [
     "all run files",
-    "report.md"
+    "report.md",
+    "report_content.json",
+    "report.html",
+    "report_detailed.html"
    ],
    "outputs": [
     "review.json"
@@ -240,6 +289,7 @@
    "tools": [
     "tools/review.py",
     "tools/render_report.py",
+    "tools/render_html.py",
     "web_fetch"
    ],
    "permissions": [
@@ -247,7 +297,7 @@
     "file_write_run"
    ],
    "human_approval": false,
-   "description": "Check the finished run before calling it done - ids, counts and evidence agree across files, every recommendation is grounded, links open, nothing is guessed - fix what fails and record the review. Step 7.",
+   "description": "Check the finished run before calling it done - ids, counts and evidence agree across files, every recommendation is grounded, links open, nothing is guessed - fix what fails and record the review. Step 8.",
    "path": "skills/report-review/SKILL.md"
   }
  ]

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ lang | default('en') }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page_title }}</title>
+<style>
+{{ kit_fonts }}
+{{ kit_css }}
+</style>
+</head>
+<body>
+<div class="rk-shell">
+  <nav class="rk-side" aria-label="Contents">
+    <p class="rk-side-title">{{ side_title }}</p>
+    <p class="rk-side-sub">{{ side_sub }}</p>
+    <ol class="rk-toc">
+      {% for item in toc %}
+      <li><a href="#{{ item.id }}"><span>{{ item.num }}</span><span>{{ item.title }}</span></a></li>
+      {% endfor %}
+    </ol>
+  </nav>
+  <main class="rk-main">
+    {% block main %}{% endblock %}
+  </main>
+</div>
+<script>
+{{ kit_js }}
+</script>
+</body>
+</html>

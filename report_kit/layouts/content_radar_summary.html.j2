@@ -1,0 +1,196 @@
+{% extends "base.html.j2" %}
+{% from "components.html.j2" import section_head, stat_strip, finding_card, chip, logo, vs_bar, table, idea_card, tile %}
+{% block main %}
+<header class="rk-cover">
+  <p class="rk-eyebrow">{{ cover.eyebrow }}</p>
+  <h1 class="rk-title">{{ cover.title }}</h1>
+  <p class="rk-dek">{{ cover.dek }}</p>
+  <div class="rk-meta">
+    {% for m in cover.meta %}<span>{{ icon(m.icon) }}{{ m.text }}</span>{% endfor %}
+  </div>
+</header>
+
+{# 01 Product brief #}
+<section class="rk-section" id="{{ S.brief.id }}">
+  {{ section_head(S.brief) }}
+  <div class="rk-body">
+    <div class="rk-prose">
+      {% for para in brief.paragraphs %}<p>{{ para }}</p>{% endfor %}
+    </div>
+    {{ stat_strip(brief.stats) }}
+    <div class="rk-note">{{ icon("info") }}<span>{{ brief.method_note }}</span></div>
+  </div>
+</section>
+
+{# 02 Headline findings #}
+<section class="rk-section" id="{{ S.findings.id }}">
+  {{ section_head(S.findings, findings.lede) }}
+  <div class="rk-body rk-findings">
+    {% for f in findings["items"] %}{{ finding_card(f) }}{% endfor %}
+  </div>
+</section>
+
+{# 03 Competitors and why they were chosen #}
+<section class="rk-section" id="{{ S.competitors.id }}">
+  {{ section_head(S.competitors, competitors.lede) }}
+  <div class="rk-body">
+    <div class="rk-note">{{ icon("crosshair") }}<span>{{ competitors.selection_rule }}</span></div>
+    <div style="height:18px"></div>
+    {% call table(["Brand", "Why it was chosen", "Matched product", "Where its content lives", "Creatives"]) %}
+      {% for r in competitors.rows %}
+      <tr>
+        <td><span class="rk-brandname">{{ logo(r.brand) }}{{ r.brand.name }}</span>{% if r.is_brand %}<br><span class="rk-tag rk-tag-paid" style="margin-top:6px">Baseline</span>{% endif %}</td>
+        <td>{{ r.why }}</td>
+        <td>{% if r.product_page %}<a href="{{ r.product_page }}" target="_blank" rel="noopener">{{ r.product }}</a>{% else %}{{ r.product }}{% endif %}{% if r.price %}<br><small>{{ r.price }}</small>{% endif %}</td>
+        <td><div class="rk-links">{% for l in r.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ icon(l.icon) }}{{ l.label }}</a>{% endfor %}</div></td>
+        <td style="white-space:nowrap">{{ r.paid }} paid<br>{{ r.organic }} organic</td>
+      </tr>
+      {% endfor %}
+    {% endcall %}
+    <h3 class="rk-sub">How the creatives were picked</h3>
+    <div class="rk-prose"><p>{{ competitors.creative_rule }}</p></div>
+    <div class="rk-chart" data-anim>
+      <p class="rk-chart-title">How closely competitor creatives match the product</p>
+      <p class="rk-chart-sub">{{ competitors.match_total }} competitor creatives</p>
+      <div class="rk-stack-bar">
+        {% for m in competitors.match %}<i class="rk-bar-fill{% if m.light %} is-light{% endif %}" style="width:{{ m.pct }}%;background:{{ m.color }}" title="{{ m.label }}: {{ m.n }}">{{ m.n if m.n else '' }}</i>{% endfor %}
+      </div>
+      <div class="rk-legend">{% for m in competitors.match %}<span><i style="background:{{ m.color }}"></i>{{ m.label }} ({{ m.n }})</span>{% endfor %}</div>
+    </div>
+    {% if competitors.gaps %}
+    <h3 class="rk-sub">What this run could not cover</h3>
+    <ul class="rk-not">{% for g in competitors.gaps %}<li>{{ icon("warning-circle") }}<span>{{ g }}</span></li>{% endfor %}</ul>
+    {% endif %}
+  </div>
+</section>
+
+{# 04 Competitor notes #}
+<section class="rk-section" id="{{ S.notes.id }}">
+  {{ section_head(S.notes) }}
+  <div class="rk-body">
+    <div class="rk-prose"><p>{{ notes.summary }}</p></div>
+    <div class="rk-cards">
+      {% for b in notes.brands %}
+      <article class="rk-card">
+        <div class="rk-card-head">{{ logo(b.brand, "rk-logo-lg") }}<h3>{{ b.brand.name }}</h3></div>
+        <p>{{ b.strategy }}</p>
+        <h4>What it repeats</h4>
+        {% for r in b.repeats %}<div class="rk-count"><b>{{ r.n }}/{{ r.of }}</b><span>{{ r.text }}</span></div>{% endfor %}
+        <h4>Standout creative</h4>
+        <div class="rk-standout">
+          {% if b.standout.thumb %}<a href="{{ b.standout.href }}"><img src="{{ b.standout.thumb }}" alt="{{ b.standout.id }}"></a>{% endif %}
+          <div><b><a href="{{ b.standout.href }}">{{ b.standout.id }}</a></b> · {{ b.standout.why }}</div>
+        </div>
+        <h4>What it does not do</h4>
+        <ul class="rk-not">{% for d in b.does_not %}<li>{{ icon("x-circle") }}<span>{{ d }}</span></li>{% endfor %}</ul>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# 05 Brand vs market #}
+<section class="rk-section" id="{{ S.vs.id }}">
+  {{ section_head(S.vs, vs.lede) }}
+  <div class="rk-body">
+    <div class="rk-two">
+      {% for col in vs.columns %}
+      <div class="rk-col{% if col.lead %} is-lead{% endif %}" data-anim>
+        <h3 class="rk-col-title">{{ icon(col.icon) }}{{ col.title }}</h3>
+        {% if not col["items"] %}<p class="rk-item" style="color:var(--ink-3)">{{ col.empty }}</p>{% endif %}
+        {% for it in col["items"] %}
+        <div class="rk-item">
+          <h4>{{ it.title }} <small style="color:var(--ink-3);font-weight:400">{{ it.parameter }}</small></h4>
+          {{ vs_bar(vs.brand_name, it.brand.n, it.brand.of, "var(--ochre)") }}
+          {{ vs_bar("Market", it.market.n, it.market.of, "var(--forest)") }}
+          <p>{{ it.meaning }}</p>
+          <div class="rk-chips">{% for c in it.chips %}{{ chip(c) }}{% endfor %}</div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+    {% if vs.map %}
+    <div class="rk-chart rk-map" style="margin-top:18px">
+      <p class="rk-chart-title">Where each brand sits</p>
+      <p class="rk-chart-sub">{{ vs.map.subtitle }}</p>
+      {{ vs.map.svg }}
+      <p class="rk-map-reason">{{ vs.map.reason }}</p>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{# 06 Business table, with the funnel on top #}
+<section class="rk-section" id="{{ S.business.id }}">
+  {{ section_head(S.business, business.lede) }}
+  <div class="rk-body">
+    <div class="rk-chart" data-anim>
+      <p class="rk-chart-title">Funnel stage</p>
+      <p class="rk-chart-sub">{{ funnel.subtitle }}</p>
+      {% for row in funnel.rows %}
+      <div class="rk-stack"><span class="rk-brandname">{{ logo(row.brand) }}{{ row.brand.name }}</span>
+        <div class="rk-stack-bar">{% for s in row.stages %}<i class="rk-bar-fill{% if s.light %} is-light{% endif %}" style="width:{{ s.pct }}%;background:{{ s.color }}" title="{{ s.label }}: {{ s.n }} of {{ row.total }}">{{ s.n if s.n else '' }}</i>{% endfor %}</div>
+      </div>
+      {% endfor %}
+      <div class="rk-legend">{% for s in funnel.stages %}<span><i style="background:{{ s.color }}"></i>{{ s.label }}</span>{% endfor %}</div>
+      <div class="rk-funnel-map">
+        {% for s in funnel.map %}
+        <div class="rk-stage">
+          <div class="rk-stage-head"><span><i style="background:{{ s.color }}"></i>{{ s.label }}</span><small>{{ s.chips | length }} creatives</small></div>
+          <div class="rk-chips">{% for c in s.chips %}{{ chip(c) }}{% endfor %}</div>
+        </div>
+        {% endfor %}
+      </div>
+      {% if funnel.note %}<p class="rk-map-reason">{{ funnel.note }}</p>{% endif %}
+    </div>
+    {% call table(["Parameter", "What most competitors do", vs.brand_name, "Gap", "Evidence"]) %}
+      {% for r in business.rows %}
+      <tr>
+        <td class="rk-param">{{ r.id }}<small>{{ r.name }}</small></td>
+        <td>{{ r.market }}</td>
+        <td>{{ r.brand }}</td>
+        <td><span class="rk-tag rk-tag-{{ r.status }}">{{ r.status_label }}</span><div style="margin-top:6px">{{ r.gap }}</div></td>
+        <td><div class="rk-chips">{% for c in r.chips %}{{ chip(c) }}{% endfor %}</div></td>
+      </tr>
+      {% endfor %}
+    {% endcall %}
+  </div>
+</section>
+
+{# 07 Style table #}
+<section class="rk-section" id="{{ S.style.id }}">
+  {{ section_head(S.style, style.lede) }}
+  <div class="rk-body">
+    {% call table(["Parameter", "What most competitors do", vs.brand_name, "Gap", "Evidence"]) %}
+      {% for r in style.rows %}
+      <tr>
+        <td class="rk-param">{{ r.id }}<small>{{ r.name }}</small></td>
+        <td>{% for s in r.swatches_market %}<span class="rk-swatch" style="background:{{ s }}"></span>{% endfor %}{{ r.market }}</td>
+        <td>{% for s in r.swatches_brand %}<span class="rk-swatch" style="background:{{ s }}"></span>{% endfor %}{{ r.brand }}</td>
+        <td><span class="rk-tag rk-tag-{{ r.status }}">{{ r.status_label }}</span><div style="margin-top:6px">{{ r.gap }}</div></td>
+        <td><div class="rk-chips">{% for c in r.chips %}{{ chip(c) }}{% endfor %}</div></td>
+      </tr>
+      {% endfor %}
+    {% endcall %}
+  </div>
+</section>
+
+{# 08 Recommendations #}
+<section class="rk-section" id="{{ S.ideas.id }}">
+  {{ section_head(S.ideas, ideas.lede) }}
+  <div class="rk-body rk-ideas">
+    {% for i in ideas["items"] %}{{ idea_card(i) }}{% endfor %}
+  </div>
+</section>
+
+{# 09 Sample creatives gallery #}
+<section class="rk-section" id="{{ S.gallery.id }}">
+  {{ section_head(S.gallery, gallery.lede) }}
+  <div class="rk-body rk-gallery">
+    {% for t in gallery.tiles %}{{ tile(t) }}{% endfor %}
+  </div>
+</section>
+
+{% block detailed %}{% endblock %}
+{% endblock %}
